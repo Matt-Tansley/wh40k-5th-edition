@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="8b8f-6326-3bc1-570f">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="26"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Space Marines" id="ee40-911b-6351-1499" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Space Marine" hidden="false" id="47c1-261a-aca3-f25e">
+              <profiles>
+                <profile name="Space Marine" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="057e-5e03-24b1-6318">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="dddc-0f4b-c4ae-e091">Infantry</characteristic>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="16"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b6ff-71bc-9f75-dd21"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7efb-813a-5f13-d4cc"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="8fad-045c-d3d5-5e66">
+          <profiles>
+            <profile name="Space Marine Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="a9d4-d57e-8ef9-f219">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="dddc-0f4b-c4ae-e091">Infantry</characteristic>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cfc-c889-4a1d-397a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cfc-c889-4a1d-397a-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
