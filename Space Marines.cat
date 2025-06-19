@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="8b8f-6326-3bc1-570f">
-      <costs>
-        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="26"/>
-      </costs>
+    <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="c1eb-afc9-f922-6164">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="7203-a638-1c88-55bf" targetId="8429-4ea5-6433-b189" primary="true"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="960d-a775-a775-ef41" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="d652-e036-7c48-7b3b">
+          <profiles>
+            <profile name="Space Marine Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="2334-7874-1a55-5bc1">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b1c-f7d0-df35-6baa"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3e0-7512-18d6-92ae"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="26"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Space Marines" id="ee40-911b-6351-1499" hidden="false">
+        <selectionEntryGroup name="Space Marines" id="1cb8-7566-4384-2299" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Space Marine" hidden="false" id="47c1-261a-aca3-f25e">
+            <selectionEntry type="model" import="true" name="Space Marine" hidden="false" id="2519-4952-f2bc-377d">
               <profiles>
-                <profile name="Space Marine" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="057e-5e03-24b1-6318">
+                <profile name="Space Marine" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="8222-b2f8-7541-564c">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="dddc-0f4b-c4ae-e091">Infantry</characteristic>
                     <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
                     <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
                     <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
@@ -31,17 +57,154 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b6ff-71bc-9f75-dd21"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7efb-813a-5f13-d4cc"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ed0a-3ed1-de35-62e5"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f617-51b0-f4ff-2e50"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="0d3f-78f7-05e2-dc6c" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Dedicated Transport" id="78ab-e5c4-968b-1369" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Place Holder Transport" hidden="false" id="6bd1-15b4-6511-3f85"/>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df27-10c4-bbea-7ab8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sergeant Weapons" id="798d-8a42-0170-5a4f" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="93b9-a09f-6838-e3e8" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf9f-00d2-d948-063a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Heavy Weapon" id="90c9-419d-1d87-c6e0" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23bc-0a8d-777f-3a50" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Launcher" hidden="false" id="b68f-43f1-afb1-8052" type="selectionEntry" targetId="a3d2-d03e-7810-7365">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="f70a-63de-22c4-b568" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-Melta" hidden="false" id="dee0-b3ec-8388-9734" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Cannon" hidden="false" id="961d-eb35-cc0b-5471" type="selectionEntry" targetId="3d04-876d-57d0-0a95">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="5d6c-0c44-47e2-c2d4" type="selectionEntry" targetId="81a2-ac97-955a-62c8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Special Weapon" id="c984-61b6-7f77-2c74" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4be-b70b-da09-9178" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="ee18-e798-26e2-9aa1" type="selectionEntry" targetId="8e4e-3d28-3c22-170b">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="bec7-faa5-ece0-8450" type="selectionEntry" targetId="c90d-186d-9c15-ce09">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Gun" hidden="false" id="68ff-cddb-f853-4fcc" type="selectionEntry" targetId="fd5b-25eb-73cf-b322">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="ab59-0709-85a4-a87c" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Captain" hidden="false" id="2bbd-e910-a53d-d241">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="a290-3c88-7c7b-102d" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="08bf-999f-3c7f-c497" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Captain" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="b174-a908-7600-9427">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terminator Squad" hidden="false" id="4b4c-cc39-3236-f03f">
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="522d-724a-6e61-497e" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="e255-84ca-9077-7ac6" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Terminators" id="e6d1-84be-9735-bf6a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Terminator" hidden="false" id="42f8-c91a-b086-73f9">
+              <profiles>
+                <profile name="Terminator" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="f823-3264-1f22-ca68">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="24e1-0852-d006-b16e"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="398b-0279-2f02-9ab8"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="8fad-045c-d3d5-5e66">
+        <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="ecba-4d17-4755-bb51">
           <profiles>
-            <profile name="Space Marine Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="a9d4-d57e-8ef9-f219">
+            <profile name="Terminator Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="28a5-4b2b-bd01-305b">
               <characteristics>
-                <characteristic name="Unit Type" typeId="dddc-0f4b-c4ae-e091">Infantry</characteristic>
                 <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
                 <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
                 <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
@@ -50,16 +213,35 @@
                 <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
                 <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
                 <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
-                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cfc-c889-4a1d-397a-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cfc-c889-4a1d-397a-max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25d6-3b76-fcff-32bd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2383-24c3-3c95-2015"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="9954-d408-9a9a-17b5" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dreadnought" hidden="false" id="3884-b8c1-17e0-232c">
+      <profiles>
+        <profile name="Dreadnought" typeId="828a-679b-1a4d-9511" typeName="Walker" hidden="false" id="162d-d158-f4c2-27c2">
+          <characteristics>
+            <characteristic name="WS" typeId="088d-2068-bd5a-62fc">4</characteristic>
+            <characteristic name="BS" typeId="1fbd-cea7-aaee-6448">4</characteristic>
+            <characteristic name="S" typeId="794d-acb1-e52a-414c">6</characteristic>
+            <characteristic name="Front" typeId="d53c-c046-cfa8-dbc4">12</characteristic>
+            <characteristic name="Side" typeId="31b8-be05-a169-eec6">12</characteristic>
+            <characteristic name="Rear" typeId="5ffa-c8d3-306c-b7bb">10</characteristic>
+            <characteristic name="I" typeId="2a73-0ffe-fbda-71dd">4</characteristic>
+            <characteristic name="A" typeId="5dd6-2318-e247-bd7b">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
