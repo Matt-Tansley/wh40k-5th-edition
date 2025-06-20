@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="fdb5-aea7-66d4-8207" name="Tyrants Legion" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Legion Space Marine Cohort" hidden="false" id="0786-2230-61cd-32fe">
+      <categoryLinks>
+        <categoryLink targetId="8429-4ea5-6433-b189" id="5232-6866-f2cd-b96d" primary="true" name="Troops"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="173c-cc32-f696-4e81" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Space Marines" id="9142-b4fd-89a1-0ec2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Space Marine" hidden="false" id="be63-7a71-1765-c370">
+              <profiles>
+                <profile name="Space Marine" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="e57e-adc3-6fa0-161f">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="468d-91f1-f415-6663"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="6141-e6ac-a471-879c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="a15f-a46d-0260-7bbd" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Dedicated Transport" id="f557-6efe-ce95-5a86" hidden="false"/>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="0169-a60c-1dba-c9c1">
+          <profiles>
+            <profile name="Veteran Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="2735-f10c-3bd6-1fdd">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca88-bbb9-3341-1cf8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7efb-6bd9-f2cd-7817" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Auxilia" hidden="false" id="d37c-1f03-87ce-a97a">
+      <categoryLinks>
+        <categoryLink targetId="8429-4ea5-6433-b189" id="8620-2c4d-7cf5-c762" primary="true" name="Troops"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="080d-0bc9-b2be-f801" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Auxiliaries" id="5aec-84dd-37f9-81fe" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Auxiliary" hidden="false" id="e2b7-9d30-d271-5b38">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
+              </costs>
+              <profiles>
+                <profile name="Auxiliary" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="c19a-de40-cf49-f19e">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">2</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">2</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">5</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="19" field="selections" scope="parent" shared="true" id="00fa-5468-2891-4bf4" includeChildSelections="false"/>
+            <constraint type="max" value="39" field="selections" scope="parent" shared="true" id="b044-6f62-46d5-3cef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Prefect" hidden="false" id="9deb-a17c-e301-1f2d">
+          <profiles>
+            <profile name="Prefect" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="40b8-e079-06d5-7799">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a1b-7cad-c77e-55c1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ade-c4e4-173c-4f1b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="13"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Armsmen Cadre" hidden="false" id="44ea-c511-63a0-59de">
+      <categoryLinks>
+        <categoryLink targetId="8429-4ea5-6433-b189" id="73cf-11a5-2ef9-4c7c" primary="true" name="Troops"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="6472-e527-b9d8-b1af" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armsmen" id="3344-64af-4eea-19cf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armsmen" hidden="false" id="5a79-e3c0-d100-6a1f">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Armsmen" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="21ce-6fc2-22ff-55e4">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="c548-228f-cfde-9913" includeChildSelections="false"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="3eb0-320b-3704-eff0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Master At Arms" hidden="false" id="709b-0b06-4c4d-a7f4">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+          <profiles>
+            <profile name="Master At Arms" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="afd2-023e-9535-7212">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5fd-2693-646a-0670" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b64b-9d2a-f5a0-fbcb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Iron Hunter Squadron" hidden="false" id="4746-3ce0-a9e3-52e0">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Iron Hunters" id="9a40-2444-ed30-6a2f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Iron Hunter" hidden="false" id="e771-3450-0b14-0695">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Iron Hunter" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="4790-7b68-529e-cfc9">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">5</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="45bf-2842-f006-d239" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ea1e-7401-27d9-2ee7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="5831-3ac6-b2d3-f125" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="65e8-7133-4b26-b5d9" id="2a90-7a61-52f3-61a2" primary="false" name="Bike"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Huntmaster" hidden="false" id="3c0b-9446-d6ec-4862">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="55"/>
+          </costs>
+          <profiles>
+            <profile name="Huntmaster" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="0ad6-e25e-49b1-8ee8">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">5</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90ef-4ecb-1d3c-d038" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cda-6a6b-0161-45a8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Hellhound Flame Tank Squadron" hidden="false" id="4a4a-f9c3-9b0e-3f97">
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="bbb8-d422-f93c-ef95" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="e352-9408-717e-72de" id="b125-7707-927e-d3a7" primary="false" name="Tank"/>
+        <categoryLink targetId="e308-d529-0957-5bf9" id="0f24-b4ba-372a-59dc" primary="false" name="Fast"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hellhound" id="0be5-76da-acd0-57ea" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hellhound" hidden="false" id="49ca-4b6a-1b80-aaad">
+              <profiles>
+                <profile name="Hellhound" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9e01-b1c5-acfb-90ac">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="130"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64b2-ad06-b7fc-8b1c" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8062-e768-9bf9-373a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Sentry Gun Battery" hidden="false" id="87a7-3325-cb3f-b26c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Legion Sentry Guns" id="2ab0-70f3-3ef6-b780" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sentry Gun" hidden="false" id="8bfc-1e05-4305-3ab1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Sentry Gun" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="2ad4-a56e-bd92-ced4">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6d93-0c8d-4e81-7cf6" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3be3-1049-cbfc-6108" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="79e5-f22e-eea5-197d" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="0d2f-9f0f-4399-42d1" id="f5a6-5f42-bbfb-a244" primary="false" name="Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Maelstrom Fleet Lighters" hidden="false" id="9a88-3123-b0aa-7433">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arvus Lighters" id="cc1b-99a4-95fe-8edc" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Arvus Lighter" hidden="false" id="c767-f635-4fc6-9cab">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="75"/>
+              </costs>
+              <profiles>
+                <profile name="Arvus Lighter" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="4868-1ad5-8afd-d176">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Rear ramp.</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1812-f532-0411-bb24" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ae01-f957-4a72-f4d8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="2616-c2b0-3326-9363" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="e308-d529-0957-5bf9" id="b0d5-940d-62c9-2cb0" primary="false" name="Fast"/>
+        <categoryLink targetId="9f87-2b05-865f-8790" id="8d11-0c00-209c-380a" primary="false" name="Skimmer"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Battle Tank Squadron" hidden="false" id="1f4d-4adb-17f1-0082">
+      <categoryLinks>
+        <categoryLink targetId="e352-9408-717e-72de" id="77a6-f1e4-e86a-d508" primary="false" name="Tank"/>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="eef2-16f6-2895-68d4" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battle Tanks" id="c715-7606-e2b7-b673" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcae-73da-836f-5708" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="69c8-ac29-b8f6-938b" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Leman Russ Battle Tank" hidden="false" id="4557-afd7-d061-d05d">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="150"/>
+              </costs>
+              <profiles>
+                <profile name="Leman Russ Battle Tank" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="af54-6dd0-0c81-eaba">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Leman Russ Annihilator" hidden="false" id="9c92-ba8a-6c53-967d">
+              <profiles>
+                <profile name="Leman Russ Annihilator" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="93e9-9fd4-ebc5-2a3a">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="130"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Leman Russ Exterminator" hidden="false" id="7e6b-d4e4-6fba-6987">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="150"/>
+              </costs>
+              <profiles>
+                <profile name="Leman Russ Exterminator" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="4e5e-22c2-e58d-eaf4">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxilia Siege Defence Squadron" hidden="false" id="1c1a-2240-143e-1212">
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="72d3-bb1f-ef27-41f5" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="e352-9408-717e-72de" id="730a-74a9-b183-7ad8" primary="false" name="Tank"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Artillery Tanks" id="21ee-92eb-e6f4-3d7b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Thunderer" hidden="false" id="2c70-70a1-a5ea-a375">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="140"/>
+              </costs>
+              <profiles>
+                <profile name="Thunderer" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c9ad-640d-2408-9c72">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="de8e-892f-c047-d696">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="125"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="a88d-6145-973a-d5a6" id="988a-4d0a-dc7c-187e" primary="false" name="Open-Topped"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Basilisk" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9166-2645-8dd5-b54f">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="4d8c-9b49-4a0f-bd7d">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="135"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="a88d-6145-973a-d5a6" id="48d0-f854-6d75-d40a" primary="false" name="Open-Topped"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Medusa" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="3e49-368f-cf16-cbeb">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="940e-d9a2-0255-33d9" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3d08-4ed4-ecbc-7ac9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Artillery Barrage" hidden="false" id="649e-2c41-94d0-2de6">
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="8ab1-54da-c1e7-aa8c" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Fire Support Cohort" hidden="false" id="7d14-f30c-8f5f-c6ac">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Auxiliary Weapons Teams" id="d399-e4f9-634d-0dad" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Auxiliary Heavy Weapons Team" hidden="false" id="5f37-1cca-b043-7a35">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Auxiliary Heavy Weapons Team" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="32a5-a11e-2828-640a">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">2</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">2</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">6</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="156f-3561-c882-eb21" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="078e-5075-b82c-1d7a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Prefect" hidden="false" id="c49f-150d-bc24-9e09">
+          <profiles>
+            <profile name="Prefect" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="e87d-0b18-d876-95d9">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70c3-61a4-f904-a9e3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f93f-eea2-b0a4-2837" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="1503-7a62-fedc-17bf" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="97e7-fe5b-6246-3b9b" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Maelstrom Fleet Naval Detachment" hidden="false" id="0cb4-e6bd-ce8e-8ebf">
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="ade4-c905-f527-85d5" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="e308-d529-0957-5bf9" id="05e1-68cd-785d-a29a" primary="false" name="Fast"/>
+        <categoryLink targetId="9f87-2b05-865f-8790" id="7b08-a2b1-98dd-e21a" primary="false" name="Skimmer"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squadron Planes" id="a11d-ffb2-2cf9-3c5e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Thunderbolt" hidden="false" id="ceea-972d-205c-3daf">
+              <profiles>
+                <profile name="Thunderbolt" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b6f0-f636-0031-befa">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="180"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Lightning" hidden="false" id="35c0-f284-0f04-dac3">
+              <profiles>
+                <profile name="Lightning" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="2f68-d558-3649-56da">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="145"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Vulture" hidden="false" id="09c6-4023-a81e-386f">
+              <profiles>
+                <profile name="Vulture" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="d246-c207-bd2d-8836">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="105"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad35-2fd6-0919-97ad" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7f44-f2bd-407f-9a76" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Auxilia Heavy Ordnance Battery" hidden="false" id="80c7-c323-5cc6-6bc5">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heavy Artillery" id="f43a-85b0-7e6e-8caa" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Earthshaker Cannon" hidden="false" id="63a9-ae3f-ac0b-a82c">
+              <profiles>
+                <profile name="Earthshaker Siege Gun" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b569-bee5-759e-ed1f">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Armsman Crew" hidden="false" id="db13-444c-8190-274f" subType="crew">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="6"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Armsman Crew" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="330e-f3ec-e125-6788">
+                      <characteristics>
+                        <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                        <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                        <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                        <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                        <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                        <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                        <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                        <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                        <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="658f-34f5-ee27-560d" includeChildSelections="false"/>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="0e89-1af8-3dcd-9fe6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="51"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Medusa Siege Gun" hidden="false" id="a5ee-6c73-7773-58ae">
+              <profiles>
+                <profile name="Medusa Siege Gun" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="5b33-163d-122a-9721">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Armsman Crew" hidden="false" id="fda6-3c06-9ed2-ac7a" subType="crew">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="6"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Armsman Crew" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="7b3b-b87e-fb39-455a">
+                      <characteristics>
+                        <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                        <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                        <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                        <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                        <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                        <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                        <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                        <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                        <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="229b-8a5c-b7f6-fbd6" includeChildSelections="false"/>
+                    <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="604b-6744-70c1-1b63" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="76"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cc5-c0e8-b85f-b6ca" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="55e0-0386-32bd-3786" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="996a-ef14-fcd6-6980" primary="true" name="Heavy Support"/>
+        <categoryLink targetId="0d2f-9f0f-4399-42d1" id="91f5-e158-d965-e4d1" primary="false" name="Artillery"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Retaliator Squad" hidden="false" id="9608-235e-dbb3-4bbe">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="1fbb-5a0f-0d2f-423e">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5774-95a3-ea64-2766" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c250-5e31-de51-9ef7" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Veteran Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="b8e8-a7e1-93dd-fea5">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="48b5-c582-23f4-4449" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="ff57-4188-44df-4ca5" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retaliators" id="c10f-3e29-b318-5d09" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Retaliator" hidden="false" id="b993-d714-1cfd-add8">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Retaliator" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="a184-5827-59ed-ce5a">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2fe5-620b-4a66-4e46" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8376-c317-e32e-8e3c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Renegade Marauder Squadron " hidden="false" id="1996-dcb8-b24a-1d79">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Marauder Chief" hidden="false" id="f5b4-3366-2f9a-44cd">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Marauder Chief" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6c04-3a83-29af-ece7">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a8c-08e5-f049-b235" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c39-07a6-e980-d634" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="c4b7-43d1-3122-626e" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="317b-a16c-609c-9852" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Marauders" id="d7c5-710e-439b-086d" hidden="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3666-857e-7395-ff12" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="394e-0059-333b-ca45" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marauder" hidden="false" id="0a21-b9f6-6166-1515">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Marauder" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="7878-61c1-839e-34be">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Brutes" id="435f-42c4-4e92-736e" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9299-3015-d529-d84c" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brute" hidden="false" id="4534-41eb-d5e1-8245">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <profiles>
+                <profile name="Brute" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1cea-103a-f66a-9050">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">2</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">2</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Corpse Taker" hidden="false" id="1f47-8636-851e-6cbe">
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="a837-ef70-0053-ae2a" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="0296-a09e-1c74-af41" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Apothecary Vivisector" hidden="false" id="ce70-80fa-2987-db6e">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+          <profiles>
+            <profile name="Apothecary Vivisector" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1ff0-978d-8f60-f1a5">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">1</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfcf-c5af-3550-b22a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c1-23e5-8a72-bf37" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dissection Servitors" id="adf8-7662-a07e-c380" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Dissection Servitor" hidden="false" id="a4d2-9496-8dd9-ba04">
+              <profiles>
+                <profile name="Dissection Servitor" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="f491-10ba-9fc5-5679">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="62d1-a33f-f260-facf" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b479-951e-eae8-0388" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Auxilia Command Detachment" hidden="false" id="34a4-350f-87c9-c0bf">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="6e40-66c5-86f7-0c4a" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="a4a6-3553-b4a9-09ca" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bodyguard" hidden="false" id="89c9-7721-ba79-5b15">
+          <profiles>
+            <profile name="Bodyguard" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1fcb-5006-1cc8-9b9c">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c506-18a2-3973-e0dd" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e1cb-8230-c548-2906" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="45"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Commander" id="8396-80ca-858c-2898" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Tribune" hidden="false" id="41e3-8514-793a-7eda">
+              <profiles>
+                <profile name="Tribune" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="f102-47a2-51d8-1e65">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Prefect Commander" hidden="false" id="d10c-da3c-50ac-2c90">
+              <profiles>
+                <profile name="Prefect Commander" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="b1ea-b23a-710b-f58f">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ce1-2780-cd13-edb1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f262-af9a-bfb7-afc2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heavy Weapons Team" id="10e5-bef4-82ee-2a31" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team" hidden="false" id="6d02-946f-7c46-ff92">
+              <profiles>
+                <profile name="Heavy Weapons Team" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="3cba-b188-0f80-ba72">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e41e-4bbd-09f0-c96c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lugft Huron The Tyrant Of Badab" hidden="false" id="4cb4-b71b-7e25-0309">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="235"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="f067-55fa-4713-813b" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="9ff5-4b5e-84cf-db0f" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lugft Huron" hidden="false" id="32bd-e48b-ef2c-d488">
+          <profiles>
+            <profile name="Lugft Huron" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6a13-7ce1-850f-8344">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6a-8d2b-b108-9f19" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ec7-05b7-46d8-33cf" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legion Centurion" hidden="false" id="6290-7210-fe59-3cbc">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="55"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legion Centurion" hidden="false" id="88c8-bf9d-0c60-b644">
+          <profiles>
+            <profile name="Legion Centurion" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="cbdb-9660-c1e4-732b">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="fc36-cf4d-6a27-b4e4" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="4f0d-df73-ec48-79dc" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Force Organisation Chart TL" id="df41-ede4-5753-371e" hidden="false">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="611f-5a46-98ac-a09e" targetId="26c0-589a-9f26-b597" type="categoryEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb0f-3e9e-d9eb-2818"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="46bc-c73f-e18a-10f0"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="1dba-f710-8a18-2ef4" targetId="c07f-a679-9bd0-a9c0" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4c8a-a5a5-7ea5-25bf"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="37d4-2a8d-0ab0-e541" targetId="8429-4ea5-6433-b189" type="categoryEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="359e-0dcc-35b2-7dd7"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="9eb3-b3cd-0e86-5a4e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="37e2-8485-69e0-585c" targetId="b327-ab7b-3c9c-3123" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94de-ebfa-617e-2b72"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="6a8e-affd-f1f1-71cd" targetId="07d4-3cdd-37e9-4188" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="10bd-50cb-0571-e3c1"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
