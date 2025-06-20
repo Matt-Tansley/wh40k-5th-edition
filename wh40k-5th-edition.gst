@@ -324,6 +324,51 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Searchlight" hidden="false" id="fb6b-2270-524a-a191">
+      <profiles>
+        <profile name="Searchlight" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="dc23-5a9c-9914-330c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Smoke Launchers" hidden="false" id="63d4-06b6-b087-6daf">
+      <profiles>
+        <profile name="Smoke Launchers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="164d-1bee-3b70-8f65">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="8632-4dbe-dfd3-9cf3">
+      <profiles>
+        <profile name="Dozer Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="4bf4-e7b6-7287-5823">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0a9f-b9a4-09b0-deb9">
+      <profiles>
+        <profile name="Extra Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="76f4-7149-7d97-ebda">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="31ed-7ab1-57dc-889b">
+      <profiles>
+        <profile name="Melta Bombs" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c1d5-fbbf-e8c1-3ae3">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -369,5 +414,6 @@ You can do multiple lines!</description>
     <rule name="Rending" id="4478-723e-b728-3cac" hidden="false"/>
     <rule name="Sniper" id="65e0-e07f-651b-c45f" hidden="false"/>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
+    <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
   </sharedRules>
 </gameSystem>
