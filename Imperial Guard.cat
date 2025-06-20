@@ -337,6 +337,15 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff5a-adc3-56ca-c195" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="ecec-90ae-7d37-2d53" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chimera" hidden="false" id="e296-70e5-88bf-d65a" type="selectionEntry" targetId="ffc2-67e9-61d3-f6e1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26d9-deac-78da-74ea" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
@@ -355,6 +364,76 @@
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Sentinel Squadron" hidden="false" id="b26c-039c-cf85-3688" defaultAmount="">
+      <categoryLinks>
+        <categoryLink targetId="b4fe-561a-c465-819b" id="0cba-a9f3-aefc-6b5d" primary="false" name="Walker"/>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="4fb2-11b5-2ea3-9414" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="a88d-6145-973a-d5a6" id="2937-0ddf-add4-f748" primary="false" name="Open-Topped"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scout Sentinel" hidden="false" id="d2b7-d2f2-541c-cc0b" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="669b-a749-d268-4cb0" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="d80a-5aa3-8ff6-63b1" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="2f74-8ad3-303c-70d4" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="bfc6-7ad2-6120-e83d" type="selectionEntry" targetId="d7fa-1bf5-861d-9ce0" defaultAmount="1">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="1c58-eab9-399e-147a" type="selectionEntry" targetId="759b-5938-021f-1661">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Autocannon" hidden="false" id="fda3-730a-aca8-dacf" type="selectionEntry" targetId="5dd8-20a0-454e-8748">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Missile Launcher" hidden="false" id="a563-cbf7-add5-7511" type="selectionEntry" targetId="a3d2-d03e-7810-7365">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="5cb9-70b1-eef0-3939" type="selectionEntry" targetId="81a2-ac97-955a-62c8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0706-99d3-5538-0291" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3d41-2fd6-a1fa-c499" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Scout Sentinel" typeId="828a-679b-1a4d-9511" typeName="Walker" hidden="false" id="ae6c-9de1-00be-356b">
+              <characteristics>
+                <characteristic name="WS" typeId="088d-2068-bd5a-62fc">3</characteristic>
+                <characteristic name="BS" typeId="1fbd-cea7-aaee-6448">3</characteristic>
+                <characteristic name="S" typeId="794d-acb1-e52a-414c">5</characteristic>
+                <characteristic name="Front" typeId="d53c-c046-cfa8-dbc4">10</characteristic>
+                <characteristic name="Side" typeId="31b8-be05-a169-eec6">10</characteristic>
+                <characteristic name="Rear" typeId="5ffa-c8d3-306c-b7bb">10</characteristic>
+                <characteristic name="I" typeId="2a73-0ffe-fbda-71dd">3</characteristic>
+                <characteristic name="A" typeId="5dd6-2318-e247-bd7b">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Sentinel Upgrades" hidden="false" id="9fb9-fb51-4399-87de" type="selectionEntryGroup" targetId="1d7e-bf5b-cfae-fee4"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -435,5 +514,196 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chimera" hidden="false" id="ffc2-67e9-61d3-f6e1">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="e352-9408-717e-72de" id="f96c-30ea-3a4b-860a" primary="false" name="Tank"/>
+        <categoryLink targetId="eb42-459e-89fa-d41a" id="40b9-f84d-f53b-cdd8" primary="false" name="Transport"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chimera" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b721-56c9-0b4c-9f80">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Rear</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">5 models can fire from the chimera&apos;s top hatch.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Mobile Command Vehicle" id="ab5b-cd54-f09d-e932" hidden="false">
+          <description>An officer embarked within a Chimera may still issue orders to squads. Measure Ranger and line of sight from any point on the Chimera&apos;s hull.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Amphibious" id="7f65-9cc3-9422-ab33" hidden="false" type="rule" targetId="6b74-c886-926e-5e59"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Turret Weapon" id="fcda-232f-75d2-c262" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad1a-18d5-699c-8a01" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="886d-e0eb-e31b-61d9" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Multi-laser" hidden="false" id="1a9d-efd4-a9d3-f97d" type="selectionEntry" targetId="d7fa-1bf5-861d-9ce0" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d75e-090d-84e2-ab0a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="9730-146c-9921-d40a" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f51a-2e58-b41a-1b98" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Hull Weapon" id="1ace-b6a6-4470-0461" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="be8b-9aff-3e89-8154" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bf4-9343-86f8-6e43" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="d856-defa-9eec-6f7f" type="selectionEntry" targetId="759b-5938-021f-1661">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6383-4cef-3142-08ab" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a6c-f32e-73b8-7ad7" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="368e-5250-f2fb-1a9f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Pintle Weapon" id="cc98-0ce4-5f99-59af" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Pintle Mounted Storm Bolter" hidden="false" id="3a70-059f-0ee0-adbc" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="d329-0471-82f2-bd1b" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9863-d307-bb64-73ea" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="c4b5-6524-bb7f-bb98" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dozer Blade" hidden="false" id="d705-e658-c62b-7652" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8cb-7680-65dc-f09e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="0301-fca6-c59c-5c22" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="a987-0100-910d-f5b4" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Camo Netting" hidden="false" id="e5c9-7211-6f27-8540" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="d7fa-1bf5-861d-9ce0">
+      <profiles>
+        <profile name="Multi-laser" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="67c0-765d-dbbd-cb52">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="7c3b-e4c9-b7a1-2c00">
+      <profiles>
+        <profile name="Camo Netting" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d276-4d1a-058b-2e08">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle equipped with camo netting has the stealth universal special rule if it remained stationary in the controllers previous movement phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Stealth" id="08ac-9352-c21d-ce9e" hidden="false" type="rule" targetId="f923-f91c-fdfe-4cb2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="8dbb-d823-948f-c199">
+      <profiles>
+        <profile name="Heavy Stubber" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fd5a-ae29-fceb-6ce2">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Amphibious" id="6b74-c886-926e-5e59" hidden="false">
+      <description>A model with this special rule treats all water features as clear terrain when it moves.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Sentinel Upgrades" id="1d7e-bf5b-cfae-fee4" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Camo Netting" hidden="false" id="a7d3-e3c4-39cc-5358" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="c0a6-aa87-1228-7afa" type="selectionEntry" targetId="63d4-06b6-b087-6daf">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="12c2-1d9b-7b6c-d1f0" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="5069-28a4-8f6b-e2ef" type="selectionEntry" targetId="fb6b-2270-524a-a191">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="1"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
