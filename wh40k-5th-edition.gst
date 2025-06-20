@@ -300,6 +300,18 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="d578-6422-9a2f-13fb">
+      <profiles>
+        <profile name="Laspistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3fbc-3ff8-c387-b74c">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="e58f-3db0-d262-b837">
       <profiles>
         <profile name="Storm Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="839a-3401-a8a3-989e">

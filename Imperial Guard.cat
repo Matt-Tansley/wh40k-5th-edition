@@ -27,6 +27,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Laspistol" hidden="false" id="3b3b-0106-66d8-03b5" type="selectionEntry" targetId="d578-6422-9a2f-13fb"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -54,11 +57,61 @@
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Lasgun" hidden="false" id="e66a-ba2d-7426-69b1" type="selectionEntry" targetId="c1a2-67a8-aac3-e2da"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="423c-5025-ee53-679b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sergeant Weapons" id="9606-11d2-08d2-83b5" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="5c3f-16c2-c26b-c0e9" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="76bd-06ff-417e-de7e" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="fee4-9dfc-ae0a-7921" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="bca0-94ee-442e-3cd1" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Shotgun" hidden="false" id="c448-051e-f5c1-520a" type="selectionEntry" targetId="6986-1d60-3e33-e4ab"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="132c-be7a-f752-3f7c" type="selectionEntry" targetId="ce5b-d7da-a7d5-8aa5"/>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="93dc-6657-bce5-903e" type="selectionEntry" targetId="d999-c8bb-1aff-e870"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="6986-1d60-3e33-e4ab">
+      <profiles>
+        <profile name="Shotgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="630e-bbf7-fb5e-9011">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
