@@ -107,23 +107,13 @@
     <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="ce5b-d7da-a7d5-8aa5">
       <infoLinks>
         <infoLink name="Assault Grenades" id="8941-6488-0948-105f" hidden="false" type="rule" targetId="3a19-913c-ca9e-f0ac"/>
+        <infoLink name="Frag Grenades" id="548d-6429-6371-bee9" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
       </infoLinks>
-      <profiles>
-        <profile name="Frag Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3600-a707-af81-279e">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Krak Grenades" hidden="false" id="d999-c8bb-1aff-e870">
-      <profiles>
-        <profile name="Krak Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23fc-31fc-fcc8-2d39">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Krak Grenades" id="8c17-0ef8-6def-6e5c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="36dc-77bf-9c77-ebec">
       <infoLinks>
@@ -184,16 +174,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="f00c-a713-50b9-c3f7">
-      <profiles>
-        <profile name="Sniper Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff94-c57b-c016-f51c">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">X</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Sniper" id="206b-72ad-523f-e294" hidden="false" type="rule" targetId="65e0-e07f-651b-c45f"/>
         <infoLink name="Pinning" id="5e5b-027e-889b-c49c" hidden="false" type="rule" targetId="2108-ee5b-e364-5610"/>
@@ -475,6 +455,29 @@ You can do multiple lines!</description>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Krak Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23fc-31fc-fcc8-2d39">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Frag Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3600-a707-af81-279e">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Combat Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3fc3-29d3-4a77-7d6b">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Sniper Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff94-c57b-c016-f51c">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">X</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
