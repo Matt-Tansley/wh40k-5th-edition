@@ -100,61 +100,30 @@
   </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8e4e-3d28-3c22-170b">
-      <profiles>
-        <profile name="Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0aa6-37fe-dc24-4432">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
-        <infoLink name="Template Weapons" id="ae2f-7701-860f-aeac" hidden="false" type="rule" targetId="aea6-d0a5-7def-15ef"/>
+        <infoLink name="Flamer" id="772f-dd77-f42d-f628" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="ce5b-d7da-a7d5-8aa5">
       <infoLinks>
         <infoLink name="Assault Grenades" id="8941-6488-0948-105f" hidden="false" type="rule" targetId="3a19-913c-ca9e-f0ac"/>
+        <infoLink name="Frag Grenades" id="548d-6429-6371-bee9" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
       </infoLinks>
-      <profiles>
-        <profile name="Frag Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3600-a707-af81-279e">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Krak Grenades" hidden="false" id="d999-c8bb-1aff-e870">
-      <profiles>
-        <profile name="Krak Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23fc-31fc-fcc8-2d39">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Krak Grenades" id="8c17-0ef8-6def-6e5c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="36dc-77bf-9c77-ebec">
-      <profiles>
-        <profile name="Boltgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4b3e-6b29-4c50-19a5">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="4116-38b9-9975-8f38">
-      <profiles>
-        <profile name="Power Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1724-667c-a495-6cd7">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Power Weapon" id="e685-9855-512e-efe1" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lightning Claws" hidden="false" id="9f12-527d-b110-cf9d">
       <profiles>
@@ -175,13 +144,9 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="14b2-b5e9-8517-9fe8">
-      <profiles>
-        <profile name="Power Fist" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cc3f-c898-284f-f88d">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Power Fist" id="6cf4-ceba-493c-1740" hidden="false" type="profile" targetId="cc3f-c898-284f-f88d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="1deb-7737-421e-a74d">
       <profiles>
@@ -193,55 +158,22 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="81a2-ac97-955a-62c8">
-      <profiles>
-        <profile name="Lascannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0361-d41b-26e7-5efe">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Lascannon" id="df57-c862-d115-b52a" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="78e5-9a3a-4fd1-ec54">
-      <profiles>
-        <profile name="Bolt Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4646-fb47-d4ac-f451">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="9fca-5bf5-be74-3086" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="fd5b-25eb-73cf-b322">
-      <profiles>
-        <profile name="Plasma Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3934-4775-0e15-7f98">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Gets Hot!</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Gets Hot!" id="9f27-73c7-c548-2533" hidden="false" type="rule" targetId="8260-d680-2ee2-06c2"/>
+        <infoLink name="Plasma Gun" id="14cc-9a96-f545-6b4a" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="f00c-a713-50b9-c3f7">
-      <profiles>
-        <profile name="Sniper Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff94-c57b-c016-f51c">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">X</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Sniper" id="206b-72ad-523f-e294" hidden="false" type="rule" targetId="65e0-e07f-651b-c45f"/>
         <infoLink name="Pinning" id="5e5b-027e-889b-c49c" hidden="false" type="rule" targetId="2108-ee5b-e364-5610"/>
@@ -249,19 +181,16 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="c90d-186d-9c15-ce09">
-      <profiles>
-        <profile name="Meltagun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2c4a-3138-e66e-a045">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Melta</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Melta Bombs" id="ef5f-f436-ca9e-e4bf" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748"/>
-    <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="dc75-835b-0844-b9a1"/>
+    <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="dc75-835b-0844-b9a1">
+      <infoLinks>
+        <infoLink name="Heavy Bolter" id="66dd-18a0-51b6-6c65" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="759b-5938-021f-1661"/>
     <selectionEntry type="upgrade" import="true" name="Hunter-Killer Missile" hidden="false" id="89b8-312d-cec7-69ac"/>
     <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="a3d2-d03e-7810-7365">
@@ -285,7 +214,11 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Multi-Melta" hidden="false" id="7195-0c6e-8ac0-9d02"/>
-    <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f8f7-2583-32c6-bd44"/>
+    <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f8f7-2583-32c6-bd44">
+      <infoLinks>
+        <infoLink name="Plasma Pistol" id="c02a-0f54-a1e5-7d49" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="3d04-876d-57d0-0a95"/>
     <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="cad5-bbe3-fb66-0625"/>
     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="c1a2-67a8-aac3-e2da">
@@ -313,16 +246,9 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm Bolter" hidden="false" id="e58f-3db0-d262-b837">
-      <profiles>
-        <profile name="Storm Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="839a-3401-a8a3-989e">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Storm Bolter" id="4857-d153-4881-32b7" hidden="false" type="profile" targetId="839a-3401-a8a3-989e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Searchlight" hidden="false" id="fb6b-2270-524a-a191">
       <profiles>
@@ -361,13 +287,19 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="31ed-7ab1-57dc-889b">
-      <profiles>
-        <profile name="Melta Bombs" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c1d5-fbbf-e8c1-3ae3">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Melta Bombs" id="601e-a4e2-43bc-ecb3" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="ee10-7f9a-f4c4-af5b">
+      <infoLinks>
+        <infoLink name="Assault Cannon" id="6a03-7ef9-62ed-57f9" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="7544-be24-33ca-539a">
+      <infoLinks>
+        <infoLink name="Chainsword" id="e2a7-96f3-7d8e-cdc3" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -416,4 +348,137 @@ You can do multiple lines!</description>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
     <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Heavy Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35f7-bbeb-6757-ba5c">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lascannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9e04-5b15-ba18-b034">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Assault Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c6d8-f011-ba85-3346">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rending</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plasma Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3bfe-f09d-17dd-d0b4">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Gets Hot!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="294d-9e0e-16c0-7de5">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chainsword" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="88b6-8f11-6a15-d874">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Storm Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="839a-3401-a8a3-989e">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Plasma Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6104-3c67-5bfb-5873">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Gets Hot!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Power Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1724-667c-a495-6cd7">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Power Fist" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cc3f-c898-284f-f88d">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Melta Bombs" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="257e-557a-29ef-7f41">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0aa6-37fe-dc24-4432">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Meltagun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2c4a-3138-e66e-a045">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Melta</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Boltgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4b3e-6b29-4c50-19a5">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bolt Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4646-fb47-d4ac-f451">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Krak Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23fc-31fc-fcc8-2d39">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Frag Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3600-a707-af81-279e">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Combat Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3fc3-29d3-4a77-7d6b">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Sniper Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff94-c57b-c016-f51c">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">X</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
