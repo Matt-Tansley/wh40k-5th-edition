@@ -288,6 +288,18 @@
     <selectionEntry type="upgrade" import="true" name="Plasma Pistol" hidden="false" id="f8f7-2583-32c6-bd44"/>
     <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="3d04-876d-57d0-0a95"/>
     <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="cad5-bbe3-fb66-0625"/>
+    <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="c1a2-67a8-aac3-e2da">
+      <profiles>
+        <profile name="Lasgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff14-0838-1a7c-b0a7">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="f17e-be90-9229-00a9">
+      <categoryLinks>
+        <categoryLink targetId="8429-4ea5-6433-b189" id="93ae-ed46-af8d-1ee0" primary="true" name="Troops"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="e6c0-6399-5538-3ee2" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="15b4-523f-174a-0bde">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ac9-b32d-4258-c403" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ffd-3e0b-6851-f9c3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Veteran Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="0457-29f4-0400-d839">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Veterans" id="9a5d-4a48-6a4d-62cf" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="cd6e-db1e-dca2-71fb">
+              <profiles>
+                <profile name="Veteran" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="b5f4-b053-d0c1-da44">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="4039-d185-fb0b-2b93" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="753e-313d-eb4b-3749" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
