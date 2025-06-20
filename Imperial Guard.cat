@@ -35,10 +35,15 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Laspistol" hidden="false" id="3b3b-0106-66d8-03b5" type="selectionEntry" targetId="d578-6422-9a2f-13fb" defaultAmount="1"/>
+            <entryLink import="true" name="Laspistol" hidden="false" id="3b3b-0106-66d8-03b5" type="selectionEntry" targetId="d578-6422-9a2f-13fb" defaultAmount="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b5b-27ce-0d95-586e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6db-817a-2ef6-1e81" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Sergeant may replace Close combat weapon with:" id="caab-4b17-1f14-138b" hidden="false">
+            <selectionEntryGroup name="Sergeant may replace Close combat weapon and/or las pistol with:" id="caab-4b17-1f14-138b" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="d2f7-bd4b-a596-3da9" type="selectionEntry" targetId="4116-38b9-9975-8f38">
                   <costs>
@@ -64,34 +69,6 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="219b-9efe-0f8e-0a2a"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Sergeant may replace laspistol with:" id="91f1-7231-bba0-fbea" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="609b-99ad-f7e5-6847" type="selectionEntry" targetId="4116-38b9-9975-8f38">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Plasma Pistol" hidden="false" id="8011-35ab-7344-9187" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Power Fist" hidden="false" id="84d9-9df7-aa70-edd0" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="f51c-a88f-2a64-f629" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="2"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Shotgun" hidden="false" id="26d1-3fb9-8fda-dd7e" type="selectionEntry" targetId="6986-1d60-3e33-e4ab"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9652-4643-8d0c-0fdf"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -279,7 +256,11 @@
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Mortar" hidden="false" id="3db1-772a-5d00-e3a2" type="selectionEntry" targetId="966e-077f-a609-d48a"/>
+                <entryLink import="true" name="Mortar" hidden="false" id="3db1-772a-5d00-e3a2" type="selectionEntry" targetId="966e-077f-a609-d48a">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -348,6 +329,7 @@
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Demolition Charge" hidden="false" id="663e-887b-131c-4f5d" type="selectionEntry" targetId="9a13-d558-a7f1-f35e"/>
+                <entryLink import="true" name="Melta Bombs" hidden="false" id="fde7-62e0-6bf1-c227" type="selectionEntry" targetId="31ed-7ab1-57dc-889b"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -360,8 +342,18 @@
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="132c-be7a-f752-3f7c" type="selectionEntry" targetId="ce5b-d7da-a7d5-8aa5"/>
-        <entryLink import="true" name="Krak Grenades" hidden="false" id="93dc-6657-bce5-903e" type="selectionEntry" targetId="d999-c8bb-1aff-e870"/>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="132c-be7a-f752-3f7c" type="selectionEntry" targetId="ce5b-d7da-a7d5-8aa5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16e6-cc23-3fb3-2527" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43dd-6757-3e66-45fd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="93dc-6657-bce5-903e" type="selectionEntry" targetId="d999-c8bb-1aff-e870">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a94-df65-6ddd-d0ed" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b820-3794-db8e-15b6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
