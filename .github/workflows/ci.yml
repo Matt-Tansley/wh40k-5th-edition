@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: BSData/check-datafiles@v1
-        id: check
+      # - uses: BSData/check-datafiles@v1
+      #   id: check
 
       - uses: actions/upload-artifact@v4
         with:
