@@ -2066,9 +2066,9 @@ The Executed model is immediately removed as a casualty regardless of the number
         <infoLink name="Hellstrike Missile" id="5e87-d32f-7311-9f93" hidden="false" type="profile" targetId="ba5d-08da-519b-ea93"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Multiple Rocket Pods" hidden="false" id="c417-7dd9-de5b-7163">
+    <selectionEntry type="upgrade" import="true" name="Multiple Rocket Pod" hidden="false" id="c417-7dd9-de5b-7163">
       <infoLinks>
-        <infoLink name="Multiple Rocket Pod" id="153d-f57f-c99a-4e48" hidden="false" type="profile" targetId="8624-642c-1df1-f841"/>
+        <infoLink name="Multiple Rocket Pod" id="5b9b-59d6-fb71-9b1b" hidden="false" type="profile" targetId="a880-27d2-faa5-82e8"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2222,7 +2222,7 @@ The Executed model is immediately removed as a casualty regardless of the number
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, one shot only</characteristic>
       </characteristics>
     </profile>
-    <profile name="Multiple Rocket Pod" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="true" id="8624-642c-1df1-f841">
+    <profile name="Multiple Rocket Pod" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a880-27d2-faa5-82e8">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
