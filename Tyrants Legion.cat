@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fdb5-aea7-66d4-8207" name="Tyrants Legion" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fdb5-aea7-66d4-8207" name="Tyrants Legion" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Legion Space Marine Cohort" hidden="false" id="0786-2230-61cd-32fe">
       <categoryLinks>
@@ -290,6 +290,7 @@
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="fbad-3d66-06a6-ad27" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
         <infoLink name="Combat Tactics" id="6f2b-7bcf-f82e-68af" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="The Tyrant&apos;s Due" id="ff03-8b56-ba77-064c" hidden="false" type="rule" targetId="76e6-8c3f-ef6e-bfc1"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Auxilia" hidden="false" id="d37c-1f03-87ce-a97a">
@@ -300,7 +301,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Auxiliaries" id="5aec-84dd-37f9-81fe" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Auxiliary" hidden="false" id="e2b7-9d30-d271-5b38">
+            <selectionEntry type="model" import="true" name="Auxiliary" hidden="false" id="e2b7-9d30-d271-5b38" sortIndex="1">
               <costs>
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
               </costs>
@@ -319,12 +320,86 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Lasgun" id="426a-de21-614f-8cbd" hidden="false" type="profile" targetId="7d32-25e9-f504-6756"/>
+                <infoLink name="Close Combat Weapon" id="4a97-4af2-a3b7-5796" hidden="false" type="profile" targetId="b478-dd2b-9914-c0e5"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Auxilia w/Special Weapon" hidden="false" id="c8e0-88fb-cb3f-2d92">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
+              </costs>
+              <profiles>
+                <profile name="Auxiliary" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="08bc-ffa5-d42d-23e5">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">2</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">2</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">5</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">6+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapon Options" id="8d2b-ad19-353e-28b1" hidden="false" defaultSelectionEntryId="none">
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="e447-f28d-4b93-3d73" type="selectionEntry" targetId="8e4e-3d28-3c22-170b">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Grenade Launcher" hidden="false" id="7b43-6a07-11d3-e6c3" type="selectionEntry" targetId="18fb-77c3-0968-7ff7">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="7287-59a7-9e61-c772" type="selectionEntry" targetId="f35f-8fca-6702-82bd">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c1b-8bcc-52e4-3d98" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ae-5140-8197-2d97" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="68dd-18a4-1785-bd1e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="68dd-18a4-1785-bd1e">
+                  <repeats>
+                    <repeat value="10" repeats="1" field="selections" scope="d37c-1f03-87ce-a97a" childId="any" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="19" field="selections" scope="parent" shared="true" id="00fa-5468-2891-4bf4" includeChildSelections="false"/>
             <constraint type="max" value="39" field="selections" scope="parent" shared="true" id="b044-6f62-46d5-3cef" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Upgrades" id="4446-9fb3-14dd-c9c2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="73dc-5ee3-dcb7-c96a">
+              <infoLinks>
+                <infoLink name="Frag Grenades" id="58ae-31ed-b62d-9814" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe0-2a68-ad78-6f9d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -351,8 +426,70 @@
           <costs>
             <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="13"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="39bf-dae3-ba34-ac00" hidden="false" defaultSelectionEntryId="f986-05d2-623d-87af">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="655a-cbb8-fd49-5f7f" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6fa-1acf-7779-fdad" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="f986-05d2-623d-87af" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ae-45c5-6a08-f637" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shotgun" hidden="false" id="02eb-aa49-936f-06fb" type="selectionEntry" targetId="cf49-171e-8279-12ff">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82a0-faaf-99a1-f1d4" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="6ccf-78bf-44af-7e1d" type="selectionEntry" targetId="d578-6422-9a2f-13fb" defaultAmount="">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09d-0501-55d7-cd06" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="48de-f4ae-4399-8d12" type="selectionEntry" targetId="5bbe-8bbb-67ad-53b4" defaultAmount="">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="792e-2037-0a7f-9f9e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85dc-4ade-fdeb-4b7a" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c4e1-0c1b-099e-2d99" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Krak Grenades" hidden="false" id="9be5-65ef-a8f8-0a1b">
+              <infoLinks>
+                <infoLink name="Krak Grenades" id="6ac4-3a68-a762-9b29" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7e7-d3bd-bc0a-7312" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
+      <rules>
+        <rule name="Prefect&apos;s Discipline" id="d32a-458a-7417-794a" hidden="false">
+          <description>While the Cohort&apos;s Prefect is still alive, the squad may always attempt to rally, even if at less than half strength.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Auxilia Armsmen Cadre" hidden="false" id="44ea-c511-63a0-59de">
       <categoryLinks>
@@ -387,6 +524,20 @@
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="c548-228f-cfde-9913" includeChildSelections="false"/>
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="3eb0-320b-3704-eff0" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Frag Grenades" id="2565-8022-9dcc-46e9" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+            <infoLink name="Laspistol" id="3b98-b355-6420-17df" hidden="false" type="profile" targetId="5f8f-321f-88e0-51c8"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Lasgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="75ab-1969-353d-c1df">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -412,6 +563,59 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5fd-2693-646a-0670" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b64b-9d2a-f5a0-fbcb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Armsmen w/Special Weapon" hidden="false" id="b9b8-6b0a-b78a-654b">
+          <profiles>
+            <profile name="Armsmen" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="8aaf-1588-5eef-5039">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="23c5-a868-553d-9f58" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="5bb6-61d0-846e-d662" type="selectionEntry" targetId="8e4e-3d28-3c22-170b">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="9a49-d4b0-d3ab-9df7" type="selectionEntry" targetId="c90d-186d-9c15-ce09">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grenade Launcher" hidden="false" id="eede-9ff2-b5c2-fc8d" type="selectionEntry" targetId="18fb-77c3-0968-7ff7">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Stubber" hidden="false" id="0413-a124-600f-10d9" type="selectionEntry" targetId="f35f-8fca-6702-82bd">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Frag Grenades" id="054e-aeb6-1cf9-c27a" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+            <infoLink name="Laspistol" id="8d33-dead-7533-c7da" hidden="false" type="profile" targetId="5f8f-321f-88e0-51c8"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2ee-d2f6-91c8-55fc" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1423,5 +1627,85 @@
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Repair" id="ff1c-eebf-eb87-fa0e" hidden="false"/>
+    <rule name="The Tyrant&apos;s Due" id="76e6-8c3f-ef6e-bfc1" hidden="false">
+      <description>Any Space Marine with this special rule may claim +1 to any cover saves granted because of fire passing through an Auxilia infantry unit to reach them (a 4+ becoming a 3+ and so on). However if this bonus is claimed, the Auxilia infantry unit immediately suffers D3 wounds per unit firing through them against which this save bonus has been claimed. Wounds inflicted this way are distributed as per wounds from normal shooting attacks and have no AP value.</description>
+    </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Lasgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7d32-25e9-f504-6756">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Laspistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f8f-321f-88e0-51c8">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Close Combat Weapon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b478-dd2b-9914-c0e5">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Melee</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">-</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="18fb-77c3-0968-7ff7">
+      <profiles>
+        <profile name="Grenade Launcher (Frag)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8512-394e-6180-34f4">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grenade Launcher (Krak)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7090-c550-c08f-e3dc">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="f35f-8fca-6702-82bd">
+      <profiles>
+        <profile name="Heavy Stubber" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d3d8-6d2e-bb9f-e77e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="cf49-171e-8279-12ff">
+      <profiles>
+        <profile name="Shotgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b660-753d-1e67-2e88">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="5bbe-8bbb-67ad-53b4">
+      <infoLinks>
+        <infoLink name="Close Combat Weapon" id="7b0c-85c2-8f5c-7f4d" hidden="false" type="profile" targetId="b478-dd2b-9914-c0e5"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

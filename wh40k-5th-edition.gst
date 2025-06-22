@@ -327,12 +327,7 @@
       <description>Rules for template weapons go here...</description>
     </rule>
     <rule name="And They Shall Know No Fear" id="2db7-2b1a-b1eb-292c" hidden="false">
-      <description>Type out what the fuck this rule does here
-
-dasdas
-
-
-You can do multiple lines!</description>
+      <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties. Units which include Servitors are still subject to this rule, providing that the unit contains at least one Space Marine. </description>
     </rule>
     <rule name="Counter-Attack" id="7b8c-f1d8-14b3-ace2" hidden="false"/>
     <rule name="Eternal Warrior" id="081d-7750-bb55-7c19" hidden="false"/>
@@ -359,7 +354,9 @@ You can do multiple lines!</description>
     <rule name="Assault Grenades" id="3a19-913c-ca9e-f0ac" hidden="false"/>
     <rule name="Defensive Grenades" id="e240-63d0-bc74-a65b" hidden="false"/>
     <rule name="Combat Squads" id="a095-a211-d826-323e" hidden="false"/>
-    <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false"/>
+    <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false">
+      <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take. </description>
+    </rule>
     <rule name="Gets Hot!" id="8260-d680-2ee2-06c2" hidden="false"/>
     <rule name="Blast" id="d7af-17f1-4289-f56b" hidden="false"/>
     <rule name="Pinning" id="2108-ee5b-e364-5610" hidden="false"/>
@@ -368,7 +365,20 @@ You can do multiple lines!</description>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
     <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
     <rule name="Combi-Weapons" id="90a6-34b7-a997-e4ab" hidden="false">
-      <description>A model armed with a combi-weapon (combi-meltagun, combi-plasma gun or combi-flamer) can choose to fire either the bolter, or the secondary weapon, each with the profile listed elsewhere in this section. The bolter can be fired every turn, but the secondary weapon can only be fired once per battle (a combi-plasma gun can, of course, Rapid Fire). You cannot fire both weapons in the same turn. </description>
+      <description>A model armed with a combi-weapon (combi-meltagun, combi-plasma gun or combi-flamer) can choose to fire either the bolter, or the secondary weapon, each with the profile listed elsewhere in this section. The bolter can be fired every turn, but the secondary weapon can only be fired once per battle (a combi-plasma gun can, of course, Rapid Fire). You cannot fire both weapons in the same turn.</description>
+    </rule>
+    <rule name="Deep Strike" id="c32f-6871-314f-219e" hidden="false">
+      <description>Some units’ special rules allow them to enter play via tunnelling, teleportation, flying, or some other extraordinary means. If you wish to use this ‘deep strike’ option, then the units in question must begin the game in reserve (even if you are playing a special mission where the ‘reserves’ special rule is not being used). Roll for arrival of these units as specified in the rules for reserves and then deploy them as follows. First place one model from the unit anywhere on the table, in the position you would like the unit to arrive, and roll the scatter dice. If you roll a hit the model stays where it is, but if an arrow is shown this determines the direction the model is scattered in. If a scatter
+occurs, roll 2D6 to see how many inches the model moves away from the intended position. Once this is done, the unit’s remaining models are arranged around the first one. Models must be placed in base contact with the original model in a circle around it. When the first circle is complete, a further circle should be placed with each model touching the circle inside it. Each circle should include as many models as will fit. Models arriving via deep strike treat all difficult terrain as dangerous terrain. In the Movement phase when they arrive, these units may not move any further, other than to disembark from a deep striking transport vehicle. Units deep striking into ruined buildings are placed on the ground floor. They may not deep strike directly inside a transport vehicle or a building, which will count as impassable terrain as normal. In that turn’s Shooting phase, these units can fire (or run) as normal, and obviously count as having moved in the previous Movement phase. Vehicles count as having moved at cruising speed. In that turn’s Assault phase, however, these units may not launch an assault (even if they have the ‘fleet’ special rule), unless clearly stated in their special rules – they are too disrupted by their deep strike move. 
+
+
+Deep strike mishaps Teleporting or dropping onto a crowded battlefield may prove extremely dangerous, as one may arrive miles away from the intended objective or even inside solid rock! If any of the models in a deep striking unit cannot be deployed because they would land off the table, in impassable terrain, on top of a friendly model, or on top or within 1&quot; of an enemy model, something has gone wrong. The controlling player must roll on the deep strike Mishap table and apply the results. 
+
+
+DEEP STRIKE MISHAP TABLE:
+1-2 Terrible accident! Teleporting troops are lost in the Warp, deep striking jump infantry are shot down with their transport, or some other suitably dramatic event occurs. The entire unit is destroyed!
+3-4 Misplaced. Were the coordinates slightly inaccurate, or has the enemy jammed your instruments? Your opponent may deploy the unit anywhere on the table (excluding impassable terrain, but including difficult terrain, which of course counts as dangerous for deep striking units!), in a valid deep strike formation, but without rolling for scatter.
+5-6 Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed. The unit is placed back in reserve. If the unit is unlucky enough to roll this result in turn 5 or later and then the game ends while it is still in reserve, it sadly counts as destroyed.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
