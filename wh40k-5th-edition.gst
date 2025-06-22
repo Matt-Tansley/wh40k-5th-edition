@@ -220,7 +220,13 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="3d04-876d-57d0-0a95"/>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="cad5-bbe3-fb66-0625"/>
+    <selectionEntry type="upgrade" import="true" name="Combi-melta" hidden="false" id="cad5-bbe3-fb66-0625">
+      <infoLinks>
+        <infoLink name="Meltagun" id="d3f4-a0e9-5ef5-430f" hidden="false" type="profile" targetId="2c4a-3138-e66e-a045"/>
+        <infoLink name="Boltgun" id="8f80-a99b-d83a-7a4e" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Combi-Weapons" id="d028-78d6-83f8-8ede" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="c1a2-67a8-aac3-e2da">
       <profiles>
         <profile name="Lasgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff14-0838-1a7c-b0a7">
@@ -301,6 +307,20 @@
         <infoLink name="Chainsword" id="e2a7-96f3-7d8e-cdc3" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combi-plasma" hidden="false" id="2cbf-d533-20f3-d524">
+      <infoLinks>
+        <infoLink name="Boltgun" id="c2b5-4b56-43d8-d620" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Plasma Gun" id="9461-2eac-61ac-aabc" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4"/>
+        <infoLink name="Combi-Weapons" id="57e7-08c0-2ae1-81ac" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="f0a4-a0e4-25f9-dded">
+      <infoLinks>
+        <infoLink name="Boltgun" id="aed6-10be-076a-d03c" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Flamer" id="dd7f-532a-5290-a18c" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
+        <infoLink name="Combi-Weapons" id="0c2c-75d6-ad2d-a728" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -347,6 +367,9 @@ You can do multiple lines!</description>
     <rule name="Sniper" id="65e0-e07f-651b-c45f" hidden="false"/>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
     <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
+    <rule name="Combi-Weapons" id="90a6-34b7-a997-e4ab" hidden="false">
+      <description>A model armed with a combi-weapon (combi-meltagun, combi-plasma gun or combi-flamer) can choose to fire either the bolter, or the secondary weapon, each with the profile listed elsewhere in this section. The bolter can be fired every turn, but the secondary weapon can only be fired once per battle (a combi-plasma gun can, of course, Rapid Fire). You cannot fire both weapons in the same turn. </description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Heavy Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35f7-bbeb-6757-ba5c">
@@ -481,4 +504,13 @@ You can do multiple lines!</description>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Combi-flamer" hidden="false" id="dc92-2602-e95e-fade" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded"/>
+        <entryLink import="true" name="Combi-melta" hidden="false" id="3542-8715-5cc3-f256" type="selectionEntry" targetId="cad5-bbe3-fb66-0625"/>
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="786a-3280-9789-d74e" type="selectionEntry" targetId="2cbf-d533-20f3-d524"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </gameSystem>

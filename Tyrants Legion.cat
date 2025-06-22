@@ -104,6 +104,9 @@
                   </repeats>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -115,6 +118,72 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Dedicated Transport" id="f557-6efe-ce95-5a86" hidden="false"/>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="d518-db4e-edb6-f24a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="166b-277a-6874-d53e">
+              <categoryLinks>
+                <categoryLink name="Transport" hidden="false" id="c37c-56c4-64d6-68f2" targetId="eb42-459e-89fa-d41a" primary="false"/>
+                <categoryLink name="Tank" hidden="false" id="db50-dc10-c077-f24c" targetId="e352-9408-717e-72de" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Rhino" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="a683-af04-78ca-d0b9">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">1 point on each side, 1 on the rear.</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">2 models can fire from the top hatch.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="f807-ccb4-1c84-6411" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e572-fa88-4b77-ed07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd70-a6aa-08ad-51f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Searchlight" hidden="false" id="ea7e-b190-a4b5-1624" type="selectionEntry" targetId="fb6b-2270-524a-a191">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c2f-05c2-315c-d08a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f99d-26c3-f4c6-13d1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Smoke Launchers" hidden="false" id="959f-ce30-5889-c9ef" type="selectionEntry" targetId="63d4-06b6-b087-6daf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98cb-c7d9-1a29-3e55" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="884c-6785-4fc0-14f3" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Upgrades" id="6000-ce38-11e6-6bda" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Space Marine Vehicle Upgrades" hidden="false" id="8d98-2e54-305e-1b23" type="selectionEntryGroup" targetId="440f-1839-b077-1b04"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Repair" id="71ab-4da2-c01d-c651" hidden="false" type="rule" targetId="ff1c-eebf-eb87-fa0e"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1575-5a86-f856-c8be" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1575-5a86-f856-c8be">
+              <conditions>
+                <condition type="greaterThan" value="9" field="selections" scope="parent" childId="9142-b4fd-89a1-0ec2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -194,6 +263,11 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c886-59f6-12a7-64d1" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Combi-Weapon" hidden="false" id="4653-54f7-b41f-2b28" type="selectionEntryGroup" targetId="344f-10b9-ca94-f1eb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25dd-dc14-a668-8dcb" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2260-2ea5-9e6a-eaeb" includeChildSelections="false"/>
@@ -213,6 +287,10 @@
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="fbad-3d66-06a6-ad27" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="6f2b-7bcf-f82e-68af" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Auxilia" hidden="false" id="d37c-1f03-87ce-a97a">
       <categoryLinks>
@@ -1305,4 +1383,45 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="440f-1839-b077-1b04" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Dozer Blade" hidden="false" id="1d82-4952-7e69-7cf6" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2be3-26bc-887c-cbb3" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="7459-da44-6f1f-3dd8" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c53a-af92-91fa-c6f5" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="9baf-ab4d-db1e-e41c" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e5f-403d-3546-9622" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="1e6e-0816-d38e-b3c8" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7187-6b8f-36e5-2c77" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Repair" id="ff1c-eebf-eb87-fa0e" hidden="false"/>
+  </sharedRules>
 </catalogue>
