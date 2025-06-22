@@ -146,67 +146,71 @@
               <entryLinks>
                 <entryLink import="true" name="Boltgun" hidden="false" id="1e37-892a-60a3-a8de" type="selectionEntry" targetId="36dc-77bf-9c77-ebec">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8122-8f10-56b9-6371" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efb3-4e56-7257-faa2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74e5-fcc0-3243-b28b" includeChildSelections="false"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="8122-8f10-56b9-6371">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="3532-0dac-ef5e-99c6" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Bolt Pistol" hidden="false" id="8025-2ac6-7aa7-0036" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0e8-5f44-e18b-b3b5" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8509-04e2-466d-b527" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5910-f398-397e-e868" includeChildSelections="false"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="e0e8-5f44-e18b-b3b5">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="parent" childId="3532-0dac-ef5e-99c6" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="1d4a-b837-ec45-08e8" type="selectionEntry" targetId="7544-be24-33ca-539a">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a6e-9cb5-f273-8b0d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="24b3-b491-408e-5796" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de23-b698-c284-a58c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="796e-4aae-9dc9-5ff8" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44be-ee4c-e8f1-889e" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="2bf9-1a08-876b-ee40" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3577-d988-4493-9211" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="88b7-a843-e597-d88e" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c886-59f6-12a7-64d1" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="May Replace Bolt Pistol/Boltgun With:" id="3532-0dac-ef5e-99c6" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="1d4a-b837-ec45-08e8" type="selectionEntry" targetId="7544-be24-33ca-539a">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="88b7-a843-e597-d88e" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="2bf9-1a08-876b-ee40" type="selectionEntry" targetId="4116-38b9-9975-8f38">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" id="796e-4aae-9dc9-5ff8" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="24b3-b491-408e-5796" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6879-82ac-b9ec-1440"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2260-2ea5-9e6a-eaeb" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9bea-1e17-5acf-848c" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="fef8-cd65-8939-4a00" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5f8-3d54-9fff-8500" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
