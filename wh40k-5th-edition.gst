@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
+<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
   <categoryEntries>
     <categoryEntry name="HQ" id="26c0-589a-9f26-b597" hidden="false"/>
     <categoryEntry name="Troops" id="8429-4ea5-6433-b189" hidden="false"/>
@@ -157,11 +157,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="81a2-ac97-955a-62c8">
-      <infoLinks>
-        <infoLink name="Lascannon" id="df57-c862-d115-b52a" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
-      </infoLinks>
-    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="81a2-ac97-955a-62c8"/>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="78e5-9a3a-4fd1-ec54">
       <infoLinks>
         <infoLink name="Bolt Pistol" id="9fca-5bf5-be74-3086" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
