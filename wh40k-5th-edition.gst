@@ -185,13 +185,35 @@
         <infoLink name="Melta Bombs" id="ef5f-f436-ca9e-e4bf" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748"/>
+    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748">
+      <profiles>
+        <profile name="Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="58e2-5295-7aea-1f2a">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="dc75-835b-0844-b9a1">
       <infoLinks>
         <infoLink name="Heavy Bolter" id="66dd-18a0-51b6-6c65" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="759b-5938-021f-1661"/>
+    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="759b-5938-021f-1661">
+      <profiles>
+        <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hunter-Killer Missile" hidden="false" id="89b8-312d-cec7-69ac"/>
     <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="a3d2-d03e-7810-7365">
       <profiles>
@@ -327,7 +349,7 @@
       <description>Rules for template weapons go here...</description>
     </rule>
     <rule name="And They Shall Know No Fear" id="2db7-2b1a-b1eb-292c" hidden="false">
-      <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties. Units which include Servitors are still subject to this rule, providing that the unit contains at least one Space Marine. </description>
+      <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties. Units which include Servitors are still subject to this rule, providing that the unit contains at least one Space Marine.</description>
     </rule>
     <rule name="Counter-Attack" id="7b8c-f1d8-14b3-ace2" hidden="false"/>
     <rule name="Eternal Warrior" id="081d-7750-bb55-7c19" hidden="false"/>
@@ -355,7 +377,7 @@
     <rule name="Defensive Grenades" id="e240-63d0-bc74-a65b" hidden="false"/>
     <rule name="Combat Squads" id="a095-a211-d826-323e" hidden="false"/>
     <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false">
-      <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take. </description>
+      <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take.</description>
     </rule>
     <rule name="Gets Hot!" id="8260-d680-2ee2-06c2" hidden="false"/>
     <rule name="Blast" id="d7af-17f1-4289-f56b" hidden="false"/>
@@ -363,7 +385,9 @@
     <rule name="Rending" id="4478-723e-b728-3cac" hidden="false"/>
     <rule name="Sniper" id="65e0-e07f-651b-c45f" hidden="false"/>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
-    <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
+    <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false">
+      <description>A set of twin-linked weapons count as a single weapon of that type, but to represent their fusillade of fire you may re-roll the dice to hit if you miss (including twinlinked blast weapons).</description>
+    </rule>
     <rule name="Combi-Weapons" id="90a6-34b7-a997-e4ab" hidden="false">
       <description>A model armed with a combi-weapon (combi-meltagun, combi-plasma gun or combi-flamer) can choose to fire either the bolter, or the secondary weapon, each with the profile listed elsewhere in this section. The bolter can be fired every turn, but the secondary weapon can only be fired once per battle (a combi-plasma gun can, of course, Rapid Fire). You cannot fire both weapons in the same turn.</description>
     </rule>
