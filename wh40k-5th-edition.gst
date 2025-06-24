@@ -214,10 +214,19 @@
         <infoLink name="Plasma Cannon" id="65c2-31a0-ea05-2576" hidden="false" type="profile" targetId="766b-acf5-f0e8-24eb"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combi-melta" hidden="false" id="cad5-bbe3-fb66-0625">
+    <selectionEntry type="upgrade" import="true" name="Combi-Melta" hidden="false" id="cad5-bbe3-fb66-0625">
       <infoLinks>
-        <infoLink name="Meltagun" id="d3f4-a0e9-5ef5-430f" hidden="false" type="profile" targetId="2c4a-3138-e66e-a045"/>
-        <infoLink name="Boltgun" id="8f80-a99b-d83a-7a4e" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Meltagun" id="d3f4-a0e9-5ef5-430f" hidden="false" type="profile" targetId="2c4a-3138-e66e-a045">
+          <modifiers>
+            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+            <modifier type="append" value="(Combi-Melta)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Boltgun" id="8f80-a99b-d83a-7a4e" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
+          <modifiers>
+            <modifier type="append" value="(Combi-Melta)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Combi-Weapons" id="d028-78d6-83f8-8ede" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
       </infoLinks>
     </selectionEntry>
@@ -275,17 +284,35 @@
         <infoLink name="Chainsword" id="e2a7-96f3-7d8e-cdc3" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combi-plasma" hidden="false" id="2cbf-d533-20f3-d524">
+    <selectionEntry type="upgrade" import="true" name="Combi-Plasma" hidden="false" id="2cbf-d533-20f3-d524">
       <infoLinks>
-        <infoLink name="Boltgun" id="c2b5-4b56-43d8-d620" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
-        <infoLink name="Plasma Gun" id="9461-2eac-61ac-aabc" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4"/>
+        <infoLink name="Boltgun" id="c2b5-4b56-43d8-d620" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
+          <modifiers>
+            <modifier type="append" value="(Combi-Plasma)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Plasma Gun" id="9461-2eac-61ac-aabc" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4">
+          <modifiers>
+            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+            <modifier type="append" value="(Combi-Plasma)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Combi-Weapons" id="57e7-08c0-2ae1-81ac" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="f0a4-a0e4-25f9-dded">
+    <selectionEntry type="upgrade" import="true" name="Combi-Flamer" hidden="false" id="f0a4-a0e4-25f9-dded">
       <infoLinks>
-        <infoLink name="Boltgun" id="aed6-10be-076a-d03c" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
-        <infoLink name="Flamer" id="dd7f-532a-5290-a18c" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
+        <infoLink name="Boltgun" id="aed6-10be-076a-d03c" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
+          <modifiers>
+            <modifier type="append" value="(Combi-Flamer)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Flamer" id="dd7f-532a-5290-a18c" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432">
+          <modifiers>
+            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+            <modifier type="append" value="(Combi-Flamer)" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Combi-Weapons" id="0c2c-75d6-ad2d-a728" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
       </infoLinks>
     </selectionEntry>

@@ -100,17 +100,17 @@
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Flamer" hidden="false" id="8aa8-f373-25aa-c08f" type="selectionEntry" targetId="2b8a-d7b5-caa3-edc4">
+                <entryLink import="true" name="Combi-flamer" hidden="false" id="8aa8-f373-25aa-c08f" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Melta" hidden="false" id="0cbe-e7ef-4d58-b847" type="selectionEntry" targetId="4321-8e77-5876-7e8f">
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="0cbe-e7ef-4d58-b847" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Plasma" hidden="false" id="0a18-12ad-c112-80ea" type="selectionEntry" targetId="2062-d2d4-63c3-75d9">
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="0a18-12ad-c112-80ea" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
@@ -412,17 +412,17 @@
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Flamer" hidden="false" id="3c5d-c969-300a-0fa0" type="selectionEntry" targetId="2b8a-d7b5-caa3-edc4">
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="3c5d-c969-300a-0fa0" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Melta" hidden="false" id="610f-4fb8-5f97-ec0c" type="selectionEntry" targetId="4321-8e77-5876-7e8f">
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="610f-4fb8-5f97-ec0c" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-Plasma" hidden="false" id="1e88-3099-3e9e-1046" type="selectionEntry" targetId="2062-d2d4-63c3-75d9">
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="1e88-3099-3e9e-1046" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
@@ -759,7 +759,7 @@
     <selectionEntry type="upgrade" import="true" name="Twin-Linked Heavy Flamer" hidden="false" id="613f-3614-fc53-e5d6">
       <infoLinks>
         <infoLink name="Twin-Linked" id="f081-975b-0c47-18ea" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-        <infoLink name="Heavy Flamer" id="ea3b-2cca-7541-7de0" hidden="false" type="profile" targetId="294d-9e0e-16c0-7de5">
+        <infoLink name="Heavy Flamer" id="ea3b-2cca-7541-7de0" hidden="false" type="profile" targetId="5f94-6b30-51ac-7af9">
           <modifiers>
             <modifier type="prepend" value="Twin-Linked" field="name"/>
             <modifier type="append" value="Twin-Linked" field="2f86-c8b4-b3b4-3ff9" join=", "/>
@@ -768,51 +768,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Space Marine Vehicle Upgrades" hidden="false" id="2f3e-ce7b-399c-2ebd"/>
-    <selectionEntry type="upgrade" import="true" name="Combi-Flamer" hidden="false" id="2b8a-d7b5-caa3-edc4">
-      <infoLinks>
-        <infoLink name="Flamer" id="48f2-b453-c47f-85c8" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432">
-          <modifiers>
-            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
-            <modifier type="append" value="(Combi-Flamer)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Boltgun" id="0a64-32f7-00db-1689" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
-          <modifiers>
-            <modifier type="append" value="(Combi-Flamer)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combi-Melta" hidden="false" id="4321-8e77-5876-7e8f">
-      <infoLinks>
-        <infoLink name="Meltagun" id="e12f-3d11-3970-c9a2" hidden="false" type="profile" targetId="2c4a-3138-e66e-a045">
-          <modifiers>
-            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
-            <modifier type="append" value="(Combi-Melta)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Boltgun" id="6403-d042-c7d3-01c9" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
-          <modifiers>
-            <modifier type="append" value="(Combi-Melta)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Combi-Plasma" hidden="false" id="2062-d2d4-63c3-75d9">
-      <infoLinks>
-        <infoLink name="Plasma Gun" id="9401-ed7c-dc8a-d3dc" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4">
-          <modifiers>
-            <modifier type="append" value="One Use Only" field="2f86-c8b4-b3b4-3ff9" join=", "/>
-            <modifier type="append" value="(Combi-Plasma)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Boltgun" id="f5a4-4a6d-10da-0299" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
-          <modifiers>
-            <modifier type="append" value="(Combi-Plasma)" field="name" join=" "/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Teleport Homer" hidden="false" id="b6a8-b9d2-d3cd-4921">
       <profiles>
         <profile name="Teleport Homer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b1fd-d25f-a188-e2ed">
