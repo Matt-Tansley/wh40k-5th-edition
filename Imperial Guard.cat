@@ -763,7 +763,7 @@
                 <categoryLink targetId="2929-ab82-8ced-da7c" id="aaa3-b715-0d1f-120c" primary="false" name="Infantry"/>
               </categoryLinks>
               <rules>
-                <rule name="Junior Officer" id="43f5-145e-f59a-7410" hidden="false" page=""/>
+                <rule name="Junior Officer" id="43f5-145e-f59a-7410" hidden="false"/>
               </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Platoon Standard" hidden="false" id="26be-9bc2-44b1-814a">
@@ -2222,7 +2222,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2151-e25f-175c-ce85" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Heavy Flamer" id="b779-8166-9201-8ca3" hidden="false" type="profile" targetId="294d-9e0e-16c0-7de5"/>
+                <infoLink name="Heavy Flamer" id="b779-8166-9201-8ca3" hidden="false" type="profile" targetId="5f94-6b30-51ac-7af9"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2580,7 +2580,7 @@ The Executed model is immediately removed as a casualty regardless of the number
       </categoryLinks>
       <rules>
         <rule name="It&apos;s For Your Own Good" id="7615-9078-d3b8-28d5" hidden="false">
-          <description>If a Primaris Psyker suffers a Perils of the Warp attack whilst joined to the same unit as a Commissar of any type then the psyker is immediately executed and removed as a casualty. </description>
+          <description>If a Primaris Psyker suffers a Perils of the Warp attack whilst joined to the same unit as a Commissar of any type then the psyker is immediately executed and removed as a casualty.</description>
         </rule>
         <rule name="Nightshroud" id="efc2-d8f3-87de-f186" hidden="false">
           <description>This psychic power is used at the start of the psykers movement phase. if successful any unit wishing to shoot at the psyker&apos;s unit must first pass a leadership or forego their shooting phase. Vehicles count as leadership 10 for the purposes of this psychic power. The effects of this power last until the beginning of the Primaris Psyker&apos;s next movement phase.</description>
