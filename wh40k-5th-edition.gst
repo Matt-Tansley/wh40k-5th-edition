@@ -181,13 +181,35 @@
         <infoLink name="Melta Bombs" id="ef5f-f436-ca9e-e4bf" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748"/>
+    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748">
+      <profiles>
+        <profile name="Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="58e2-5295-7aea-1f2a">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="dc75-835b-0844-b9a1">
       <infoLinks>
         <infoLink name="Heavy Bolter" id="66dd-18a0-51b6-6c65" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="759b-5938-021f-1661"/>
+    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="759b-5938-021f-1661">
+      <profiles>
+        <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hunter-Killer Missile" hidden="false" id="89b8-312d-cec7-69ac"/>
     <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="a3d2-d03e-7810-7365">
       <profiles>
@@ -216,7 +238,13 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="3d04-876d-57d0-0a95"/>
-    <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="cad5-bbe3-fb66-0625"/>
+    <selectionEntry type="upgrade" import="true" name="Combi-melta" hidden="false" id="cad5-bbe3-fb66-0625">
+      <infoLinks>
+        <infoLink name="Meltagun" id="d3f4-a0e9-5ef5-430f" hidden="false" type="profile" targetId="2c4a-3138-e66e-a045"/>
+        <infoLink name="Boltgun" id="8f80-a99b-d83a-7a4e" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Combi-Weapons" id="d028-78d6-83f8-8ede" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="c1a2-67a8-aac3-e2da">
       <profiles>
         <profile name="Lasgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ff14-0838-1a7c-b0a7">
@@ -297,18 +325,27 @@
         <infoLink name="Chainsword" id="e2a7-96f3-7d8e-cdc3" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combi-plasma" hidden="false" id="2cbf-d533-20f3-d524">
+      <infoLinks>
+        <infoLink name="Boltgun" id="c2b5-4b56-43d8-d620" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Plasma Gun" id="9461-2eac-61ac-aabc" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4"/>
+        <infoLink name="Combi-Weapons" id="57e7-08c0-2ae1-81ac" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="f0a4-a0e4-25f9-dded">
+      <infoLinks>
+        <infoLink name="Boltgun" id="aed6-10be-076a-d03c" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Flamer" id="dd7f-532a-5290-a18c" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
+        <infoLink name="Combi-Weapons" id="0c2c-75d6-ad2d-a728" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
       <description>Rules for template weapons go here...</description>
     </rule>
     <rule name="And They Shall Know No Fear" id="2db7-2b1a-b1eb-292c" hidden="false">
-      <description>Type out what the fuck this rule does here
-
-dasdas
-
-
-You can do multiple lines!</description>
+      <description>Space Marines automatically pass tests to regroup, and can take such tests even if the squad has been reduced to less than half strength by casualties, though all other criteria apply. Usually troops that regroup cannot move normally and always count as moving whether they do or not, but these restrictions do not apply to models subject to this special rule. If Space Marines are caught by a sweeping advance, they are not destroyed and will instead continue to fight normally. If this happens then the unit is subject to the No Retreat! rule in this round of close combat and might therefore suffer additional casualties. Units which include Servitors are still subject to this rule, providing that the unit contains at least one Space Marine.</description>
     </rule>
     <rule name="Counter-Attack" id="7b8c-f1d8-14b3-ace2" hidden="false"/>
     <rule name="Eternal Warrior" id="081d-7750-bb55-7c19" hidden="false"/>
@@ -335,14 +372,34 @@ You can do multiple lines!</description>
     <rule name="Assault Grenades" id="3a19-913c-ca9e-f0ac" hidden="false"/>
     <rule name="Defensive Grenades" id="e240-63d0-bc74-a65b" hidden="false"/>
     <rule name="Combat Squads" id="a095-a211-d826-323e" hidden="false"/>
-    <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false"/>
+    <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false">
+      <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take.</description>
+    </rule>
     <rule name="Gets Hot!" id="8260-d680-2ee2-06c2" hidden="false"/>
     <rule name="Blast" id="d7af-17f1-4289-f56b" hidden="false"/>
     <rule name="Pinning" id="2108-ee5b-e364-5610" hidden="false"/>
     <rule name="Rending" id="4478-723e-b728-3cac" hidden="false"/>
     <rule name="Sniper" id="65e0-e07f-651b-c45f" hidden="false"/>
     <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
-    <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false"/>
+    <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false">
+      <description>A set of twin-linked weapons count as a single weapon of that type, but to represent their fusillade of fire you may re-roll the dice to hit if you miss (including twinlinked blast weapons).</description>
+    </rule>
+    <rule name="Combi-Weapons" id="90a6-34b7-a997-e4ab" hidden="false">
+      <description>A model armed with a combi-weapon (combi-meltagun, combi-plasma gun or combi-flamer) can choose to fire either the bolter, or the secondary weapon, each with the profile listed elsewhere in this section. The bolter can be fired every turn, but the secondary weapon can only be fired once per battle (a combi-plasma gun can, of course, Rapid Fire). You cannot fire both weapons in the same turn.</description>
+    </rule>
+    <rule name="Deep Strike" id="c32f-6871-314f-219e" hidden="false">
+      <description>Some units’ special rules allow them to enter play via tunnelling, teleportation, flying, or some other extraordinary means. If you wish to use this ‘deep strike’ option, then the units in question must begin the game in reserve (even if you are playing a special mission where the ‘reserves’ special rule is not being used). Roll for arrival of these units as specified in the rules for reserves and then deploy them as follows. First place one model from the unit anywhere on the table, in the position you would like the unit to arrive, and roll the scatter dice. If you roll a hit the model stays where it is, but if an arrow is shown this determines the direction the model is scattered in. If a scatter
+occurs, roll 2D6 to see how many inches the model moves away from the intended position. Once this is done, the unit’s remaining models are arranged around the first one. Models must be placed in base contact with the original model in a circle around it. When the first circle is complete, a further circle should be placed with each model touching the circle inside it. Each circle should include as many models as will fit. Models arriving via deep strike treat all difficult terrain as dangerous terrain. In the Movement phase when they arrive, these units may not move any further, other than to disembark from a deep striking transport vehicle. Units deep striking into ruined buildings are placed on the ground floor. They may not deep strike directly inside a transport vehicle or a building, which will count as impassable terrain as normal. In that turn’s Shooting phase, these units can fire (or run) as normal, and obviously count as having moved in the previous Movement phase. Vehicles count as having moved at cruising speed. In that turn’s Assault phase, however, these units may not launch an assault (even if they have the ‘fleet’ special rule), unless clearly stated in their special rules – they are too disrupted by their deep strike move. 
+
+
+Deep strike mishaps Teleporting or dropping onto a crowded battlefield may prove extremely dangerous, as one may arrive miles away from the intended objective or even inside solid rock! If any of the models in a deep striking unit cannot be deployed because they would land off the table, in impassable terrain, on top of a friendly model, or on top or within 1&quot; of an enemy model, something has gone wrong. The controlling player must roll on the deep strike Mishap table and apply the results. 
+
+
+DEEP STRIKE MISHAP TABLE:
+1-2 Terrible accident! Teleporting troops are lost in the Warp, deep striking jump infantry are shot down with their transport, or some other suitably dramatic event occurs. The entire unit is destroyed!
+3-4 Misplaced. Were the coordinates slightly inaccurate, or has the enemy jammed your instruments? Your opponent may deploy the unit anywhere on the table (excluding impassable terrain, but including difficult terrain, which of course counts as dangerous for deep striking units!), in a valid deep strike formation, but without rolling for scatter.
+5-6 Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed. The unit is placed back in reserve. If the unit is unlucky enough to roll this result in turn 5 or later and then the game ends while it is still in reserve, it sadly counts as destroyed.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Heavy Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35f7-bbeb-6757-ba5c">
@@ -477,4 +534,13 @@ You can do multiple lines!</description>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Combi-flamer" hidden="false" id="dc92-2602-e95e-fade" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded"/>
+        <entryLink import="true" name="Combi-melta" hidden="false" id="3542-8715-5cc3-f256" type="selectionEntry" targetId="cad5-bbe3-fb66-0625"/>
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="786a-3280-9789-d74e" type="selectionEntry" targetId="2cbf-d533-20f3-d524"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </gameSystem>
