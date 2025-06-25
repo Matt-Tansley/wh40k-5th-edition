@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="f17e-be90-9229-00a9">
       <categoryLinks>
@@ -762,6 +762,9 @@
               <categoryLinks>
                 <categoryLink targetId="2929-ab82-8ced-da7c" id="aaa3-b715-0d1f-120c" primary="false" name="Infantry"/>
               </categoryLinks>
+              <rules>
+                <rule name="Junior Officer" id="43f5-145e-f59a-7410" hidden="false"/>
+              </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Platoon Standard" hidden="false" id="26be-9bc2-44b1-814a">
               <costs>
@@ -804,7 +807,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="377d-f910-a57a-3b54" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Commisar" hidden="false" id="dc6c-8f05-c44f-a5b7" type="selectionEntry" targetId="b03d-340a-35c5-991c">
+            <entryLink import="true" name="Commissar" hidden="false" id="dc6c-8f05-c44f-a5b7" type="selectionEntry" targetId="b03d-340a-35c5-991c">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c368-ce5e-2734-8f4e" includeChildSelections="false"/>
               </constraints>
@@ -819,7 +822,7 @@
             <categoryLink targetId="2929-ab82-8ced-da7c" id="3082-40f0-07db-729a" primary="false" name="Infantry"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Commisar" hidden="false" id="dc5d-e101-d253-16ab" type="selectionEntry" targetId="b03d-340a-35c5-991c">
+            <entryLink import="true" name="Commissar" hidden="false" id="dc5d-e101-d253-16ab" type="selectionEntry" targetId="b03d-340a-35c5-991c">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7303-27c9-225e-7ee8" includeChildSelections="false"/>
               </constraints>
@@ -1715,7 +1718,7 @@
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Multiple Rocket Pods" hidden="false" id="a185-d8a5-acf5-406f" type="selectionEntry" targetId="c417-7dd9-de5b-7163">
+                    <entryLink import="true" name="Multiple Rocket Pod" hidden="false" id="a185-d8a5-acf5-406f" type="selectionEntry" targetId="c417-7dd9-de5b-7163">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
                       </costs>
@@ -1735,6 +1738,862 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Penal Legion Squad" hidden="false" id="3155-38c8-fc66-e076">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="8429-4ea5-6433-b189" id="5041-d8cf-34e9-caa9" primary="true" name="Troops"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="8e9a-ae9f-5211-4e4e" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Scouts" id="77cb-2d73-3648-ddff" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
+        <infoLink name="Stubborn" id="717f-d117-4eec-d913" hidden="false" type="rule" targetId="4e97-1ea5-3090-a873"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Penal Legionnarie" hidden="false" id="8d2e-df7f-18e4-6827">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="5003-b594-e8d2-005a-min" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5003-b594-e8d2-005a-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Penal Legionnaire" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="aaf1-a8c8-bf14-7091">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3.</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lasgun" id="cccf-4141-d4b4-b12b" hidden="false" type="profile" targetId="9866-1147-6ea2-665d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Penal Custodian" hidden="false" id="793a-2073-7406-9e7b">
+          <profiles>
+            <profile name="Penal Custodian" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="d658-297d-f70e-3168">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Laspistol" id="9457-75be-49f8-f45e" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2d1-de00-6554-3c04-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2d1-de00-6554-3c04-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Desperadoes" id="605a-a2d4-28d2-f4b4" hidden="false">
+          <description>Roll a D6 for each Penal Legion Squad in your army before deployment to determine each squads specialist skill.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vendetta Gunship Squadron" hidden="false" id="bced-14b5-a745-e799">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Fast" hidden="false" id="9712-624e-2cb6-d36a" targetId="e308-d529-0957-5bf9" primary="false"/>
+        <categoryLink name="Skimmer" hidden="false" id="04cc-4ddf-9cbe-cea6" targetId="9f87-2b05-865f-8790" primary="false"/>
+        <categoryLink name="Fast Attack" hidden="false" id="563c-73b5-b8b8-888f" targetId="b327-ab7b-3c9c-3123" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squadron" id="7e83-ca52-9274-8474" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Vendetta" hidden="false" id="bab9-3bf2-a2ed-79ff" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="130"/>
+              </costs>
+              <profiles>
+                <profile name="Vendetta" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="5387-1e50-e0d7-2300">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12 (this model cannot transport Ogryns)</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One access point on each side and one of the rear</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Grav Chute Insertion" id="5275-3115-d7ae-d0b0" hidden="false">
+                  <description>If a model with this special rule moved flat out, passengers may still disembark but must do so as follows. Nominate any point over which this model moved and deploy the squad as if it were deep striking on to that point/ if the unit scatters every model must immediately take a dangerous terrain test. If any of the models can not be deployed the unit is destroyed as described in the 1-2 result of the deep strike mishap table.</description>
+                </rule>
+                <rule name="Deep Strike Placeholder" id="d8fd-89c8-2d18-8b3f" hidden="false"/>
+              </rules>
+              <infoLinks>
+                <infoLink name="Scouts" id="b4bd-47a6-743c-a4ea" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Extra Armour" hidden="false" id="e091-fede-a3d1-91a9" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7a2-cbb3-263d-60a6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f00-4e17-2255-ed0d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Searchlight" hidden="false" id="6eb4-9003-3677-1362" type="selectionEntry" targetId="fb6b-2270-524a-a191">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a712-c377-5c26-c8bf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd6f-dd50-624c-d926" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="10a8-abe9-4ec4-2cfa" type="selectionEntry" targetId="81a2-ac97-955a-62c8">
+                  <infoLinks>
+                    <infoLink name="Twin-Linked" id="fe11-72ba-3266-983f" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+                    <infoLink name="Lascannon" id="7a11-0f16-6cb5-69c4" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="226e-503e-a9b2-106a-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="226e-503e-a9b2-106a-max" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Twin Linked Lascannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="A Valkyrie is equipped with two of the following wing mounted weapons" id="a378-ca6a-a44c-440d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Hellstrike Missile" hidden="false" id="b9a3-34a6-f366-210c" type="selectionEntry" targetId="08b2-c43b-9684-7af8" defaultAmount="1">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="eb30-6987-4c05-6f1c" type="selectionEntry" targetId="81a2-ac97-955a-62c8">
+                      <infoLinks>
+                        <infoLink name="Twin-Linked" id="863a-0cdd-dd34-00ae" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="set" value="Twin Linked Lascannon" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6317-9073-59f9-d7b2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d636-6cd5-780b-c4b8" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81cb-301d-ad2d-7956" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2b29-b445-a5fb-d951" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord Commissar" hidden="false" id="4335-42b7-a7c1-0649">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="a353-0665-2948-74d6" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="6e1e-eb64-3f89-8961" primary="false" name="Independent Character"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="2817-5f4a-6cf3-1871" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lord Commissar" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="32b3-c050-d2a4-346f">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="4335-42b7-a7c1-0649" childId="bf9e-77d0-8616-51f6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Frag Grenades" id="410a-db60-7d08-b971" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="344a-9a55-2286-ec92" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Stubborn" id="c525-a273-ed78-cb3a" hidden="false" type="rule" targetId="4e97-1ea5-3090-a873"/>
+      </infoLinks>
+      <rules>
+        <rule name="Aura of Discipline" id="69f7-ca35-ef3e-5b6b" hidden="false">
+          <description>Any friendly unit within 6&quot; of a Lord Commissar may use his Leadership of 10 for any Moral or Pinning tests as well as Leadership tests incurred by orders issued to the squad</description>
+        </rule>
+        <rule name="Summary Execution" id="9735-aed6-7bf5-f349" hidden="false">
+          <description>If the Commissar&apos;s unit fails a Morale test the Commissar will execute the model with the highest leadership in the unit. If two or more models are tied for the highest leadership randomly determine who will be executed. The Commissar will never execute themselves or another Commissar.
+
+
+The Executed model is immediately removed as a casualty regardless of the number of wounds remaining. The unit in question must then reroll the Leadership test if the test is failed the unit falls back as normal.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Refractor Field" hidden="false" id="0282-a1b9-4db6-e5a0" type="selectionEntry" targetId="940a-cdb2-8f51-fee3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8be7-101d-4c50-c6a0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8be7-101d-4c50-c6a0-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="The Lord Commissar may exchange his Bolt Pistol and/or Close Combat Weapon for the following" id="8f42-efd8-0033-d517" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="3199-54d1-7e30-4de1" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Boltgun" hidden="false" id="db61-52ac-7782-7910" type="selectionEntry" targetId="36dc-77bf-9c77-ebec">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="9af8-50b3-2c9f-b170" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="c2e6-130b-7adc-9f04" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="add2-778a-7d53-1f22" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="134c-dd6c-6572-3555" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bac9-8fa5-108d-775b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="The Lord Commissar may take any of the following" id="ba60-ebeb-2f03-5f5e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carapace Armour" hidden="false" id="bf9e-77d0-8616-51f6">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab3b-326d-b5c8-3eeb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Camo Cloaks" hidden="false" id="3890-121b-f38c-420c" type="selectionEntry" targetId="0bfe-ec75-79e6-d7f8">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="812f-e3e4-99a5-b890" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="81d3-d5d4-4150-ed68" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="613b-5f70-74c1-815e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="64f2-6f27-4647-4656" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chimera" hidden="false" id="f5d9-e613-9b8f-1f7f" type="selectionEntry" targetId="ffc2-67e9-61d3-f6e1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ecc-d42f-c87e-db68"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Company Command Squad" hidden="false" id="b19e-75ba-a2db-13aa">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Company Commander" hidden="false" id="b1b8-c1b3-6cba-1eeb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7398-d2a5-e99b-72a8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7398-d2a5-e99b-72a8-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Company Commander" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="167f-c8dc-49e5-ffef">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="The Company Commander may exchange his laspistol and/or ccw for:" id="27f8-f99c-c541-5832" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="c378-6020-1da5-8765" type="selectionEntry" targetId="d578-6422-9a2f-13fb" defaultAmount="1">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="fa00-b337-14c3-415e" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="6aaa-ff6e-80f9-ee6d" type="selectionEntry" targetId="36dc-77bf-9c77-ebec">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="995e-2050-8612-5d31" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="951f-558e-f242-8302" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="daf1-c6c5-15bf-d287" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87d7-1a5d-cdf2-16b4" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f759-6567-7f8f-d95e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="adca-d962-bdf2-043e" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b13-f344-047a-972b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Refractor Field" hidden="false" id="6b47-2cf6-dcd1-980e" type="selectionEntry" targetId="940a-cdb2-8f51-fee3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c26-3469-1a92-2503-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c26-3469-1a92-2503-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="Senior Officer" id="fe56-c9f7-fd01-5f54" hidden="false"/>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Carapace Armour" hidden="false" id="0124-72f5-7e73-4244">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8d1-c7ba-7d77-1469" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="e486-3711-e9bf-f391" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="6150-a03f-945d-af43" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Veterans" id="8159-a9b3-1574-4da2" hidden="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c605-d0c5-82a7-897c" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9557-8e62-ee8f-1760" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Veteran w/Lasgun" hidden="false" id="e2b2-11c5-3ecd-45da" defaultAmount="4">
+              <infoLinks>
+                <infoLink name="Lasgun" id="d99c-d88b-04f7-c705" hidden="false" type="profile" targetId="9866-1147-6ea2-665d"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cd74-8ba0-a234-7fb3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran w/Laspitsol" hidden="false" id="80ac-51f4-ee61-ed9f">
+              <infoLinks>
+                <infoLink name="Laspistol" id="17e0-9ad2-1ef7-efd8" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c61f-bbeb-da68-3b41" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran w/ Medi-Pack" hidden="false" id="5d56-3dab-20f0-4cb3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Medi-pack" hidden="false" id="eea8-d3a8-1768-df46" type="selectionEntry" targetId="f20c-d4a5-4782-cd86">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4a4-7651-b428-c88d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4a4-7651-b428-c88d-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="164c-d3a4-178c-4cfa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran W/ Regimental Standard" hidden="false" id="c56e-cf6a-7d8a-e2bc">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Regimental Standard" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="72d8-ae33-6021-4371">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whilst the standard bearer is still alive his squad counts a scoring one additional wound for the purposes of calculating close combat results. In addition any friendly units with 12&quot; re-roll failed morale and pinning checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37f0-5c11-644a-9a44" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran w/ Vox-caster" hidden="false" id="1330-3d17-1c6a-cbc6">
+              <entryLinks>
+                <entryLink import="true" name="Vox Caster" hidden="false" id="4817-67d8-3689-3c7c" type="selectionEntry" targetId="7686-91a6-fb38-0fbe">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a75-0c74-2656-5159-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a75-0c74-2656-5159-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00eb-a45d-cf84-59c1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Veteran w/ Heavy Flamer" hidden="false" id="9067-0093-4e10-e654">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2151-e25f-175c-ce85" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Flamer" id="b779-8166-9201-8ca3" hidden="false" type="profile" targetId="5f94-6b30-51ac-7af9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons Team" id="335c-f7c7-b7ba-4453" hidden="false" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="34af-4d41-c396-08c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Veteran Weapons Team" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="c799-e510-a6df-ea39">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Autocannon" hidden="false" id="c8f7-78aa-a6ca-0947" type="selectionEntry" targetId="5dd8-20a0-454e-8748">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="3afd-3bd5-c891-465d" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Missile Launcher" hidden="false" id="19ff-11fb-7dc8-0afd" type="selectionEntry" targetId="a3d2-d03e-7810-7365">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="7a35-65f5-1142-a4fa" type="selectionEntry" targetId="81a2-ac97-955a-62c8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mortar" hidden="false" id="0127-2522-430b-b745" type="selectionEntry" targetId="966e-077f-a609-d48a">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Veteran Special weapons " id="11d6-9f7b-0074-beb1" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Sniper Rifle" hidden="false" id="d277-acfe-e8d2-9fd5" type="selectionEntry" targetId="f00c-a713-50b9-c3f7">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grenade Launcher" hidden="false" id="a1fd-32e0-603f-6033" type="selectionEntry" targetId="6643-68df-bd8a-c917">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Flamer" hidden="false" id="1ab0-e0c1-3b63-fde3" type="selectionEntry" targetId="8e4e-3d28-3c22-170b">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="66e5-2534-7752-cea3" type="selectionEntry" targetId="c90d-186d-9c15-ce09">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Gun" hidden="false" id="a9b9-3761-79ca-4269" type="selectionEntry" targetId="fd5b-25eb-73cf-b322">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="decrement" value="1" field="9557-8e62-ee8f-1760">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="335c-f7c7-b7ba-4453" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="c605-d0c5-82a7-897c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="335c-f7c7-b7ba-4453" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Veterans" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6d5b-e8f8-ca20-2fe7">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Regimental Advisors" id="2b36-ffb0-26c5-fbe7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Astropath" hidden="false" id="7bd0-05ee-22ad-ebc5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a76a-2970-7aaa-43b1" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <profiles>
+                <profile name="Astropath" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="3029-3ff1-89a0-530a">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Telepathic Relay" id="9a48-7988-243b-11ff" hidden="false">
+                  <description>While the Astropath is alive, you add 1 to any of your reserve rolls. In addition if any of your units arrive using the Outflank Special Rule you can reroll the dice used to determine which board edge these squads arrives from.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Laspistol" id="109e-9e8f-268c-5a16" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Master of Ordnance" hidden="false" id="b4e3-fdf1-0147-d632">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc71-fca7-41d0-779f" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Laspistol" id="b8bf-e172-45f3-2249" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Artillery Barrage" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c7b3-64c7-e1c4-dd8c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">Unlimited</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1 (If a hit is rolled on the Scatter Dice the template scatters 2D6&quot; in the direction shown by the arrow on the hit symbol, if an arrow is rolled the template scatters an additional D6&quot; for a total deviation of 3D6&apos;. In either case if the Master of Ordnance has line of sight to the target then reduce the total distance scattered by his BS. This attack can not be made if the Master of Ordnance has moved in the preceding movement phase.) One Shot Only*</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Master of Ordnance" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="e825-dbab-adb9-36c7">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Officer of the Fleet" hidden="false" id="cec5-b043-e938-ae11">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="727e-fbd4-644d-c391" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Officer of the Fleet" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="ed7e-cfcd-5471-4d76">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Laspistol" id="602c-a07c-5432-c223" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+              </infoLinks>
+              <rules>
+                <rule name="Intercept Reserves" id="4d8e-7458-dce6-bbed" hidden="false">
+                  <description>Whist a Officer of the Fleet is alive your opponent must subtract 1 from all reserve rolls. In addition if any enemy units arrive using the outflank special rule you may choose to make your opponent re-roll the dice used to determine which table edge those units arrive from.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bodyguard" hidden="false" id="30c2-8e2b-6725-c758">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e174-f4e9-5315-a7c6" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Bodyguard" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="5bf8-284c-d98b-0ed0">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4+" field="82b9-7b33-be67-0944">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0124-72f5-7e73-4244" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Laspistol" id="c909-a270-772a-8146" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+              </infoLinks>
+              <rules>
+                <rule name="Look out - Arghh!" id="8be4-216a-98a6-2ad6" hidden="false">
+                  <description>Whist the bodyguard is alive, each time the Command Squad is wounded by the enemy, up to two wounds allocated to the Company Commander are instead resolved against the Bodyguards.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="2b59-61d1-d11c-a6e8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chimera" hidden="false" id="80ac-74e7-f382-c17e" type="selectionEntry" targetId="ffc2-67e9-61d3-f6e1"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7e2-0f3f-7496-9614" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Camo Cloaks" hidden="false" id="e9be-32df-cc1b-75bb" type="selectionEntry" targetId="0bfe-ec75-79e6-d7f8">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="511d-a25e-02d4-382d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="88ac-e881-5f07-845b" type="selectionEntry" targetId="d999-c8bb-1aff-e870" sortIndex="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1040-6e3d-e67b-a300" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Frag Grenades" id="0aaf-4a38-26a6-a17a" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Primaris Psyker" hidden="false" id="23bb-03e8-55e7-762c">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="70"/>
+      </costs>
+      <profiles>
+        <profile name="Primaris Psyker" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="d466-198d-173e-09fc">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lightning Arc" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d118-64a1-5198-d3fd">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2D6 (Psychic shooting attack)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="force weapon placeholder" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9a29-21cf-0d08-b656">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Laspistol" id="fefe-43bf-9471-1ce2" hidden="false" type="profile" targetId="fe12-8296-4db7-c624"/>
+        <infoLink name="Frag Grenades" id="6e1b-dc0d-185f-1c1a" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="9eae-aaf2-f871-9aa2" id="1ec6-a982-e31e-d5d4" primary="false" name="Psyker"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="c695-6751-7a9b-dcd4" primary="false" name="Independent Character"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="6040-0bc3-a874-aebe" primary="false" name="Infantry"/>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="94e8-e068-bd9b-7d02" primary="true" name="HQ"/>
+      </categoryLinks>
+      <rules>
+        <rule name="It&apos;s For Your Own Good" id="7615-9078-d3b8-28d5" hidden="false">
+          <description>If a Primaris Psyker suffers a Perils of the Warp attack whilst joined to the same unit as a Commissar of any type then the psyker is immediately executed and removed as a casualty.</description>
+        </rule>
+        <rule name="Nightshroud" id="efc2-d8f3-87de-f186" hidden="false">
+          <description>This psychic power is used at the start of the psykers movement phase. if successful any unit wishing to shoot at the psyker&apos;s unit must first pass a leadership or forego their shooting phase. Vehicles count as leadership 10 for the purposes of this psychic power. The effects of this power last until the beginning of the Primaris Psyker&apos;s next movement phase.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Refractor Field" hidden="false" id="65b5-cadf-dd9c-21d4" type="selectionEntry" targetId="940a-cdb2-8f51-fee3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7946-8435-0346-c1e5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7946-8435-0346-c1e5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1996,7 +2855,7 @@
         <infoLink name="Feel No Pain" id="6815-705f-d2bd-b8f3" hidden="false" type="rule" targetId="9cd9-3f91-3337-fdd0"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Commisar" hidden="false" id="b03d-340a-35c5-991c">
+    <selectionEntry type="model" import="true" name="Commissar" hidden="false" id="b03d-340a-35c5-991c">
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
       </costs>
@@ -2070,6 +2929,15 @@ The Executed model is immediately removed as a casualty regardless of the number
       <infoLinks>
         <infoLink name="Multiple Rocket Pod" id="5b9b-59d6-fb71-9b1b" hidden="false" type="profile" targetId="a880-27d2-faa5-82e8"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Refractor Field" hidden="false" id="940a-cdb2-8f51-fee3">
+      <profiles>
+        <profile name="Refractor Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3f03-52e7-3daf-0eca">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Model with a refractor field has a 5+ invulnerable save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
