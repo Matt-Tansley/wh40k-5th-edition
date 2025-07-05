@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="f17e-be90-9229-00a9">
       <categoryLinks>
@@ -2594,6 +2594,206 @@ The Executed model is immediately removed as a casualty regardless of the number
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ogryn Squad" hidden="false" id="d550-0b69-b27c-ff6d">
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="1a0f-76f0-29fd-f61e" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="a1f9-38d9-b7ca-e9ca" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ripper Gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a18a-d8d7-f5f8-2522">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Frag Grenades" id="fbda-ac6d-bcc7-e7e3" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Furious Charge" id="faa4-d311-777b-76f0" hidden="false" type="rule" targetId="f7a4-1a30-9b9e-862c"/>
+        <infoLink name="Stubborn" id="3b22-809b-0316-2d3f" hidden="false" type="rule" targetId="4e97-1ea5-3090-a873"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ogryns" hidden="false" id="e573-1ad4-b975-aad3" defaultAmount="2">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bc3a-51c6-f608-0efe" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="93eb-bbd3-f5ba-5d4e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ogryn" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="3c1a-e1f3-15e2-623e">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">5</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">5</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">2</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">6</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Bone &apos;ead" hidden="false" id="87c7-9b18-2ce3-e00e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="460d-d853-3658-bd5e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="460d-d853-3658-bd5e-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ogryn Bond &apos;ead" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="76e8-0225-add7-cb87">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">5</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">5</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">2</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">4</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">7</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Bulky Placeholder" id="bd9f-e57f-2669-1415" hidden="false"/>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ratling Squad" hidden="false" id="7d8d-0064-f328-05be">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ratlings" hidden="false" id="ee71-2b6a-4960-a083">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3358-f29a-70d8-64fb" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="93f7-ebc0-7bee-d62f" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ratling" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="66a4-066c-6eeb-8959">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">2</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">2</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">2</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">6</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sniper Rifle" id="723a-f6ef-ffc5-970d" hidden="false" type="profile" targetId="ff94-c57b-c016-f51c"/>
+            <infoLink name="Laspistol" id="112e-9a65-9893-081c" hidden="false" type="profile" targetId="3fbc-3ff8-c387-b74c"/>
+            <infoLink name="Infiltrate" id="b225-431f-9f39-f16a" hidden="false" type="rule" targetId="ab39-776f-d923-a486"/>
+            <infoLink name="Stealth" id="e8f5-349e-10b0-089f" hidden="false" type="rule" targetId="f923-f91c-fdfe-4cb2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="4b95-f5e9-9713-2765" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="c0b1-e4b7-9ca9-798d" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Psyker Battle Squad" hidden="false" id="3f2a-81c3-e1d4-2a0c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Overseer" hidden="false" id="b7ce-17f3-4e0e-61d8" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2830-be5a-513d-7b84-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2830-be5a-513d-7b84-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Overseer" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="0aa8-3da0-30ff-9188">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Laspistol" id="e999-b84b-b6b0-c379" hidden="false" type="profile" targetId="3fbc-3ff8-c387-b74c"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sanctioned Psykers" hidden="false" id="c1b8-8ba3-cdd0-5a03" defaultAmount="4">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a3a2-5fa2-8f84-2c9c" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="b8f2-7dc2-9623-a0c5" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Sanctioned Psykers" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="3b7c-3419-1c8f-a779">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">2</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">2</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Laspistol" id="1a91-123f-bf96-ef30" hidden="false" type="profile" targetId="3fbc-3ff8-c387-b74c"/>
+          </infoLinks>
+          <rules>
+            <rule name="Weaken Resolve" id="30fc-1b0e-2b78-e003" hidden="false">
+              <description>The Power is used during the controlling players shooting phase. Choose one enemy unit within 36&quot; and in line of sight of the Psyker Battle Squad. for the remainder of the turn the enemy unit&apos;s Leadership is reduced by the number of Sanctioned Psykers in the unit utilising the power to a minimum of 2.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="9eae-aaf2-f871-9aa2" id="f55a-a048-60ee-7978" primary="false" name="Psyker"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Psychic Choir" id="bfb4-b44c-e3e9-3988" hidden="false">
+          <description>The Psyker Battle Squad is treated as a single psyker for the purposes of using a psychic power. The controlling player may measure range and line of sight from any sanctioned psyker model when resolving Psychic powers</description>
+        </rule>
+        <rule name="Ultimate Sanction" id="394f-45a3-3c71-9973" hidden="false">
+          <description>If a Psyker Battle Squad suffers a Perils of the Warp attack the the Overseer will immediately &apos;save&apos; the affected Psyker&apos;s souls. Remove D3 Sanctioned Psykers as casualties instead of resolving the attack. If the Overseer has been killed, every Sanctioned Psyker in the squad suffers a Perils of Warp attack.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="df3a-5eaa-b778-2df7" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="a165-fbdb-0fa3-c027" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Soulstorm" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6016-1891-ab66-fbeb">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">D6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast, Psychic, The Strength of Soulstorm is equal to the number of Sanctioned Psykers in the Unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
