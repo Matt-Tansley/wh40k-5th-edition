@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
+<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
   <categoryEntries>
     <categoryEntry name="HQ" id="26c0-589a-9f26-b597" hidden="false"/>
     <categoryEntry name="Troops" id="8429-4ea5-6433-b189" hidden="false"/>
@@ -608,9 +608,9 @@ DEEP STRIKE MISHAP TABLE:
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Combi-flamer" hidden="false" id="dc92-2602-e95e-fade" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded"/>
-        <entryLink import="true" name="Combi-melta" hidden="false" id="3542-8715-5cc3-f256" type="selectionEntry" targetId="cad5-bbe3-fb66-0625"/>
-        <entryLink import="true" name="Combi-plasma" hidden="false" id="786a-3280-9789-d74e" type="selectionEntry" targetId="2cbf-d533-20f3-d524"/>
+        <entryLink import="true" name="Combi-Flamer" hidden="false" id="dc92-2602-e95e-fade" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded"/>
+        <entryLink import="true" name="Combi-Melta" hidden="false" id="3542-8715-5cc3-f256" type="selectionEntry" targetId="cad5-bbe3-fb66-0625"/>
+        <entryLink import="true" name="Combi-Plasma" hidden="false" id="786a-3280-9789-d74e" type="selectionEntry" targetId="2cbf-d533-20f3-d524"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
