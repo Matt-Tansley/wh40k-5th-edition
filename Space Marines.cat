@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="c1eb-afc9-f922-6164">
       <categoryLinks>
@@ -100,7 +100,7 @@
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Combi-flamer" hidden="false" id="8aa8-f373-25aa-c08f" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="8aa8-f373-25aa-c08f" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
                   <costs>
                     <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
                   </costs>
@@ -122,7 +122,7 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Heavy Weapon" id="90c9-419d-1d87-c6e0" hidden="false">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23bc-0a8d-777f-3a50" includeChildSelections="false"/>
+                <constraint type="max" value="0" field="selections" scope="c1eb-afc9-f922-6164" shared="false" id="6c92-762f-c436-0633" includeChildSelections="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Missile Launcher" hidden="false" id="b68f-43f1-afb1-8052" type="selectionEntry" targetId="a3d2-d03e-7810-7365">
@@ -151,10 +151,17 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="6c92-762f-c436-0633">
+                  <conditions>
+                    <condition type="equalTo" value="10" field="selections" scope="c1eb-afc9-f922-6164" childId="model" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Special Weapon" id="c984-61b6-7f77-2c74" hidden="false">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4be-b70b-da09-9178" includeChildSelections="false"/>
+                <constraint type="max" value="0" field="selections" scope="c1eb-afc9-f922-6164" shared="false" id="f43c-4df1-c5f4-b49a" includeChildSelections="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Flamer" hidden="false" id="ee18-e798-26e2-9aa1" type="selectionEntry" targetId="8e4e-3d28-3c22-170b">
@@ -173,6 +180,13 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="1" field="f43c-4df1-c5f4-b49a">
+                  <conditions>
+                    <condition type="equalTo" value="10" field="selections" scope="c1eb-afc9-f922-6164" childId="model" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sergeant Wargear" id="c30f-56ed-a272-d071" hidden="false">
               <entryLinks>
@@ -204,9 +218,6 @@
         <infoLink name="And They Shall Know No Fear" id="ab59-0709-85a4-a87c" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
         <infoLink name="Combat Squads" id="9fdd-7d8a-441b-e080" hidden="false" type="rule" targetId="a095-a211-d826-323e"/>
         <infoLink name="Combat Tactics" id="a8e9-7b84-4952-955c" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
-        <infoLink name="Infiltrate" id="635d-373a-a03a-6761" hidden="false" type="rule" targetId="ab39-776f-d923-a486"/>
-        <infoLink name="Move Through Cover" id="fe1c-5e2c-e0e3-e7a9" hidden="false" type="rule" targetId="e9ec-8f85-d9d0-69ef"/>
-        <infoLink name="Scouts" id="49b3-ec31-f420-3212" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Captain" hidden="false" id="2bbd-e910-a53d-d241">
@@ -515,6 +526,15 @@
         <infoLink name="Combat Tactics" id="58a5-6f94-8bcc-e8c6" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
         <infoLink name="And They Shall Know No Fear" id="0c35-cf40-0d1b-5164" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Terminator Assault Squad" hidden="false" id="1ff2-a82f-bb58-c318">
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="0812-be0c-cef8-e0c2" primary="true" name="Elites"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="cfb8-75d4-4111-06fb" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="200"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
