@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="c1eb-afc9-f922-6164">
       <categoryLinks>
@@ -315,6 +315,10 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="c07f-a679-9bd0-a9c0" id="06c8-e777-b699-4607" primary="true" name="Elites"/>
+        <categoryLink targetId="b4fe-561a-c465-819b" id="a4cd-0fab-4e18-9551" primary="false" name="Walker"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scout Squad" hidden="false" id="9db3-95aa-d0c3-1663">
       <selectionEntryGroups>
@@ -535,6 +539,13 @@
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="200"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chaplain" hidden="false" id="9bad-b962-1ed7-bb5b">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="c142-7d30-555d-8cbc" primary="true" name="HQ"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="20ff-bdbd-5fc4-ffa8" primary="false" name="Infantry"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="ac96-8ca3-ee99-64e4" primary="false" name="Independent Character"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
