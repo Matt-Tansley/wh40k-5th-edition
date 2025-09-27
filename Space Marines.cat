@@ -547,6 +547,13 @@
         <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="ac96-8ca3-ee99-64e4" primary="false" name="Independent Character"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Librarian" hidden="false" id="0632-d4dc-553d-cce8">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="d7b1-9e24-3cf9-7978" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="7f93-a8e4-0d9f-a91c" primary="false" name="Independent Character"/>
+        <categoryLink targetId="9eae-aaf2-f871-9aa2" id="c7fa-92c1-72b7-02cc" primary="false" name="Psyker"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="de58-8000-9d96-fb47">
