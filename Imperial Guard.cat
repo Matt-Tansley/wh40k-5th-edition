@@ -2977,7 +2977,7 @@ The Executed model is immediately removed as a casualty regardless of the number
               <selectionEntryGroups>
                 <selectionEntryGroup name="May take a pair of sponsons" id="a97b-db74-1eeb-4620" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolters" hidden="false" id="d154-6bf1-085b-35d2" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="d154-6bf1-085b-35d2" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3074,7 +3074,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Executioner" hidden="false" id="68ed-8200-22b7-408a" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Executioner" hidden="false" id="68ed-8200-22b7-408a">
               <profiles>
                 <profile name="Executioner Plasma Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2ab7-9708-4de7-fd04">
                   <characteristics>
@@ -3114,7 +3114,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="ded1-d8cd-b549-bb39" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="21a5-951a-5313-2bb7" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="21a5-951a-5313-2bb7" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3198,7 +3198,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="190"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Vanquisher" hidden="false" id="60cc-ee9e-411b-2812" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Vanquisher" hidden="false" id="60cc-ee9e-411b-2812">
               <profiles>
                 <profile name="Vanquisher Battle Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="012b-9b97-1c85-e187">
                   <characteristics>
@@ -3238,7 +3238,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="0ffb-e0c1-380b-48f1" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="8a30-1b44-0a6c-61ab" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="8a30-1b44-0a6c-61ab" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3322,7 +3322,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="155"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Eradicator" hidden="false" id="f366-14d1-0a58-18e6" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Eradicator" hidden="false" id="f366-14d1-0a58-18e6">
               <profiles>
                 <profile name="Eradicator Nova Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c6bf-8b52-6341-d676">
                   <characteristics>
@@ -3362,7 +3362,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="22f5-ea44-f284-2b61" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="43d8-e7a7-8838-9a23" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="43d8-e7a7-8838-9a23" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3446,7 +3446,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="160"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Demolisher" hidden="false" id="43a5-e596-6950-4bc8" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Demolisher" hidden="false" id="43a5-e596-6950-4bc8">
               <profiles>
                 <profile name="Demolisher Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="751b-b6a0-c66f-1fac">
                   <characteristics>
@@ -3486,7 +3486,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="9811-83ae-271f-3aa8" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="911e-fc55-c3e7-cba9" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="911e-fc55-c3e7-cba9" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3570,7 +3570,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="165"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Punisher" hidden="false" id="0e3a-eec9-05cb-2ad6" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Punisher" hidden="false" id="0e3a-eec9-05cb-2ad6">
               <profiles>
                 <profile name="Punisher Gatling Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="b5ef-9226-78d2-40d8">
                   <characteristics>
@@ -3610,7 +3610,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="96dc-655c-d580-e589" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="9ea2-ff89-ffbc-c278" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="9ea2-ff89-ffbc-c278" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3694,7 +3694,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="180"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Leman Russ Exterminator" hidden="false" id="ad4b-c761-afd9-9778" defaultAmount="">
+            <selectionEntry type="model" import="true" name="Leman Russ Exterminator" hidden="false" id="ad4b-c761-afd9-9778">
               <profiles>
                 <profile name="Exterminator Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="00d6-1325-0bf1-bd41">
                   <characteristics>
@@ -3734,7 +3734,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May take a pair of sponsons" id="9d52-5b35-0966-1347" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="b2e6-59bc-6a4f-e10a" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="">
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="b2e6-59bc-6a4f-e10a" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
                       <costs>
                         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
                       </costs>
@@ -3836,6 +3836,829 @@ The Executed model is immediately removed as a casualty regardless of the number
           </modifiers>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hydra Flak Tank Battery" hidden="false" id="ce11-f827-9e4a-b1af">
+      <categoryLinks>
+        <categoryLink targetId="e352-9408-717e-72de" id="a47e-550f-c652-b2af" primary="false" name="Tank"/>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="efad-cf51-a3de-f3d1" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Camo Netting" hidden="false" id="7501-9910-efed-a8b6" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2b30-0921-1240-51c8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a2e-ca28-7272-9113" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="20" field="66e8-2b35-427e-1fbd">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squadron" id="3bfb-66eb-8ea1-e874" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hydra" hidden="false" id="e923-20b1-85be-3d35">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="75"/>
+              </costs>
+              <profiles>
+                <profile name="Hydra" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="4e14-c31d-4ae1-3278">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Auto-Targeting System" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="86e6-8b41-ab66-143b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Skimmers cannot claim the cover saves granted by moving flat out against shots fired by the Hydra. Similarly bikes cannot claim the cover save granted by turbo-boosting against shot fired by the hydra.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pintle Weapon" id="8eb6-9fb3-1c12-fbd3" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="7d13-9494-3d2d-0b96" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="b74e-2d09-5229-c3eb" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8d-a4dc-4de1-af19" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="fa38-5663-6b39-1010" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Dozer Blade" hidden="false" id="bfba-c962-b7aa-f52b" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e97c-e1e2-5214-f4b1" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="cc77-34d0-5c2b-1818" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77c1-0d6c-c640-8703" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Extra Armour" hidden="false" id="343e-9a73-5c01-626a" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="260c-1a4f-ea3a-cf12" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="f234-c718-76f9-0438" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="64ff-b743-c47b-f34a" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="c918-e7ce-5dec-41d5" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a94-6465-66dd-168e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8127-e8f2-8f40-e0b4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Searchlight" id="fc16-3b48-a0bb-0677" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+                <infoLink name="Smoke Launchers" id="a37e-a22a-f8c4-ca76" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin Linked Hydra Autocannons" hidden="false" id="718b-2da0-dbe4-9396" defaultAmount="2">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="25f0-190a-b05e-30c8-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="25f0-190a-b05e-30c8-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Twin Linked Hydra Autocannons" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="16e7-f7f2-9e67-794f">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-Linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ceb2-9a77-4f35-0459" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6f09-fc5f-a049-7d99" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ordnance Battery" hidden="false" id="ff3d-4108-78c7-6764">
+      <categoryLinks>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="08ee-81fe-db1b-199b" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Camo Netting" hidden="false" id="88e1-0f3b-6668-58ca" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9df3-50a1-b686-cf19"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6c3-a224-bec0-fa99" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="30" field="66e8-2b35-427e-1fbd">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squadron" id="6736-3878-d970-c65b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Colossus" hidden="false" id="bd04-e110-582f-5311">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="140"/>
+              </costs>
+              <profiles>
+                <profile name="Colossus" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="bb3a-fe22-422e-c434">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Colossus Siege Mortar" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="adf0-545a-ed3d-848a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;-240&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, Large Blast, A Colossus siege mortar cannot fire directly. Cover saves may not be taken against hits caused by a colossus siege mortar. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="a88d-6145-973a-d5a6" id="de79-5ca2-6e4a-b8c2" primary="false" name="Open-Topped"/>
+                <categoryLink targetId="e352-9408-717e-72de" id="e409-3647-db03-b125" primary="false" name="Tank"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pintle Weapon" id="4942-b91e-17cc-c7ac" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="ff20-992d-7cff-e2f7" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="355d-e4e8-4ef5-213d" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5833-81cc-f7e2-7337" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="369e-97eb-5185-f4a1" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Dozer Blade" hidden="false" id="7901-07a6-8c16-394b" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9444-5bb2-1ef1-1827" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="c102-cfad-e207-3caf" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bc8-1d31-48db-a54b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Extra Armour" hidden="false" id="d937-2558-425b-e297" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7601-04b7-f665-92ef" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Enclosed Crew Compartment" hidden="false" id="a78d-9cab-6a89-ecbe">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="remove" value="a88d-6145-973a-d5a6" field="category" scope="parent"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f78-25f1-8cdd-7cd5" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="eecb-bae5-c781-d65c" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="b7e8-6898-0ff2-0b62" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="2002-8dc6-0320-ea8a" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ccc-235b-13fe-3e9e" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07db-1bb4-177d-545c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Smoke Launchers" id="bbdc-ee2e-5038-0401" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+                <infoLink name="Searchlight" id="ecfb-df6d-9bca-9370" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Medusa" hidden="false" id="0301-c21e-9d5b-cdfa">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="135"/>
+              </costs>
+              <profiles>
+                <profile name="Medusa" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="9ab5-375d-a644-efad">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Medusa Siege Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ae8a-bbea-fe50-466b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Open-Topped" hidden="false" id="001f-e6c6-be6a-d88e" targetId="a88d-6145-973a-d5a6" primary="false"/>
+                <categoryLink name="Tank" hidden="false" id="c2f5-aa9c-a700-26db" targetId="e352-9408-717e-72de" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pintle Weapon" id="9526-6b24-7d20-97c9" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="9147-3373-a62c-abe3" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="8d0e-5b9b-9d9c-e5a3" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d1-8466-45c8-6090" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="d44a-05ce-d787-4145" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Dozer Blade" hidden="false" id="e288-f689-535a-463f" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b3-e5ec-e194-99a4" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="16c3-ad33-4dd9-07fc" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9af-5078-dff1-f620" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Extra Armour" hidden="false" id="59d7-7c6b-718b-99cb" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e378-1463-1c1c-e6fa" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Enclosed Crew Compartment" hidden="false" id="d9c2-cba6-4c4c-feb4">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="remove" value="a88d-6145-973a-d5a6" field="category" scope="parent"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7be-a146-d969-a386" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="7d78-a833-f58f-ae9f" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="4689-be00-8b55-949a" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="e8e1-7a07-23e2-42d5" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c92b-a7eb-8ff8-4a07" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d86-75b3-2aba-742f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Smoke Launchers" id="7f54-85dd-e0de-963c" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+                <infoLink name="Searchlight" id="210d-ebcd-86c5-ec3f" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Bastion-Breacher Shells" hidden="false" id="c0c3-209c-c7cb-51f3">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f1c-6d3f-02f5-94aa" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Bastion-Breacher Shells" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="103e-20ee-ba57-41ff">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast, Bastion-Breacher shells roll an additional D6 when rolling for armour penetration.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Griffon" hidden="false" id="3ece-e695-4cdb-75b3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="75"/>
+              </costs>
+              <profiles>
+                <profile name="Griffon" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="475d-e834-a68d-0a68">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Griffon Heavy Mortar" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="426a-3c6e-e7f4-8d73">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, Large Blast, a Griffon Heavy Mortar cannon fire directly.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Open-Topped" hidden="false" id="e07b-e7b0-d872-01da" targetId="a88d-6145-973a-d5a6" primary="false"/>
+                <categoryLink name="Tank" hidden="false" id="58af-c99b-ef13-f3cb" targetId="e352-9408-717e-72de" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pintle Weapon" id="f6ea-6701-f7e1-c205" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="8954-9fa2-bf71-aaf7" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="091d-ae94-35f4-1225" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d2e-5c87-797c-717c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="c005-db34-a988-001f" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Dozer Blade" hidden="false" id="49b2-ca44-f01f-04cc" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe3f-01e4-f0f3-a0d8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="ed39-8e79-1521-87fe" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7df8-37be-7a11-75bb" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Extra Armour" hidden="false" id="7e37-a391-8d98-7809" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c857-b45c-a81f-61bc" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Enclosed Crew Compartment" hidden="false" id="5e86-744f-0153-5cea">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="remove" value="a88d-6145-973a-d5a6" field="category" scope="parent"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b067-a416-8d3d-b96d" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="36b7-2b08-ff77-6256" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="394a-9aac-12ff-0f95" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="4da8-c506-9fa2-3a61" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-2b88-61a9-81c6" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08f6-c51a-1569-2a18" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Smoke Launchers" id="c760-fafe-d4c1-431e" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+                <infoLink name="Searchlight" id="21a0-fff5-344c-997e" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+              </infoLinks>
+              <rules>
+                <rule name="Accurate Bombardment" id="cf8b-f529-913e-a13d" hidden="false">
+                  <description>When a Griffon fires its heavy mortar the controlling player may reroll the scatter dice.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="06ff-a3ad-77c2-77f3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="125"/>
+              </costs>
+              <profiles>
+                <profile name="Basilisk" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="ce3f-260b-a464-5801">
+                  <characteristics>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Earthshaker Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7f7b-8546-ac3f-eea6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;-240&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Open-Topped" hidden="false" id="9b13-8613-a6fe-b654" targetId="a88d-6145-973a-d5a6" primary="false"/>
+                <categoryLink name="Tank" hidden="false" id="f64c-9a68-271d-833b" targetId="e352-9408-717e-72de" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pintle Weapon" id="2203-e06f-df5d-b02b" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="0b65-ebc1-b7cc-9981" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Stubber" hidden="false" id="a160-b467-5933-53d5" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e5-48de-e83b-52ec" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Wargear" id="d319-ddbe-db2e-2e59" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Dozer Blade" hidden="false" id="bb91-a8e4-d339-5c21" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="345b-cc7f-1836-2a00" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="8c44-a9f0-d4e5-443f" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98dd-d876-50c3-a7b6" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Extra Armour" hidden="false" id="b463-ca57-57e9-edb6" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b083-11c6-d58e-da48" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Enclosed Crew Compartment" hidden="false" id="ab03-ddfb-3b9d-8ed3">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="remove" value="a88d-6145-973a-d5a6" field="category" scope="parent"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="654d-8f1b-b00e-24a1" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="01b2-a878-61b6-ad5d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="77ca-7787-9862-2e6a" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="ce26-6a03-ddcf-5d2e" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f8f-4a0e-dfba-3ad3" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ca7-bb2e-a2cc-994b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Smoke Launchers" id="17e9-79cc-c77f-a527" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+                <infoLink name="Searchlight" id="da64-e9ba-4575-30a0" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Deathstrike Missile Launcher" hidden="false" id="6e82-c138-8c77-e238">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="160"/>
+      </costs>
+      <profiles>
+        <profile name="Deathstrike" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="281c-8b0a-f250-9860">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deathstrike Missile" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5aa9-bae6-23b3-23f5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-Unlimited</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, One Shot Only , D3+3&quot; Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Tank" hidden="false" id="2c39-de02-c74d-8bb4" targetId="e352-9408-717e-72de" primary="false"/>
+        <categoryLink targetId="07d4-3cdd-37e9-4188" id="9721-bb65-3bd5-80b5" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pintle Weapon" id="04e2-5798-dd13-8bd6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="c734-ccd6-a4e2-d235" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="b38a-6411-962c-e7d6" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4738-6b17-696e-791e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="062e-2b48-6cb7-fba1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dozer Blade" hidden="false" id="d4a2-a244-ce7f-7be2" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3838-a914-3eed-a82d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="e436-900b-79b6-8d9e" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7f2-c1a3-52b7-7080" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="224d-823d-1447-e278" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c62-1132-a068-287b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Camo Netting" hidden="false" id="0abe-b7f7-c280-1874" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae33-1eca-c046-6703" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="8b88-7d38-de64-94c8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="606c-4f26-73da-b499" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="9836-3f15-bc07-4928" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1717-07d7-f314-1af9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f052-17d5-0bde-e79a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="effe-3e25-1e5f-d50f" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="d297-8813-70a9-1e54" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+      </infoLinks>
+      <rules>
+        <rule name="T-minus five minutes to launch... and counting" id="280f-475f-551b-6b48" hidden="false">
+          <description>A Deathstrike missile may not be fired on the first turn of the game or if the deathstrike has moved that turn. When firing, roll a dice and apply the following modifiers:
+
+
+- Each full game turn the Deathstrike Missile Launcher has been on the table +1
+
+
+- Each weapon destroyed result allocated to the Deathstrike Missile -1
+
+
+- The Deathsrtike Missile Launcher receieved any crew stunned or crew shaken results during the previous turn -1
+
+
+If the result is a 6 or more the Deathstrike Missile can be fired. A natural 6 will always result in the Deathstrike Missile firing regardless of negative modifiers.
+
+
+The Deathstrike Missile cannot be destroyed by a weapon destroyed result. Similarly a crew shaken or crew stunned result does not prevent a Deathstrike Missile from firing.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Manticore Rocket Launcher" hidden="false" id="97da-3048-a5be-a31a">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="160"/>
+      </costs>
+      <profiles>
+        <profile name="Manticore" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="32b8-a73a-d5f8-e488">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Storm Eagle Rockets" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="298d-a758-26b0-547b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;-120&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage D3, Large Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Tank" hidden="false" id="c8c2-1276-2702-53fc" targetId="e352-9408-717e-72de" primary="false"/>
+        <categoryLink name="Heavy Support" hidden="false" id="7074-ea74-7f28-ca5e" targetId="07d4-3cdd-37e9-4188" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pintle Weapon" id="2c00-2412-98b4-6ab3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="a4e6-81be-8405-7bff" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Stubber" hidden="false" id="f9b8-8e0a-8c98-7018" type="selectionEntry" targetId="8dbb-d823-948f-c199">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6297-9865-2857-b6af" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" id="46f6-0a04-31f8-2a3a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dozer Blade" hidden="false" id="b3a8-985c-f843-08bd" type="selectionEntry" targetId="8632-4dbe-dfd3-9cf3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e04a-11e5-832e-21ad" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="07f8-2d19-5ef3-85d7" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d2e-83ea-ff50-efa7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="77fa-7272-1318-ac97" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f5-1f01-659a-a55b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Camo Netting" hidden="false" id="0f1d-8fe0-f4dc-bcbd" type="selectionEntry" targetId="7c3b-e4c9-b7a1-2c00">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5635-49d4-fd54-902a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="May replace hull mounted Heavy Bolter with the following" id="c4fb-3a14-e5d0-a77f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="36b8-7853-eec2-f4bf" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="15ae-040e-d361-6bcb" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd1c-2864-e7c4-b8e8" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29f4-b0d8-4f3c-03a3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="cde5-89a7-4853-023c" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="7868-163f-5acc-b039" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+      </infoLinks>
+      <rules>
+        <rule name="Limited Ammunition" id="5d0f-0b15-40bf-6474" hidden="false">
+          <description>The Manticore comes with four rockets. Make note each time a rocket is fired. Once four rockets have been fired the Manticore may not fire Storm Eagle Rockets for the remainder of the game.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
