@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e850-33da-ba6e-4508" name="Imperial Guard" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="f17e-be90-9229-00a9">
       <categoryLinks>
@@ -4013,7 +4013,7 @@ The Executed model is immediately removed as a casualty regardless of the number
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;-240&quot;</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
                     <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, Large Blast, A Colossus siege mortar cannot fire directly. Cover saves may not be taken against hits caused by a colossus siege mortar. </characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance Barrage 1, Large Blast, A Colossus siege mortar cannot fire directly. Cover saves may not be taken against hits caused by a colossus siege mortar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4659,6 +4659,12 @@ The Deathstrike Missile cannot be destroyed by a weapon destroyed result. Simila
           <description>The Manticore comes with four rockets. Make note each time a rocket is fired. Once four rockets have been fired the Manticore may not fire Storm Eagle Rockets for the remainder of the game.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Priest" hidden="false" id="de13-f18e-f465-50bb">
+      <categoryLinks>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="95cf-095f-073f-3cd9" primary="false" name="Independent Character"/>
+        <categoryLink targetId="2929-ab82-8ced-da7c" id="9f05-3a75-b051-7593" primary="false" name="Infantry"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
