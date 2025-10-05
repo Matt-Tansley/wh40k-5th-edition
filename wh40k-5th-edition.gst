@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
+<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
   <categoryEntries>
     <categoryEntry name="HQ" id="26c0-589a-9f26-b597" hidden="false"/>
     <categoryEntry name="Troops" id="8429-4ea5-6433-b189" hidden="false"/>
@@ -117,7 +117,15 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="36dc-77bf-9c77-ebec">
       <infoLinks>
-        <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="2bbd-e910-a53d-d241" childId="5d39-bc51-7145-28bb" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="4116-38b9-9975-8f38">
