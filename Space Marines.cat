@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d53-723a-e45e-55ed" name="Space Marines" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="c1eb-afc9-f922-6164">
       <categoryLinks>
@@ -3737,7 +3737,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Melta Bombs" hidden="false" id="752b-b583-e798-ebaf" type="selectionEntry" targetId="31ed-7ab1-57dc-889b" defaultAmount="">
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="752b-b583-e798-ebaf" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d88-b255-db44-45fa" includeChildSelections="false"/>
               </constraints>
@@ -3787,7 +3787,7 @@
                 <infoLink name="Bolt Pistol" id="d9d4-e2d9-8ab7-9888" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Space Marine with Special Weapon" hidden="false" id="c4b4-5583-59f7-bbc8" defaultAmount="">
+            <selectionEntry type="upgrade" import="true" name="Space Marine with Special Weapon" hidden="false" id="c4b4-5583-59f7-bbc8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b0f-535d-1911-51a5" includeChildSelections="false"/>
               </constraints>
@@ -4068,7 +4068,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="The entire squad may take Jump Packs" hidden="false" id="5b5f-6c7a-9bc9-fbce" type="selectionEntry" targetId="555a-e74c-14cb-864d">
+        <entryLink import="true" name="Jump Pack" hidden="false" id="5b5f-6c7a-9bc9-fbce" type="selectionEntry" targetId="555a-e74c-14cb-864d">
           <modifiers>
             <modifier type="increment" value="10" field="66e8-2b35-427e-1fbd">
               <repeats>
@@ -4208,6 +4208,234 @@
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Land Speeder Storm" hidden="false" id="9f18-f700-a70b-12e0">
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="61ed-36d7-7d8b-ba88" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="a88d-6145-973a-d5a6" id="952d-9aa3-5cfa-65e1" primary="false" name="Open-Topped"/>
+        <categoryLink targetId="e308-d529-0957-5bf9" id="459c-657a-794b-224d" primary="false" name="Fast"/>
+        <categoryLink targetId="9f87-2b05-865f-8790" id="72ff-3b1c-0c71-e86c" primary="false" name="Skimmer"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
+      </costs>
+      <profiles>
+        <profile name="Land Speeder Storm" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="0714-de31-e1c6-11f3">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">5 (Scouts only)</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256"/>
+          </characteristics>
+        </profile>
+        <profile name="Cerberus Launcher" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1675-5f4c-14f7-4a50">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">If a Scout unit charges into combat on the same turn as it disembarks from the Land Speeder Storm, any enemy units the Scouts assault have their leadership reduced by 2 for the duration of the assault phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Jamming Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1eb2-a857-1987-f8e0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Items that prevent Deep Strike Scatter do not function within 6&quot; of a Land Speeder Storm. In addition enemies wishing to Deep Strike within 6&quot; of a Land Speeder Storm scatter 4D6&quot; instead of 2D6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="15bc-a6db-1cca-b051" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="c86e-b99c-2154-4caf" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="9950-6e11-7242-19b2" type="selectionEntry" targetId="759b-5938-021f-1661">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Multi-Melta" hidden="false" id="6efb-c279-821e-2a7a" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Assault Cannon" hidden="false" id="1578-2ece-b5ca-fab3" type="selectionEntry" targetId="ee10-7f9a-f4c4-af5b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ec5-048f-3091-2bb9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec5-048f-3091-2bb9-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="261e-89d4-b8ac-d6ab" hidden="false" type="rule" targetId="c32f-6871-314f-219e"/>
+        <infoLink name="Scouts" id="ee59-b4d3-6b0c-61bc" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Bike Squad" hidden="false" id="d869-bffc-611e-956e">
+      <categoryLinks>
+        <categoryLink targetId="b327-ab7b-3c9c-3123" id="c2da-8b70-5a57-e59b" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="65e8-7133-4b26-b5d9" id="f12a-16dd-052e-db50" primary="false" name="Bike"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="d846-8a82-de3b-a804" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ee2-1508-a3cc-4ef3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee2-1508-a3cc-4ef3-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scout Biker Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="5378-0bf6-acc5-e7fa">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4(5)</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Space Marine Shotgun" id="6be8-8434-87e2-4c2f" hidden="false" type="profile" targetId="5078-bf20-4145-511b"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="b2d9-43b3-0ded-f35d" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5d2-95ac-25e7-3039-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5d2-95ac-25e7-3039-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="1db3-ac5c-7739-514d" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="b0b1-775b-f2f9-61cf" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="93e8-c571-17c6-f5db" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="03c7-ce95-4dcb-a33e" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="1476-b646-f4a9-9bc2" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="e2ee-15b9-2199-81e0" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="9795-a674-2c26-2d17" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="4a7f-0f38-9f0c-c160" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06fd-8d0e-f36b-5923" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Space Marine Bike" hidden="false" id="0896-4fd1-d0f0-aa2f" type="selectionEntry" targetId="9ad1-91e2-3149-a6fa">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="865d-ced0-e823-01e5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="865d-ced0-e823-01e5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Locator Beacon" hidden="false" id="081f-c9a7-e472-e303">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Locator Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8e72-60fd-cd23-2914">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">If a unit wishes to arrive from deep strike then it will not scatter. Note that the locator beacon must be on the table at the start of the turn for it to used.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c15-ac97-523f-07c8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Scout Bikers" hidden="false" id="2fe8-d47c-9624-dfc3" defaultAmount="2">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="75d2-2eba-6072-5408" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0810-685c-2875-3042" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Space Marine Bike" hidden="false" id="8857-1067-435c-5fe2" type="selectionEntry" targetId="9ad1-91e2-3149-a6fa">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6cd-f6fd-ef25-e23c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6cd-f6fd-ef25-e23c-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="1c2a-2ad4-2b34-ec05" type="selectionEntry" targetId="8951-bf4c-5f52-f713">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba0-0c70-bad6-42e7" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="d869-bffc-611e-956e" shared="true" id="ba0e-0c6e-6a7c-bcce" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Space Marine Shotgun" id="cfdd-887e-e1c5-137a" hidden="false" type="profile" targetId="5078-bf20-4145-511b"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cluster Mines" hidden="false" id="1397-16fb-56b8-4558">
+          <profiles>
+            <profile name="Cluster Mines" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8719-cd14-21e7-02b7">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each Scout Bike Squad equipped with cluster mines can booby-trap one piece of area terrain before the game begins. Note that a Scout Bike Squad that has split into combat squads still counts as one unit for the purposes of cluster mines. At the start of the game after terrain has been placed declare that your Scout Bikers have placed booby-traps and secretly write down the piece(s) of terrain that have been booby-trapped in this fashion. Each terrain piece can only be booby trapped once. 
+
+
+Cluster Mines are automatically triggered the first time a unit (friendly or enemy) moves into the booby-trapped terrain, the Cluster Mines inflict 2D6 S4 Ap- hits on the unfortunate unit against which no cover saves may be taken vehicles are hit on their rear armor. Once the hits have resolves the Cluster Mines have no further effect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8831-d955-d0bd-c1ae" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="805a-7baa-8b2d-7092" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Squads" id="428c-5e78-fa4b-2064" hidden="false" type="rule" targetId="a095-a211-d826-323e"/>
+        <infoLink name="Combat Tactics" id="741d-fbed-c1b1-e7ae" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Scouts" id="586e-4eda-bcb2-9513" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
+        <infoLink name="Infiltrate" id="403a-b64d-4bd6-6818" hidden="false" type="rule" targetId="ab39-776f-d923-a486"/>
+        <infoLink name="Frag Grenades" id="81dc-44c8-c2e8-051d" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="e0c0-f408-92cc-6cab" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -4540,6 +4768,13 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10da-34ec-9382-0645-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10da-34ec-9382-0645-max" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="9ad1-91e2-3149-a6fa" childId="8951-bf4c-5f52-f713" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -4658,6 +4893,31 @@
       <rules>
         <rule name="Typhoon Missile Launcher" id="7bc4-868c-848c-9828" hidden="false">
           <description>A Typhoon Missile Launcher is equipped with Frag and Krak Missiles, declare which type of missile you wish to use each time the weapon is fired.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Astartes Grenade Launcher" hidden="false" id="8951-bf4c-5f52-f713">
+      <profiles>
+        <profile name="Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1ac3-2851-5314-2121">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e7c2-2748-582d-6dc0">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Astartes Grenade Launcher" id="812d-a39c-6532-d70e" hidden="false">
+          <description>Each time an Astartes Grenade Launcher is fired the controlling player which profile to use.</description>
         </rule>
       </rules>
     </selectionEntry>
