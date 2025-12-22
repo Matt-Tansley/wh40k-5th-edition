@@ -117,7 +117,25 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="36dc-77bf-9c77-ebec">
       <infoLinks>
-        <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5"/>
+        <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
+          <modifiers>
+            <modifier type="set" value="X" field="24d9-b8e1-a355-2458">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1f47-8636-851e-6cbe" childId="9140-b2c5-6e2e-fe73" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Rapid Fire, Poisoned 2+ " field="2f86-c8b4-b3b4-3ff9">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1f47-8636-851e-6cbe" childId="9140-b2c5-6e2e-fe73" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Hellfire)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1f47-8636-851e-6cbe" childId="9140-b2c5-6e2e-fe73" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="4116-38b9-9975-8f38">
@@ -170,8 +188,18 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="c90d-186d-9c15-ce09">
       <infoLinks>
-        <infoLink name="Melta Bombs" id="ef5f-f436-ca9e-e4bf" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
+        <infoLink name="Melta" id="c8c8-87a8-1492-c19d" hidden="false" type="rule" targetId="153e-8f9b-a750-43f1"/>
       </infoLinks>
+      <profiles>
+        <profile name="Meltagun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="daa9-d5f9-b7a8-44f5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assaut 1, Melta</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="5dd8-20a0-454e-8748">
       <infoLinks>
@@ -316,6 +344,18 @@
         <infoLink name="Combi-Weapons" id="0c2c-75d6-ad2d-a728" hidden="false" type="rule" targetId="90a6-34b7-a997-e4ab"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Narthecium" hidden="false" id="dbe0-1ae5-c392-ea61">
+      <profiles>
+        <profile name="Narthecium" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="14b3-15dc-ca6f-e413">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">As long as the Apothecary is still alive, all models in his squad have the Feel No Pain special rule. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="0a34-cca0-9bd8-df67" hidden="false" type="rule" targetId="9cd9-3f91-3337-fdd0"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -327,37 +367,62 @@
     <rule name="Counter-Attack" id="7b8c-f1d8-14b3-ace2" hidden="false"/>
     <rule name="Eternal Warrior" id="081d-7750-bb55-7c19" hidden="false"/>
     <rule name="Fearless" id="5323-6c00-da35-3737" hidden="false"/>
-    <rule name="Feel No Pain" id="9cd9-3f91-3337-fdd0" hidden="false"/>
+    <rule name="Feel No Pain" id="9cd9-3f91-3337-fdd0" hidden="false">
+      <description>If a model with this ability suffers an unsaved wound, roll a dice. On a 1, 2 or 3, take the wound as normal (removing the model if it loses its final Wound). On a 4, 5 or 6, the injury is ignored and the model continues fighting. This ability cannot be used against wounds from weapons that inflict instant death (by having a high enough Strength or a special rule to that effect; even if the model is an eternal warrior). Neither can it be used against wounds from AP1 and AP2 weapons, power weapons and any other wound against which no armour save can ever be taken (like wounds from power fists, Dreadnought close combat weapons, rending weapons that roll a 6, Perils of the Warp, failed dangerous terrain tests, etc).</description>
+    </rule>
     <rule name="Fleet" id="9c8b-bc6a-0a56-899e" hidden="false"/>
-    <rule name="Furious Charge" id="f7a4-1a30-9b9e-862c" hidden="false"/>
+    <rule name="Furious Charge" id="f7a4-1a30-9b9e-862c" hidden="false">
+      <description>In a turn in which models with this skill assaulted into combat they add +1 to both their Initiative and Strength characteristics when attacking in close combat (note that this has no effect on the Initiative tests for sweeping advances).</description>
+    </rule>
     <rule name="Hit &amp; Run" id="785a-36a4-90d1-9a2c" hidden="false"/>
     <rule name="Infiltrate" id="ab39-776f-d923-a486" hidden="false"/>
-    <rule name="Move Through Cover" id="e9ec-8f85-d9d0-69ef" hidden="false"/>
-    <rule name="Night Vision/Acute Senses" id="90cf-7d9b-d819-1c43" hidden="false"/>
+    <rule name="Move Through Cover" id="e9ec-8f85-d9d0-69ef" hidden="false">
+      <description>Units with this rule roll an extra D6 when rolling to move through difficult terrain. In most circumstances this will mean that they roll three D6 and pick the dice with the highest score.</description>
+    </rule>
+    <rule name="Night Vision/Acute Senses" id="90cf-7d9b-d819-1c43" hidden="false">
+      <description>When the Night Fighting mission special rule is in use, models with this rule may choose to re-roll the test to determine how far they can see, but must abide by the new result. Characters with this rule confer it onto any unit they join, as long as they are part of the unit. Units with this rule confer it onto any characters joining them, as long as they are part of the unit. </description>
+    </rule>
     <rule name="Preferred Enemy" id="ac74-44b7-d2ea-a9b7" hidden="false"/>
     <rule name="Rage" id="f6c2-f621-94a7-9489" hidden="false"/>
     <rule name="Relentless" id="c6b8-503e-85d0-cc5c" hidden="false"/>
-    <rule name="Scouts" id="6582-1f0a-7769-4153" hidden="false"/>
+    <rule name="Scouts" id="6582-1f0a-7769-4153" hidden="false">
+      <description>After both sides have deployed (including infiltrators), but before the first player begins his first turn, any scouts may make a normal move. This is done exactly as in their Movement phase, except that during this move, scouts must remain more than 12&quot; away from any enemy.
+
+
+If both sides have scouts, the players roll-off and the winner decides who goes first, and then alternate moving these units. If a unit with this ability is deployed inside a dedicated transport vehicle, it confers the scout ability to the transport too. This rule also confers a special outflank move to units of scouts that are kept in reserve</description>
+    </rule>
     <rule name="Skilled Rider" id="9ada-1645-9f29-f2dc" hidden="false"/>
     <rule name="Slow And Purposeful" id="4ac7-3506-53f5-ffbc" hidden="false"/>
-    <rule name="Stealth" id="f923-f91c-fdfe-4cb2" hidden="false"/>
+    <rule name="Stealth" id="f923-f91c-fdfe-4cb2" hidden="false">
+      <description>All of the unit’s cover saves are improved by +1. </description>
+    </rule>
     <rule name="Stubborn" id="4e97-1ea5-3090-a873" hidden="false"/>
     <rule name="Swarms" id="638a-bd67-8c99-0dfa" hidden="false"/>
     <rule name="Tank Hunters" id="ed96-997d-5dfb-5b54" hidden="false"/>
     <rule name="Turbo-Boosters" id="8a4b-2e0a-9e98-c05d" hidden="false"/>
     <rule name="Vulnerable To Blasts/Templates" id="a01f-55fd-f942-e1c5" hidden="false"/>
-    <rule name="Assault Grenades" id="3a19-913c-ca9e-f0ac" hidden="false"/>
+    <rule name="Assault Grenades" id="3a19-913c-ca9e-f0ac" hidden="false">
+      <description>Models equipped with assault grenades don’t suffer the penalty to their Initiative for assaulting enemies through cover.</description>
+    </rule>
     <rule name="Defensive Grenades" id="e240-63d0-bc74-a65b" hidden="false"/>
     <rule name="Combat Squads" id="a095-a211-d826-323e" hidden="false"/>
     <rule name="Combat Tactics" id="401e-a2bb-b897-f056" hidden="false">
       <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take.</description>
     </rule>
-    <rule name="Gets Hot!" id="8260-d680-2ee2-06c2" hidden="false"/>
+    <rule name="Gets Hot!" id="8260-d680-2ee2-06c2" hidden="false">
+      <description>Roll to hit as normal, except that you must roll to hit even if the target is found to be out of range. For each result of a 1 rolled on its to hit rolls, the firing model suffers a wound (normal saves apply). Weapons on vehicles are not affected by this rule. 
+
+
+
+Blast weapons do not roll to hit, so you must always roll a D6 before firing a Gets Hot! blast weapon to check if the weapon overheats. If you roll a 1, the weapon gets hot, it does not fire, and the firing model suffers a wound (normal saves apply). Otherwise the shot is resolved as normal.</description>
+    </rule>
     <rule name="Blast" id="d7af-17f1-4289-f56b" hidden="false"/>
     <rule name="Pinning" id="2108-ee5b-e364-5610" hidden="false"/>
     <rule name="Rending" id="4478-723e-b728-3cac" hidden="false"/>
     <rule name="Sniper" id="65e0-e07f-651b-c45f" hidden="false"/>
-    <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false"/>
+    <rule name="Melta" id="153e-8f9b-a750-43f1" hidden="false">
+      <description>Melta weapons roll an extra D6 when rolling to penetrate a vehicle’s Armour Value at half range or less</description>
+    </rule>
     <rule name="Twin-Linked" id="e0a9-c4c2-998e-cad5" hidden="false">
       <description>A set of twin-linked weapons count as a single weapon of that type, but to represent their fusillade of fire you may re-roll the dice to hit if you miss (including twinlinked blast weapons).</description>
     </rule>
@@ -376,6 +441,9 @@ DEEP STRIKE MISHAP TABLE:
 1-2 Terrible accident! Teleporting troops are lost in the Warp, deep striking jump infantry are shot down with their transport, or some other suitably dramatic event occurs. The entire unit is destroyed!
 3-4 Misplaced. Were the coordinates slightly inaccurate, or has the enemy jammed your instruments? Your opponent may deploy the unit anywhere on the table (excluding impassable terrain, but including difficult terrain, which of course counts as dangerous for deep striking units!), in a valid deep strike formation, but without rolling for scatter.
 5-6 Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed. The unit is placed back in reserve. If the unit is unlucky enough to roll this result in turn 5 or later and then the game ends while it is still in reserve, it sadly counts as destroyed.</description>
+    </rule>
+    <rule name="Poisoned Weapons" id="9a2a-5fce-a6f7-640d" hidden="false">
+      <description>Poisoned weapons always wound on a fixed number, generally shown in brackets.  In addition, if the Strength of the wielder is the same or higher than the Toughness of the victim, the wielder must re-roll failed rolls to wound in close combat.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -434,17 +502,18 @@ DEEP STRIKE MISHAP TABLE:
     </profile>
     <profile name="Power Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1724-667c-a495-6cd7">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models wounded in close combat by the attacks of a model armed with a power weapon are not allowed armour saves.</characteristic>
       </characteristics>
     </profile>
     <profile name="Power Fist" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="cc3f-c898-284f-f88d">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A power fist is a power weapon, and also doubles the user’s Strength
+(up to a maximum of 10). Attacks with a power fist are always delivered at Initiative 1 (ignore Initiative bonuses from special rules, wargear, etc.).</characteristic>
       </characteristics>
     </profile>
     <profile name="Melta Bombs" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="257e-557a-29ef-7f41">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Against vehicles, Melta Bombs have the following armour penetration: 8+2D6</characteristic>
       </characteristics>
     </profile>
     <profile name="Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0aa6-37fe-dc24-4432">
@@ -481,12 +550,12 @@ DEEP STRIKE MISHAP TABLE:
     </profile>
     <profile name="Krak Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23fc-31fc-fcc8-2d39">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Against vehicles, Krak grenades have the following armour penetration: 6+D6</characteristic>
       </characteristics>
     </profile>
     <profile name="Frag Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3600-a707-af81-279e">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Frag grenades are assault grenades Against vehicles, Frag grenades have the following armour penetration: 4+D6</characteristic>
       </characteristics>
     </profile>
     <profile name="Combat Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3fc3-29d3-4a77-7d6b">
