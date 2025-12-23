@@ -860,4 +860,20 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Badab" id="0449-0363-2f53-15a1" targetId="09cf-2cb8-65aa-33a8"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Badab Chapter" hidden="false" id="29dc-3183-90c0-61a8" type="selectionEntry" targetId="4fd3-3314-f580-1f5d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3035-ec9a-d8a2-41fc" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Red Scorpions - Lord High Commander Carab Culln" hidden="false" id="56f1-9fb9-556f-da1e" type="selectionEntry" targetId="1a57-6d64-9beb-5a38"/>
+    <entryLink import="true" name="Astral Claws - Armenneus Valthex" hidden="false" id="07e2-20a8-906a-c908" type="selectionEntry" targetId="1eae-9130-ea70-aa12"/>
+    <entryLink import="true" name="Astral Claws - Captain Corien Sumatris" hidden="false" id="4fef-88fd-c1f0-9fb7" type="selectionEntry" targetId="7f60-b326-dc94-66f7"/>
+    <entryLink import="true" name="Astral Claws - Lugft Huron" hidden="false" id="5b94-8de7-05ab-6a2b" type="selectionEntry" targetId="a429-e5e4-b2cf-7efe"/>
+    <entryLink import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="27b2-199c-bc47-e6e5" type="selectionEntry" targetId="be43-969a-1da0-45df"/>
+    <entryLink import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="304e-30e7-aba0-aa21" type="selectionEntry" targetId="a5fb-f059-5870-7e49"/>
+  </entryLinks>
 </catalogue>

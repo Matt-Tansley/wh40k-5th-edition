@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="09cf-2cb8-65aa-33a8" name="The Badab War" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Badab Chapter" hidden="false" id="4fd3-3314-f580-1f5d">
+      <categoryLinks>
+        <categoryLink targetId="bf01-6be2-bb3b-bcaf" id="0fa5-1fd0-31d3-ca68" primary="false" name="No Force Org Slot"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chapter Selection" id="f35a-90ba-1554-00cd" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="b8d3-363a-8fcc-4e4f"/>
+            <selectionEntry type="upgrade" import="true" name="Executioners" hidden="false" id="edb8-5eff-1a4c-ce20"/>
+            <selectionEntry type="upgrade" import="true" name="Astral Claws" hidden="false" id="67bd-044a-afe4-7d7e"/>
+            <selectionEntry type="upgrade" import="true" name="Lamenters" hidden="false" id="ed5d-9142-2754-4620"/>
+            <selectionEntry type="upgrade" import="true" name="Mantis Warriors" hidden="false" id="896d-6536-8048-4016"/>
+            <selectionEntry type="upgrade" import="true" name="Fire Hawks" hidden="false" id="5403-5fa4-a1e8-84c9"/>
+            <selectionEntry type="upgrade" import="true" name="Marines Errant" hidden="false" id="556b-025b-eb11-bbbe"/>
+            <selectionEntry type="upgrade" import="true" name="Red Scorpions" hidden="false" id="1c6e-73a3-f4d3-72f2">
+              <rules>
+                <rule name="Red Scorpions Chapter Tactics" id="c86c-6671-d1de-4fc3" hidden="false">
+                  <description>All units lose the Combat Tactics special rule.
+
+
+Instead, the Veteran Sergeants in your Tactical Squads may be replaced with Apothecaries if you wish at no additional cost (with profile and wargear exactly as per the Apothecary in a standard Space Marine Command Squad).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Raptors" hidden="false" id="9bc9-0277-fc8f-7275"/>
+            <selectionEntry type="upgrade" import="true" name="Fire Angels" hidden="false" id="44af-0b63-f3b7-435b"/>
+            <selectionEntry type="upgrade" import="true" name="Novamarines" hidden="false" id="2272-0225-ca45-9dd6"/>
+            <selectionEntry type="upgrade" import="true" name="Howling Griffons" hidden="false" id="93a9-74b6-3e3f-1ac3"/>
+            <selectionEntry type="upgrade" import="true" name="Sons of Medusa" hidden="false" id="e10b-0a1f-fe3b-151d"/>
+            <selectionEntry type="upgrade" import="true" name="Exorcists" hidden="false" id="ca0a-a09d-b56f-25aa"/>
+            <selectionEntry type="upgrade" import="true" name="Minotaurs" hidden="false" id="4f39-fcc3-21b9-b7cd"/>
+            <selectionEntry type="upgrade" import="true" name="Star Phantoms" hidden="false" id="fdbf-27f2-b8b9-4703"/>
+            <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="8a2c-2594-20bc-139c"/>
+            <selectionEntry type="upgrade" import="true" name="No Chapter" hidden="false" id="3a83-9870-4c4d-dd37"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="b39f-15bf-d7b2-38b2" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="b39f-15bf-d7b2-38b2"/>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Red Scorpions - Lord High Commander Carab Culln" hidden="false" id="1a57-6d64-9beb-5a38">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="1c6e-73a3-f4d3-72f2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="b1ed-2519-4e24-cc94" targetId="26c0-589a-9f26-b597" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="be43-969a-1da0-45df">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="a35f-0b62-bbaf-5af3" primary="true" name="HQ"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Howling Griffons - Chaplain Dreadnought Titus" typeId="828a-679b-1a4d-9511" typeName="Walker" hidden="false" id="7263-ac3d-3e73-6e8e">
+          <characteristics>
+            <characteristic name="WS" typeId="088d-2068-bd5a-62fc">5</characteristic>
+            <characteristic name="BS" typeId="1fbd-cea7-aaee-6448">5</characteristic>
+            <characteristic name="S" typeId="794d-acb1-e52a-414c">6(10)</characteristic>
+            <characteristic name="Front" typeId="d53c-c046-cfa8-dbc4">12</characteristic>
+            <characteristic name="Side" typeId="31b8-be05-a169-eec6">12</characteristic>
+            <characteristic name="Rear" typeId="5ffa-c8d3-306c-b7bb">10</characteristic>
+            <characteristic name="I" typeId="2a73-0ffe-fbda-71dd">4</characteristic>
+            <characteristic name="A" typeId="5dd6-2318-e247-bd7b">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Living Icon of the Chapter" id="05c1-8c8b-adcb-e9e6" hidden="false">
+          <description>Friendly Space Marine models within 12&quot; of Chaplain Dreadnought Titus are Fearless.</description>
+        </rule>
+        <rule name="Venerable" id="92e6-7367-271c-b9eb" hidden="false">
+          <description>Chaplain Dreadnoughts are very hard to destroy and Titus is no exception. Whenever he suffers a Glancing or Penetration hit, the owning player may ask their opponent to re-roll the result rolled on the Damage Chart. However, the second result stands even if it is worse</description>
+        </rule>
+        <rule name="Litany of Hate" id="f57a-4246-c1f5-98a5" hidden="false">
+          <description>Even though encased in a Dreadnought sarcophagus, the Chaplain&apos;s ire for the enemies of the Imperium remains undimmed. On a player&apos;s turn in which the Chaplain Dreadnought charges, it may re-roll failed rolls to hit in close combat.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="93a9-74b6-3e3f-1ac3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Astral Claws - Lugft Huron" hidden="false" id="a429-e5e4-b2cf-7efe">
+      <profiles>
+        <profile name="Astral Claws - Lugft Huron" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="fbdb-cf3b-c33f-dcfb">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Living Legend" id="4289-c585-de26-65dd" hidden="false">
+          <description>Allied Space Marines can always opt to use Huron&apos;s leadership rather than their own while he is in play (modifiers apply to this as normal). An army featuring Lugft Huron can also always re-roll failed attempts to steal the initiative at the start of the game where this rule is used.</description>
+        </rule>
+        <rule name="The Big Guns Never Tire" id="9e4c-1bad-0a4b-4dbe" hidden="false">
+          <description>Lugft Huron was never one to enter battle without fire support, be it either from mobile artillery, fleet-based firepower or the legendary &apos;big guns&apos; of the Badab system itself. Huron has the ability to use one Orbital Bombardment per game, as per a standard Space Marine Chapter Master as listed in the Space Marine Codex, but his strike is Ordnance 2.</description>
+        </rule>
+        <rule name="Shadowed Fate" id="5873-dd71-2c3a-a702" hidden="false">
+          <description>Lugft Huron is touched by a dark destiny as later events would prove. The first time Huron would be removed from play as a casualty for any reason, leave him on his side on the table. At the end of the turn where this has happened, roll a D6 and on a 2+ he instead survives with a single remaining wound, (this includes attacks causing Instant Death, and multiple wounds which remove him from play caused by a particular model&apos;s attacks, etc) and is placed back in play as close to where he fell as possible. This special rule does not apply to any subsequent damage he takes after he has escaped death once in the game.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Ghost Razors" hidden="false" id="d27d-5fdc-d7b5-972a">
+          <profiles>
+            <profile name="The Ghost Razors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23b4-5698-3c23-e38d">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This unique lightning claw was a long-cherished artifact of the Tiger Claws Chapter and gifted to Huron as a mark of their gratitude. Its strange pale blades flicker with a ghostly light when activated and the technology which powers the weapon is an utter mystery even to Valthek, the Astral Claws savant master of Techmarines. As well as working as a lightning claw, successful invulnerable saves made against wounds caused by the Ghost Razors must be re-rolled (the results of the second roll count as normal).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="c0c2-72c9-df77-e50b" primary="true" name="HQ"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="67bd-044a-afe4-7d7e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Astral Claws - Captain Corien Sumatris" hidden="false" id="7f60-b326-dc94-66f7">
+      <profiles>
+        <profile name="Astral Claws - Captain Corien Sumatris" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="d8a7-fc67-4e1e-ba32">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">7</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="The Tyrant&apos;s Champion" id="ab0f-311c-1025-4dcf" hidden="false">
+          <description>Fierce and merciless, Corien Sumatris&apos; combat skills are legendary in his Chapter, and the highly trained fighters of the 2nd Company under this charge seek to excel all others in the Tyrant&apos;s service. Corien Sumatris has the Furious Charge universal special rule which he also confers to any Codex Space Marine unit he joins. Space Marine infantry units in his force (but not independent characters) also gain +1 to their WS while within 12&quot; of him.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Spectre Pattern Bolter" hidden="false" id="567e-191c-c766-0128">
+          <profiles>
+            <profile name="Spectre Pattern Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="66db-3471-d816-5246">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Goldenfang" hidden="false" id="e947-ccc1-c840-bfb2">
+          <profiles>
+            <profile name="Goldenfang" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6502-7e1b-3dcf-7461">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This shimmering blade is a master-crafted power sword, in additional while using the weapon Corien Sumatris gains two extra attacks on a turn when he assaults, rather than the usual one.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="589a-dda6-a92c-feda" primary="true" name="HQ"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="67bd-044a-afe4-7d7e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Astral Claws - Armenneus Valthex" hidden="false" id="1eae-9130-ea70-aa12">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="2e61-67c6-5f84-9b0c" primary="true" name="HQ"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Astral Claws - Armenneus Valthex" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="608f-be58-3066-8f55">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Battle Alchemistry" id="a364-389c-2f4b-25c3" hidden="false">
+          <description>If Valthex is present in the army, then both he and one chosen Space Marine infantry squad in the army may upgrade their bolt guns, bolt pistols, or storm bolters to use specially modified Hellfire rounds at no cost. This means these weapons gain the Poisoned (2+) ability, though otherwise their weapon profiles remain unchanged. Which squad is selected for this upgrade must be noted down before the battle.</description>
+        </rule>
+        <rule name="Lord of the Armoury" id="0016-1eb0-32b9-72ac" hidden="false">
+          <description>Armenneus Valthex is the Astral Claws chief Master of the Forge, and as such if he is included in the army, then Dreadnoughts, Venerable Dreadnoughts, and Ironclad Dreadnoughts may be taken as Heavy Support choices as well as Elites choices.</description>
+        </rule>
+        <rule name="Indynabula Array" id="9f93-75b9-a478-3b5f" hidden="false">
+          <description>The array allows Armenneus Valthex to re-roll failed Blessings of the Omnissiah attempts, and in addition it incorporates numerous field generators and energy-charged lash-tendrils he can use in combat. As a result Armenneus Valthex counts as being equipped with two power weapons (the extra attack for this is included in his profile) and has the Counter-Attack universal special rule. The Array also grants him a 5+ Invulnerable save.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="67bd-044a-afe4-7d7e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="a5fb-f059-5870-7e49">
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="cbcc-ec41-1e96-03c6" primary="true" name="HQ"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Marines Errant - Lieutenant Commander Anton Narvaez" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="177d-541e-ad18-bd17">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Dark Void Elite" id="24c7-ef09-5d27-24b3" hidden="false">
+          <description>If Anton Narvaez is included in your army, one Tactical Squad also included in your army may be chosen to represent the veterans of the Chapter&apos;s long voyages into the outer-galactic darkness. Both Anton Narvaez himself and his chosen squad have the Move Through Cover and Scout universal special rules, and counts as having Void Hardened Armour in battles such as boarding actions where this is relevant, all at no additional cost.</description>
+        </rule>
+        <rule name="Actinic Halo" id="c8ff-7700-9535-6c60" hidden="false">
+          <description>A highly charged power-field generator, the Actinic Halo provides a 3+ invulnerable save, however should this be failed and Narvaez survives, roll a further dice and on a 4+ the Actinic Halo continues to work, otherwise it cannot be used for the rest of the battle.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Thundershock" hidden="false" id="6b72-9697-1d69-6160">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Thundershock" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6d97-e35f-f1a4-4160">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A pre-Imperial artifact acquired when Narvaez was fighting as a veteren sergeant under the banner of Rogue Trader Ecale, Thundershock is a master-crafted plasma-gun/</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="556b-025b-eb11-bbbe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

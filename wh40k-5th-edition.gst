@@ -32,6 +32,7 @@
     <categoryEntry name="Walker" id="b4fe-561a-c465-819b" hidden="false"/>
     <categoryEntry name="Psyker" id="9eae-aaf2-f871-9aa2" hidden="false"/>
     <categoryEntry name="Independent Character" id="f64f-8fb4-d8ea-6fc9" hidden="false"/>
+    <categoryEntry name="No Force Org Slot" id="bf01-6be2-bb3b-bcaf" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Pts" id="66e8-2b35-427e-1fbd" defaultCostLimit="-1"/>
@@ -95,6 +96,7 @@
         <categoryLink name="Elites" hidden="false" id="727d-fb85-cfb4-9746" targetId="c07f-a679-9bd0-a9c0"/>
         <categoryLink name="Fast Attack" hidden="false" id="eb92-8c6f-f853-b6d1" targetId="b327-ab7b-3c9c-3123"/>
         <categoryLink name="Heavy Support" hidden="false" id="1bea-ab93-523e-613a" targetId="07d4-3cdd-37e9-4188"/>
+        <categoryLink name="No Force Org Slot" hidden="false" id="9004-5159-5e0f-0958" targetId="bf01-6be2-bb3b-bcaf"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -348,7 +350,7 @@
       <profiles>
         <profile name="Narthecium" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="14b3-15dc-ca6f-e413">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">As long as the Apothecary is still alive, all models in his squad have the Feel No Pain special rule. </characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">As long as the Apothecary is still alive, all models in his squad have the Feel No Pain special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -380,7 +382,7 @@
       <description>Units with this rule roll an extra D6 when rolling to move through difficult terrain. In most circumstances this will mean that they roll three D6 and pick the dice with the highest score.</description>
     </rule>
     <rule name="Night Vision/Acute Senses" id="90cf-7d9b-d819-1c43" hidden="false">
-      <description>When the Night Fighting mission special rule is in use, models with this rule may choose to re-roll the test to determine how far they can see, but must abide by the new result. Characters with this rule confer it onto any unit they join, as long as they are part of the unit. Units with this rule confer it onto any characters joining them, as long as they are part of the unit. </description>
+      <description>When the Night Fighting mission special rule is in use, models with this rule may choose to re-roll the test to determine how far they can see, but must abide by the new result. Characters with this rule confer it onto any unit they join, as long as they are part of the unit. Units with this rule confer it onto any characters joining them, as long as they are part of the unit.</description>
     </rule>
     <rule name="Preferred Enemy" id="ac74-44b7-d2ea-a9b7" hidden="false"/>
     <rule name="Rage" id="f6c2-f621-94a7-9489" hidden="false"/>
@@ -394,7 +396,7 @@ If both sides have scouts, the players roll-off and the winner decides who goes
     <rule name="Skilled Rider" id="9ada-1645-9f29-f2dc" hidden="false"/>
     <rule name="Slow And Purposeful" id="4ac7-3506-53f5-ffbc" hidden="false"/>
     <rule name="Stealth" id="f923-f91c-fdfe-4cb2" hidden="false">
-      <description>All of the unit’s cover saves are improved by +1. </description>
+      <description>All of the unit’s cover saves are improved by +1.</description>
     </rule>
     <rule name="Stubborn" id="4e97-1ea5-3090-a873" hidden="false"/>
     <rule name="Swarms" id="638a-bd67-8c99-0dfa" hidden="false"/>
