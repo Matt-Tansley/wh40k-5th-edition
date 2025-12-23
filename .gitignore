@@ -11,6 +11,7 @@
 
 # Don't ignore docs
 !*.md
+!docs/**
 
 # Don't ignore github files
 !/.github
