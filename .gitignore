@@ -11,6 +11,9 @@
 
 # Don't ignore docs
 !*.md
+# Allow directories (so Git can see inside them)
+!*/ 
+!docs/**/*.md
 
 # Don't ignore github files
 !/.github
