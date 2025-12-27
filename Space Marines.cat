@@ -860,4 +860,36 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Badab" id="0449-0363-2f53-15a1" targetId="09cf-2cb8-65aa-33a8"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Badab Chapter" hidden="false" id="29dc-3183-90c0-61a8" type="selectionEntry" targetId="4fd3-3314-f580-1f5d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3035-ec9a-d8a2-41fc" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Red Scorpions - Lord High Commander Carab Culln" hidden="false" id="56f1-9fb9-556f-da1e" type="selectionEntry" targetId="1a57-6d64-9beb-5a38"/>
+    <entryLink import="true" name="Astral Claws - Armenneus Valthex" hidden="false" id="07e2-20a8-906a-c908" type="selectionEntry" targetId="1eae-9130-ea70-aa12"/>
+    <entryLink import="true" name="Astral Claws - Captain Corien Sumatris" hidden="false" id="4fef-88fd-c1f0-9fb7" type="selectionEntry" targetId="7f60-b326-dc94-66f7"/>
+    <entryLink import="true" name="Astral Claws - Lugft Huron" hidden="false" id="5b94-8de7-05ab-6a2b" type="selectionEntry" targetId="a429-e5e4-b2cf-7efe"/>
+    <entryLink import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="27b2-199c-bc47-e6e5" type="selectionEntry" targetId="be43-969a-1da0-45df"/>
+    <entryLink import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="304e-30e7-aba0-aa21" type="selectionEntry" targetId="a5fb-f059-5870-7e49"/>
+    <entryLink import="true" name="Carcharodons - Tyberos the Red Wake" hidden="false" id="940d-b948-2d10-1e4c" type="selectionEntry" targetId="9203-732a-be9d-3682"/>
+    <entryLink import="true" name="Executioners - High Chaplain Thulsa Kane" hidden="false" id="f23e-0b0a-4a8c-6101" type="selectionEntry" targetId="1627-d1d2-0d1c-7820"/>
+    <entryLink import="true" name="Exorcists - Captain Silas Alberec" hidden="false" id="df4c-f16f-a594-3743" type="selectionEntry" targetId="ff77-16fa-67b3-f628"/>
+    <entryLink import="true" name="Fire Angels - Captain Tarnus Vale" hidden="false" id="42d9-d098-b405-08e0" type="selectionEntry" targetId="1d4e-c915-f924-c01d"/>
+    <entryLink import="true" name="Fire Hawks - Knight-Captain Elam Courbray" hidden="false" id="979e-0a1d-1444-4aa6" type="selectionEntry" targetId="95e6-b3c8-1478-5e88"/>
+    <entryLink import="true" name="Lamenters - Malakim Phoros" hidden="false" id="d7ba-4428-a816-c631" type="selectionEntry" targetId="8228-710a-b520-a1df"/>
+    <entryLink import="true" name="Mantis Warriors - Ahazra Redth" hidden="false" id="a4ba-4d90-be51-ad7d" type="selectionEntry" targetId="74fb-c149-0a66-75e1"/>
+    <entryLink import="true" name="Minotaurs - Chaplain Ivanus Enkomi" hidden="false" id="c200-12bc-62d7-cedc" type="selectionEntry" targetId="dc5a-c1d7-3085-ad8f"/>
+    <entryLink import="true" name="Minotaurs - Lord Asterion Moloc" hidden="false" id="fb60-1c8a-80b2-d07e" type="selectionEntry" targetId="b911-aee3-cefc-e606"/>
+    <entryLink import="true" name="Novamarines - Captain Mordaci Blaylock" hidden="false" id="6a37-f613-8bce-0f8a" type="selectionEntry" targetId="6e39-6800-d664-f0e8"/>
+    <entryLink import="true" name="Raptors - Lias Issodon" hidden="false" id="8fd5-74a1-0bad-1eaa" type="selectionEntry" targetId="f65c-e2e4-5b9b-4648"/>
+    <entryLink import="true" name="Red Scorpions - Magister Sevrin Loth" hidden="false" id="3a0a-627b-0231-d49e" type="selectionEntry" targetId="b6f2-868d-f98b-50fa"/>
+    <entryLink import="true" name="Salamanders - Bray&apos;Arth Ashmantle" hidden="false" id="3609-0a11-1e87-21f3" type="selectionEntry" targetId="07fc-a816-b323-67bb"/>
+    <entryLink import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="c3b0-05b1-1f2b-65b4" type="selectionEntry" targetId="f308-079f-d941-9e4e"/>
+    <entryLink import="true" name="Sons of Medusa - Vaylund Cal" hidden="false" id="c272-5fb7-ff82-fa4d" type="selectionEntry" targetId="7a49-d5c0-899a-e255"/>
+    <entryLink import="true" name="Star Phantoms - Captain Zhrukhal Androcles" hidden="false" id="b9d3-d4ab-f8e4-e648" type="selectionEntry" targetId="cd39-1695-51e6-70d2"/>
+  </entryLinks>
 </catalogue>
