@@ -9,11 +9,32 @@
         <selectionEntryGroup name="Chapter Selection" id="f35a-90ba-1554-00cd" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Salamanders" hidden="false" id="b8d3-363a-8fcc-4e4f"/>
-            <selectionEntry type="upgrade" import="true" name="Executioners" hidden="false" id="edb8-5eff-1a4c-ce20"/>
+            <selectionEntry type="upgrade" import="true" name="Executioners" hidden="false" id="edb8-5eff-1a4c-ce20">
+              <rules>
+                <rule name="Executioners Chapter Tactics" id="0877-0008-6e2f-672b" hidden="false">
+                  <description>All units exchange the Combat Tactics rule for the Stubborn rule.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Astral Claws" hidden="false" id="67bd-044a-afe4-7d7e"/>
             <selectionEntry type="upgrade" import="true" name="Lamenters" hidden="false" id="ed5d-9142-2754-4620"/>
-            <selectionEntry type="upgrade" import="true" name="Mantis Warriors" hidden="false" id="896d-6536-8048-4016"/>
-            <selectionEntry type="upgrade" import="true" name="Fire Hawks" hidden="false" id="5403-5fa4-a1e8-84c9"/>
+            <selectionEntry type="upgrade" import="true" name="Mantis Warriors" hidden="false" id="896d-6536-8048-4016">
+              <rules>
+                <rule name="Mantis Warriors Chapter Tactics" id="a49d-fcb9-0202-e2af" hidden="false">
+                  <description>All infantry models exchange Combat Tactics for the Infiltrators special rule (with the exception of models in Terminator armour or those which have purchased a Dedicated Transport - these simply lose the Combat Tactics rule where applicable).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fire Hawks" hidden="false" id="5403-5fa4-a1e8-84c9">
+              <rules>
+                <rule name="Fire Hawks Chapter Tactics" id="1e51-a198-4789-9d39" hidden="false">
+                  <description>All units lose the Combat Tactics special rule.
+
+
+All flamers and heavy flamers in your army count as twin-linked and Assault squads and Vanguard Assault Squads count as scoring units.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Marines Errant" hidden="false" id="556b-025b-eb11-bbbe"/>
             <selectionEntry type="upgrade" import="true" name="Red Scorpions" hidden="false" id="1c6e-73a3-f4d3-72f2">
               <rules>
@@ -25,15 +46,52 @@ Instead, the Veteran Sergeants in your Tactical Squads may be replaced with Apot
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Raptors" hidden="false" id="9bc9-0277-fc8f-7275"/>
-            <selectionEntry type="upgrade" import="true" name="Fire Angels" hidden="false" id="44af-0b63-f3b7-435b"/>
+            <selectionEntry type="upgrade" import="true" name="Raptors" hidden="false" id="9bc9-0277-fc8f-7275">
+              <rules>
+                <rule name="Raptors Chapter Tactics" id="fb04-f04c-2f32-9f94" hidden="false">
+                  <description>All units exchange Combat Tactics for the Stealth universal special rule.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fire Angels" hidden="false" id="44af-0b63-f3b7-435b">
+              <rules>
+                <rule name="Fire Angels Chapter Tactics" id="37cb-c96e-19b4-2a32" hidden="false">
+                  <description>All units exchange the Combat Tactics rule for the Tank Hunter universal special rule. 
+
+
+
+Any Rhino or Razorback bought as a dedicated transport option for squads affected by this rule gains the Extra Armour upgrade for free.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Novamarines" hidden="false" id="2272-0225-ca45-9dd6"/>
             <selectionEntry type="upgrade" import="true" name="Howling Griffons" hidden="false" id="93a9-74b6-3e3f-1ac3"/>
-            <selectionEntry type="upgrade" import="true" name="Sons of Medusa" hidden="false" id="e10b-0a1f-fe3b-151d"/>
+            <selectionEntry type="upgrade" import="true" name="Sons of Medusa" hidden="false" id="e10b-0a1f-fe3b-151d">
+              <rules>
+                <rule name="Sons of Medusa Chapter Tactics" id="85ec-6817-0261-beeb" hidden="false">
+                  <description>All units exchange Combat Tactics for the Fearless rule.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exorcists" hidden="false" id="ca0a-a09d-b56f-25aa"/>
-            <selectionEntry type="upgrade" import="true" name="Minotaurs" hidden="false" id="4f39-fcc3-21b9-b7cd"/>
+            <selectionEntry type="upgrade" import="true" name="Minotaurs" hidden="false" id="4f39-fcc3-21b9-b7cd">
+              <rules>
+                <rule name="Minotaurs Chapter Tactics" id="209d-d95c-43e3-6112" hidden="false">
+                  <description>All units exchange Combat Tactics for Preferred Enemy: Space Marines. Note this counts against all Space Marines excepting those drawn from a Chaos-based Codex or army list.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Star Phantoms" hidden="false" id="fdbf-27f2-b8b9-4703"/>
-            <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="8a2c-2594-20bc-139c"/>
+            <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="8a2c-2594-20bc-139c">
+              <rules>
+                <rule name="Carcharodons Chapter Tactics" id="c453-fa0b-f268-9ecc" hidden="false">
+                  <description>All units exchange Combat Tactics for the Furious Charge rule.
+
+
+Any unit affected by this rule becomes subject to the Rage universal special rule for the rest of the game once they have won a hand-to-hand combat with an infantry unit.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="No Chapter" hidden="false" id="3a83-9870-4c4d-dd37"/>
           </selectionEntries>
           <constraints>
@@ -56,6 +114,21 @@ Instead, the Veteran Sergeants in your Tactical Squads may be replaced with Apot
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="b1ed-2519-4e24-cc94" targetId="26c0-589a-9f26-b597" primary="true"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Red Scorpions - Lord High Commander Carab Culln" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1c7a-058f-9aa3-4ac5">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">4</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="be43-969a-1da0-45df">
       <categoryLinks>
@@ -297,6 +370,437 @@ Instead, the Veteran Sergeants in your Tactical Squads may be replaced with Apot
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Red Scorpions - Magister Sevrin Loth" hidden="false" id="b6f2-868d-f98b-50fa">
+      <profiles>
+        <profile name="Red Scorpions - Magister Sevrin Loth" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="ac9a-4e98-ba48-ae66">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="1c6e-73a3-f4d3-72f2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="e52e-6be5-9763-81ca" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fire Angels - Captain Tarnus Vale" hidden="false" id="1d4e-c915-f924-c01d">
+      <profiles>
+        <profile name="Fire Angels - Captain Tarnus Vale" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="c8aa-f137-71d2-bbf2">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="44af-0b63-f3b7-435b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="d9b8-f657-efe5-2dc5" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Raptors - Lias Issodon" hidden="false" id="f65c-e2e4-5b9b-4648">
+      <profiles>
+        <profile name="Raptors - Lias Issodon" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="7535-f128-5ef6-d6a4">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">6</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="9bc9-0277-fc8f-7275" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="ff30-3955-4e90-74e9" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lamenters - Malakim Phoros" hidden="false" id="8228-710a-b520-a1df">
+      <profiles>
+        <profile name="Malakim Phoros" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="5d8f-6335-42f4-fe03">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">4</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="ed5d-9142-2754-4620" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="e439-6a7b-8241-0589" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Novamarines - Captain Mordaci Blaylock" hidden="false" id="6e39-6800-d664-f0e8">
+      <profiles>
+        <profile name="Novamarines - Captain Mordaci Blaylock" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="731f-186e-c922-512d">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2272-0225-ca45-9dd6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="fa49-d87c-581b-bc38" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fire Hawks - Knight-Captain Elam Courbray" hidden="false" id="95e6-b3c8-1478-5e88">
+      <profiles>
+        <profile name="Fire Hawks - Knight-Captain Elam Courbray" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1f9c-58c3-4bba-6bdc">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">6</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="5403-5fa4-a1e8-84c9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="448d-2085-2e9b-86e6" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="f308-079f-d941-9e4e">
+      <profiles>
+        <profile name="Salamanders - Captain Pellas Mir&apos;San" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="a2a5-3173-2fa4-f917">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">7</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b8d3-363a-8fcc-4e4f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="86eb-a298-d3bb-6d05" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Salamanders - Bray&apos;Arth Ashmantle" hidden="false" id="07fc-a816-b323-67bb">
+      <profiles>
+        <profile name="Salamanders - Bray&apos;Arth Ashmantle" typeId="828a-679b-1a4d-9511" typeName="Walker" hidden="false" id="1cc5-ac49-a1a3-7264">
+          <characteristics>
+            <characteristic name="WS" typeId="088d-2068-bd5a-62fc">6</characteristic>
+            <characteristic name="BS" typeId="1fbd-cea7-aaee-6448">5</characteristic>
+            <characteristic name="S" typeId="794d-acb1-e52a-414c">6(10)</characteristic>
+            <characteristic name="Front" typeId="d53c-c046-cfa8-dbc4">13</characteristic>
+            <characteristic name="Side" typeId="31b8-be05-a169-eec6">12</characteristic>
+            <characteristic name="Rear" typeId="5ffa-c8d3-306c-b7bb">10</characteristic>
+            <characteristic name="I" typeId="2a73-0ffe-fbda-71dd">4</characteristic>
+            <characteristic name="A" typeId="5dd6-2318-e247-bd7b">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b8d3-363a-8fcc-4e4f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="0ab6-4901-58e4-2e4d" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mantis Warriors - Ahazra Redth" hidden="false" id="74fb-c149-0a66-75e1">
+      <profiles>
+        <profile name="Mantis Warriors - Ahazra Redth" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="65d5-58af-4081-efd2">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="896d-6536-8048-4016" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="df93-17f4-09f2-b6b8" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Executioners - High Chaplain Thulsa Kane" hidden="false" id="1627-d1d2-0d1c-7820">
+      <profiles>
+        <profile name="Executioners - High Chaplain Thulsa Kane" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="4460-c35c-ef01-9d8f">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="edb8-5eff-1a4c-ce20" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="eafc-aa9c-c0da-61b1" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minotaurs - Chaplain Ivanus Enkomi" hidden="false" id="dc5a-c1d7-3085-ad8f">
+      <profiles>
+        <profile name="Minotaurs - Chaplain Ivanus Enkomi" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="fb08-9d0d-dd8b-9056">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="4f39-fcc3-21b9-b7cd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="f6bf-f21e-0604-27eb" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minotaurs - Lord Asterion Moloc" hidden="false" id="b911-aee3-cefc-e606">
+      <profiles>
+        <profile name="Minotaurs - Lord Asterion Moloc" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="a321-980d-69d8-ad86">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">4</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="4f39-fcc3-21b9-b7cd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="5808-d216-9a84-390b" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carcharodons - Tyberos the Red Wake" hidden="false" id="9203-732a-be9d-3682">
+      <profiles>
+        <profile name="Carcharodons - Tyberos the Red Wake" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="4c67-449c-1eec-4c48">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">4</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="8a2c-2594-20bc-139c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="e17e-9649-a028-2a72" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exorcists - Captain Silas Alberec" hidden="false" id="ff77-16fa-67b3-f628">
+      <profiles>
+        <profile name="Exorcists - Captain Silas Alberec" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="f4ff-2c80-d795-42e9">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">5</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="ca0a-a09d-b56f-25aa" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="3a36-3173-bfdf-55ed" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Star Phantoms - Captain Zhrukhal Androcles" hidden="false" id="cd39-1695-51e6-70d2">
+      <profiles>
+        <profile name="Star Phantoms - Captain Zhrukhal Androcles" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="e10e-b340-7ffe-fd25">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">6</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="fdbf-27f2-b8b9-4703" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="a076-25fe-e775-0bb8" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sons of Medusa - Vaylund Cal" hidden="false" id="7a49-d5c0-899a-e255">
+      <profiles>
+        <profile name="Sons of Medusa - Vaylund Cal" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="fcce-5a0d-d8f9-135a">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">5</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">6</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="e10b-0a1f-fe3b-151d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="26c0-589a-9f26-b597" id="d943-a039-b98d-402b" primary="true" name="HQ"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
