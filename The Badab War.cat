@@ -521,6 +521,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Sword Excellus" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1627-eba5-c784-4a0c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Excellus is a Power Weapon that also has the Rending Special rule. In addition, when he charges into an assault, Knight-Captain Elam Courbray can forgo his usual number of attacks (including the bonus attack for charging) to make a single special attack which is a strength 8, Power Weapon, Rending attack.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -531,7 +536,23 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="448d-2085-2e9b-86e6" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="6097-7ae4-a71f-4ec6" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <rules>
+        <rule name="Firefall" id="2cac-1d03-1abf-4df8" hidden="false">
+          <description>Knight-Captain Elam Courbray and any jump pack equipped Space Marine squad he joins have the Counter Attack and Hit and Run universal special rules.</description>
+        </rule>
+        <rule name="Martial Contempt" id="dc8c-4514-63e8-5dcb" hidden="false">
+          <description>If knight-Captain Elam Courbray is in base-to-base contact with an enemy independent character at the start of any assault in which he is involved, then he must direct all his attacks against them. Also, if charging into an assault with a squad containing an enemy independent character. Courbray must be placed in base-to-base contact with them if possible. if more than one enemy character is is eligible as a target to attack, Courbray&apos;s owning player may decide which to focus on.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="ae0f-7eec-a7c4-c1e2" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="f6f0-b1e0-ed81-f801" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Bolt Pistol" id="c636-b494-703e-f2d8" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="1836-6857-31ab-02db" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="dbd8-c7b5-b911-0a24" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="f308-079f-d941-9e4e">
       <profiles>
