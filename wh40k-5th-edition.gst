@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
+<gameSystem id="sys-282a-b1c7-7a9a-c326" name="wh40k-5th-edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Matthew Tansley">
   <categoryEntries>
     <categoryEntry name="HQ" id="26c0-589a-9f26-b597" hidden="false"/>
     <categoryEntry name="Troops" id="8429-4ea5-6433-b189" hidden="false"/>
@@ -588,7 +588,10 @@ DEEP STRIKE MISHAP TABLE:
     </profile>
     <profile name="Force Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3e6f-4d21-608f-f3ee">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Force Weapons have the same effects as power weapons, but also confer to the wielder one additional psychic power. 
+
+
+Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value. </characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
