@@ -358,6 +358,34 @@
         <infoLink name="Feel No Pain" id="0a34-cca0-9bd8-df67" hidden="false" type="rule" targetId="9cd9-3f91-3337-fdd0"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Conversion Beamer" hidden="false" id="9d9f-755c-3258-709e">
+      <profiles>
+        <profile name="Conversion Beamer &lt;18&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="637f-f7aa-6018-57d2">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conversion Beamer 18&quot; to 42&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="aff9-51da-b2df-2cb3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot; - 42&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conversion Beamer 42&quot;-72&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="682c-d155-e125-6b63">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">42&quot; - 72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -446,6 +474,17 @@ DEEP STRIKE MISHAP TABLE:
     </rule>
     <rule name="Poisoned Weapons" id="9a2a-5fce-a6f7-640d" hidden="false">
       <description>Poisoned weapons always wound on a fixed number, generally shown in brackets.  In addition, if the Strength of the wielder is the same or higher than the Toughness of the victim, the wielder must re-roll failed rolls to wound in close combat.</description>
+    </rule>
+    <rule name="Blessing of the Omnissiah" id="8d73-d6f7-7bc6-7a43" hidden="false">
+      <description>If a Techmarine is in base contact with a damaged vehicle during the shooting phase he can attempt to repair it instead of firing. Roll a D6 and add the following modifiers:
+
+Each Servitor with a servo-arm in the unit: +1
+The Techmarine has a servo-harness: +1
+
+If the result is a 5 or more, then either a Weapon Destroyed or Immobilised result may be repaired. If a Weapon Destroyed result is repaired the weapon may be fired in the following shooting phase. A Techmarine may not attempt to repair if gone to ground or falling back.</description>
+    </rule>
+    <rule name="Bolster Defences" id="2c42-9e65-0c0c-3481" hidden="false">
+      <description>Each Techmarine may bolster a single ruin before the game begins. When you deploy nominate one ruin in your deployment zone for your Techmarine to Bolster. The ruin&apos;s cover save is improved by one for the duration of the game.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -591,7 +630,7 @@ DEEP STRIKE MISHAP TABLE:
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Force Weapons have the same effects as power weapons, but also confer to the wielder one additional psychic power. 
 
 
-Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value. </characteristic>
+Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
@@ -676,6 +715,26 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
     <profile name="Thunder Hammer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b105-7b07-956b-be5e">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Terminator Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6064-dd96-bab7-5727">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models in terminator armor have the relentless universal special rule. Models in terminator armor may not perform sweeping advances. Models in Terminator armor have a 2+ armor save and a 5+ invulnerable save. Any model wearing terminator armor may deploy via deep strike even if the mission rules would not typically permit it. Terminators count as two models for the purposed of transport capacity and cannot embark on Rhinos or Razorbacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3540-7821-df0a-eda5">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Iron Halo Confers a 4+ Invulnerable Save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Storm Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bfee-9985-7f95-5235">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a storm shield has a 3+ invulnerable save. A model with a storm shield may never claim an additional attack for being armed with two melee weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Digital Weapons" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="60c1-32f6-1e4d-c121">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model armed with digital weapons can re-roll a single failed roll to wound in each assault phase</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

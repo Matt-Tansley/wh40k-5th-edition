@@ -182,6 +182,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Ghost Razors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23b4-5698-3c23-e38d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This unique lightning claw was a long-cherished artifact of the Tiger Claws Chapter and gifted to Huron as a mark of their gratitude. Its strange pale blades flicker with a ghostly light when activated and the technology which powers the weapon is an utter mystery even to Valthek, the Astral Claws savant master of Techmarines. As well as working as a lightning claw, successful invulnerable saves made against wounds caused by the Ghost Razors must be re-rolled (the results of the second roll count as normal).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Living Legend" id="4289-c585-de26-65dd" hidden="false">
@@ -194,23 +199,9 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           <description>Lugft Huron is touched by a dark destiny as later events would prove. The first time Huron would be removed from play as a casualty for any reason, leave him on his side on the table. At the end of the turn where this has happened, roll a D6 and on a 2+ he instead survives with a single remaining wound, (this includes attacks causing Instant Death, and multiple wounds which remove him from play caused by a particular model&apos;s attacks, etc) and is placed back in play as close to where he fell as possible. This special rule does not apply to any subsequent damage he takes after he has escaped death once in the game.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="The Ghost Razors" hidden="false" id="d27d-5fdc-d7b5-972a">
-          <profiles>
-            <profile name="The Ghost Razors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23b4-5698-3c23-e38d">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This unique lightning claw was a long-cherished artifact of the Tiger Claws Chapter and gifted to Huron as a mark of their gratitude. Its strange pale blades flicker with a ghostly light when activated and the technology which powers the weapon is an utter mystery even to Valthek, the Astral Claws savant master of Techmarines. As well as working as a lightning claw, successful invulnerable saves made against wounds caused by the Ghost Razors must be re-rolled (the results of the second roll count as normal).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="c0c2-72c9-df77-e50b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="9b66-71a1-d7f6-bc07" primary="false" name="Independent Character"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -219,6 +210,16 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Heavy Flamer" id="53f0-e2b3-fbe0-96a3" hidden="false" type="profile" targetId="5f94-6b30-51ac-7af9"/>
+        <infoLink name="And They Shall Know No Fear" id="8b93-1421-fc94-0879" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9518-5223-7d45-fb68" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Terminator Armour" id="e160-a4c7-64f8-c8b8" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Iron Halo" id="cf10-ff90-c8d8-e42d" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="235"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Captain Corien Sumatris" hidden="false" id="7f60-b326-dc94-66f7">
       <profiles>
@@ -235,45 +236,28 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Spectre Pattern Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="66db-3471-d816-5246">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Goldenfang" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6502-7e1b-3dcf-7461">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This shimmering blade is a master-crafted power sword, in additional while using the weapon Corien Sumatris gains two extra attacks on a turn when he assaults, rather than the usual one.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="The Tyrant&apos;s Champion" id="ab0f-311c-1025-4dcf" hidden="false">
           <description>Fierce and merciless, Corien Sumatris&apos; combat skills are legendary in his Chapter, and the highly trained fighters of the 2nd Company under this charge seek to excel all others in the Tyrant&apos;s service. Corien Sumatris has the Furious Charge universal special rule which he also confers to any Codex Space Marine unit he joins. Space Marine infantry units in his force (but not independent characters) also gain +1 to their WS while within 12&quot; of him.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Spectre Pattern Bolter" hidden="false" id="567e-191c-c766-0128">
-          <profiles>
-            <profile name="Spectre Pattern Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="66db-3471-d816-5246">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Goldenfang" hidden="false" id="e947-ccc1-c840-bfb2">
-          <profiles>
-            <profile name="Goldenfang" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6502-7e1b-3dcf-7461">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This shimmering blade is a master-crafted power sword, in additional while using the weapon Corien Sumatris gains two extra attacks on a turn when he assaults, rather than the usual one.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="589a-dda6-a92c-feda" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="7077-fbc7-19ec-3040" primary="false" name="Independent Character"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -282,10 +266,22 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="165"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Storm Shield" id="ad88-a843-2e01-fcf6" hidden="false" type="profile" targetId="bfee-9985-7f95-5235"/>
+        <infoLink name="Digital Weapons" id="cf8c-c465-4e34-6d91" hidden="false" type="profile" targetId="60c1-32f6-1e4d-c121"/>
+        <infoLink name="Frag Grenades" id="ac30-ba08-a3d4-a106" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="2847-2746-d761-a487" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="a64e-3c1e-3693-a5c1" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="36e4-3311-6b66-734a" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Armenneus Valthex" hidden="false" id="1eae-9130-ea70-aa12">
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="2e61-67c6-5f84-9b0c" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="9166-8f7d-fc60-8485" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Astral Claws - Armenneus Valthex" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="608f-be58-3066-8f55">
@@ -320,6 +316,26 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="145"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="3a1e-f971-0be1-985c" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="ad09-82cd-1362-7fb6" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="a0e3-7a7b-bb13-aa76" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="And They Shall Know No Fear" id="ce38-a49a-b3f0-4233" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="d94b-2a51-dfbf-2ac3" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Blessing of the Omnissiah" id="bb01-8fe1-14df-427e" hidden="false" type="rule" targetId="8d73-d6f7-7bc6-7a43"/>
+        <infoLink name="Bolster Defences" id="a201-4374-b4cd-aa41" hidden="false" type="rule" targetId="2c42-9e65-0c0c-3481"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Beamer" hidden="false" id="365e-afac-dbce-af44" type="selectionEntry" targetId="9d9f-755c-3258-709e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db38-4c21-b800-a2a2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3429-de16-bc33-8ee2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="a5fb-f059-5870-7e49">
       <categoryLinks>
@@ -661,7 +677,7 @@ Weapons and Attacks that usually gain any form of additional dice to penetrate B
           <description>Venerable dreadnaughts are very hard to destroy. Whenever Bray&apos;arth Ashmantle suffers a Glancing or penetrating hit, Ashmantles player may tell their opponent to re-roll the result on the damage chart, the second result stands even if it is worse! you may not cry about it.</description>
         </rule>
         <rule name="Burning Wrath" id="8d3f-8a6c-fc2e-c9b6" hidden="false">
-          <description>Bray&apos;arth&apos;s Dreadnaught Chassis is also fitted with a number of secondary flame projectors as well as his main armament, allowing the ancient Dreadnaught to wreath himself in flame, incinerating anything that strays too close. In any close combat in which he is involved, Bray&apos;arth can forgo one of his usual attacks to inflict  a single automatic Strength 5, AP 4 hit to all models (friend and foe) in base-to-base contact. the rest of his attacks are made as normal. Note this is not a weapon as such and so is not affected by the Weapon Destroyed result. </description>
+          <description>Bray&apos;arth&apos;s Dreadnaught Chassis is also fitted with a number of secondary flame projectors as well as his main armament, allowing the ancient Dreadnaught to wreath himself in flame, incinerating anything that strays too close. In any close combat in which he is involved, Bray&apos;arth can forgo one of his usual attacks to inflict  a single automatic Strength 5, AP 4 hit to all models (friend and foe) in base-to-base contact. the rest of his attacks are made as normal. Note this is not a weapon as such and so is not affected by the Weapon Destroyed result.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -935,7 +951,4 @@ Weapons and Attacks that usually gain any form of additional dice to penetrate B
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="New Catalogue (link)" id="fa0e-be60-148e-c369"/>
-  </catalogueLinks>
 </catalogue>
