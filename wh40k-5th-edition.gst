@@ -121,9 +121,6 @@
       <infoLinks>
         <infoLink name="Boltgun" id="0faa-4577-de7f-9d24" hidden="false" type="profile" targetId="4b3e-6b29-4c50-19a5">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="2bbd-e910-a53d-d241" childId="5d39-bc51-7145-28bb" shared="true" includeChildSelections="true" includeChildForces="false"/>
             <modifier type="set" value="X" field="24d9-b8e1-a355-2458">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="1f47-8636-851e-6cbe" childId="9140-b2c5-6e2e-fe73" shared="true"/>
@@ -591,7 +588,10 @@ DEEP STRIKE MISHAP TABLE:
     </profile>
     <profile name="Force Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3e6f-4d21-608f-f3ee">
       <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Force Weapons have the same effects as power weapons, but also confer to the wielder one additional psychic power. 
+
+
+Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value. </characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
