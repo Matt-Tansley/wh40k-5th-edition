@@ -526,6 +526,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Excellus is a Power Weapon that also has the Rending Special rule. In addition, when he charges into an assault, Knight-Captain Elam Courbray can forgo his usual number of attacks (including the bonus attack for charging) to make a single special attack which is a strength 8, Power Weapon, Rending attack.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1409-ea1f-78fd-2ca3">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -553,6 +558,9 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
         <infoLink name="Krak Grenades" id="1836-6857-31ab-02db" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
         <infoLink name="Frag Grenades" id="dbd8-c7b5-b911-0a24" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="185"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="f308-079f-d941-9e4e">
       <profiles>
@@ -579,7 +587,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="86eb-a298-d3bb-6d05" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="4872-762a-40cd-eadc" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="150"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Bray&apos;Arth Ashmantle" hidden="false" id="07fc-a816-b323-67bb">
       <profiles>
@@ -595,6 +607,30 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="A" typeId="5dd6-2318-e247-bd7b">4</characteristic>
           </characteristics>
         </profile>
+        <profile name="Dreadfire Heavy Flamers (Flamer Mode)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d829-eb7f-d0e2-c490">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dreadfire Heavy Flamers (Melta Mode)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="67b0-c38a-dc7e-c508">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Melta</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dreadfire Heavy Flamers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="12c2-4271-4d12-f87a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">These Weapons of ancient design are capable of unleashing their power in a single, highly concentrated burst, confining the burning promethium in a superheated lance of flame.
+
+
+Instead of using these weapons as two heavy flamers, they may be fired as a single twin-linked Melta gun (or a single Melta gun if one arm has been destroyed).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -605,7 +641,29 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="0ab6-4901-58e4-2e4d" primary="true" name="HQ"/>
+        <categoryLink targetId="b4fe-561a-c465-819b" id="4774-a3f2-f5df-afa7" primary="false" name="Walker"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="265"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="a579-e300-dfc4-60e5" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="9e92-b262-5e4b-c83b" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+      </infoLinks>
+      <rules>
+        <rule name="Wrought by Vulkan" id="787e-c05a-d545-a845" hidden="false">
+          <description>The &apos;Iron Dragon&apos; in which Bray&apos;art has been interned is a true relic, a unique Dreadnaught war machine that is believed to have been fashioned by the artifice of the Primarch Vulcan himself. It contains many defensive measures and systems that others have strived but always failed to replicate.
+
+
+Weapons and Attacks that usually gain any form of additional dice to penetrate Bray&apos;arths Thick Booty (such as monstrous creatures, chainfists, melta weapons, rending attacks, ect) do not do so in his case, and lance weapons do not lower his armour value.</description>
+        </rule>
+        <rule name="Venerable" id="2d8f-24fe-bcfe-197a" hidden="false">
+          <description>Venerable dreadnaughts are very hard to destroy. Whenever Bray&apos;arth Ashmantle suffers a Glancing or penetrating hit, Ashmantles player may tell their opponent to re-roll the result on the damage chart, the second result stands even if it is worse! you may not cry about it.</description>
+        </rule>
+        <rule name="Burning Wrath" id="8d3f-8a6c-fc2e-c9b6" hidden="false">
+          <description>Bray&apos;arth&apos;s Dreadnaught Chassis is also fitted with a number of secondary flame projectors as well as his main armament, allowing the ancient Dreadnaught to wreath himself in flame, incinerating anything that strays too close. In any close combat in which he is involved, Bray&apos;arth can forgo one of his usual attacks to inflict  a single automatic Strength 5, AP 4 hit to all models (friend and foe) in base-to-base contact. the rest of his attacks are made as normal. Note this is not a weapon as such and so is not affected by the Weapon Destroyed result. </description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mantis Warriors - Ahazra Redth" hidden="false" id="74fb-c149-0a66-75e1">
       <profiles>
@@ -784,6 +842,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bdd6-d305-4250-9f0c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -794,7 +857,37 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="a076-25fe-e775-0bb8" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="38a2-fa99-bccc-da39" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Fist" id="c62b-dfeb-da19-c822" hidden="false" type="profile" targetId="cc3f-c898-284f-f88d"/>
+        <infoLink name="Frag Grenades" id="ddc8-4ecb-80dd-d902" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="5549-60e3-69b3-612f" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="d3c9-d98f-2033-2fc9" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="a288-17cf-551f-af77" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Combi-Melta" hidden="false" id="bca9-321f-2e64-3739" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8184-66de-6b76-7073" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52bd-d8e0-d314-202c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="155"/>
+      </costs>
+      <rules>
+        <rule name="Master Of Destruction" id="8479-373f-1b1a-97b8" hidden="false">
+          <description>Once per turn, either Zhrukhal Androcles himself, or a single chosen Space Marine unit within 6&quot; of Androcles may add +1 to their rills on the damage chart against all targets (including buildings and bastions) with an Armour Value that turn. This bonus is cumulative with any other bonus gained as a result from a weapon&apos;s special rules, ect.</description>
+        </rule>
+        <rule name="Commander of the 9th Company " id="89ce-a58b-a358-7549" hidden="false">
+          <description>Devastator squads may be taken as Elites as well as Heavy Support choices.</description>
+        </rule>
+        <rule name="Commander of the 9th Company " id="238c-2970-529b-f8d2" hidden="false">
+          <description>Zhrukhal Androcles&apos; personal forces comprise of his Chapters heavily armed 9th company Devastator reserve. As such, if Zhrukhal Androcles is present in the army, then devastator squads may be taken as elite ass well as heavy support choices.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sons of Medusa - Vaylund Cal" hidden="false" id="7a49-d5c0-899a-e255">
       <profiles>
@@ -821,7 +914,28 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="d943-a039-b98d-402b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="d4a7-981c-df17-383d" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Thunder Hammer" id="284f-0f00-3136-33a2" hidden="false" type="profile" targetId="b105-7b07-956b-be5e"/>
+        <infoLink name="Fearless" id="39d7-e225-3d5f-7c6a" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+        <infoLink name="And They Shall Know No Fear" id="47ed-7c85-bc65-3c3a" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9409-c6d8-c78b-7fca" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Purge the Weak" id="32ce-915b-01a2-b2e2" hidden="false">
+          <description>Any Devastator squad suitably modelled to represent their cybernetic augmentation taken as part of a ab army that contains Vaylund Cal gains the Feel No Pain universal special rule, but may not run or make sweeping advances.</description>
+        </rule>
+        <rule name="Opus Machina " id="3e64-e62e-a40e-899a" hidden="false">
+          <description>vayland Cal is a big boy and should be modelled on a 40mm base.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="215"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="fa0e-be60-148e-c369"/>
+  </catalogueLinks>
 </catalogue>
