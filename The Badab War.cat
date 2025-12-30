@@ -375,6 +375,7 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
     <selectionEntry type="unit" import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="a5fb-f059-5870-7e49">
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="cbcc-ec41-1e96-03c6" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="eb19-da00-1c75-26bc" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Marines Errant - Lieutenant Commander Anton Narvaez" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="177d-541e-ad18-bd17">
@@ -390,30 +391,17 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Actinic Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1460-bc61-1c60-4992">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A highly charged power-field generator, the Actinic Halo provides a 3+ invulnerable save, however should this be failed and Narvaez survives, roll a further dice and on a 4+ the Actinic Halo continues to work, otherwise it cannot be used for the rest of the battle.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Dark Void Elite" id="24c7-ef09-5d27-24b3" hidden="false">
           <description>If Anton Narvaez is included in your army, one Tactical Squad also included in your army may be chosen to represent the veterans of the Chapter&apos;s long voyages into the outer-galactic darkness. Both Anton Narvaez himself and his chosen squad have the Move Through Cover and Scout universal special rules, and counts as having Void Hardened Armour in battles such as boarding actions where this is relevant, all at no additional cost.</description>
         </rule>
-        <rule name="Actinic Halo" id="c8ff-7700-9535-6c60" hidden="false">
-          <description>A highly charged power-field generator, the Actinic Halo provides a 3+ invulnerable save, however should this be failed and Narvaez survives, roll a further dice and on a 4+ the Actinic Halo continues to work, otherwise it cannot be used for the rest of the battle.</description>
-        </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Thundershock" hidden="false" id="6b72-9697-1d69-6160">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-max" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Thundershock" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6d97-e35f-f1a4-4160">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A pre-Imperial artifact acquired when Narvaez was fighting as a veteren sergeant under the banner of Rogue Trader Ecale, Thundershock is a master-crafted plasma-gun/</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -421,6 +409,23 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Plasma Gun" id="2f00-5db1-425d-12e5" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4">
+          <modifiers>
+            <modifier type="set" value="Thundershock" field="name" join=" "/>
+            <modifier type="append" value="Master-Crafted" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Power Weapon" id="2e48-cf32-802f-b90e" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Bolt Pistol" id="5509-9a7d-b684-9537" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="5b0d-f9d7-aafe-834f" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="c757-8c8f-d9a5-5a63" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="046a-9998-9751-9e1f" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9ee6-cd97-3372-d414" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="135"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Red Scorpions - Magister Sevrin Loth" hidden="false" id="b6f2-868d-f98b-50fa">
       <profiles>
