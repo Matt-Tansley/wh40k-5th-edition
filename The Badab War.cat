@@ -166,6 +166,41 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="205"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Storm Bolter or Heavy Flamer" id="2a28-3656-2492-3e9f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="3dce-d4d0-8eb0-939c" type="selectionEntry" targetId="e58f-3db0-d262-b837" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="0515-e123-5fed-d269" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b33-23e7-a660-dfaa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f73a-a058-bafd-53e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Lascannon opr Assault Cannon" id="9f0b-9385-fc16-f412" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="256e-a9ed-763d-a688" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e506-ee25-e853-bf5e" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lascannon" hidden="false" id="054f-a9d0-d017-62ee" type="selectionEntry" targetId="81a2-ac97-955a-62c8"/>
+            <entryLink import="true" name="Assault Cannon" hidden="false" id="50c3-f67c-4263-5024" type="selectionEntry" targetId="ee10-7f9a-f4c4-af5b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Extra Armour" id="b6ec-830f-daa6-d0b8" hidden="false" type="profile" targetId="ac51-15a9-3707-b470"/>
+        <infoLink name="Smoke Launchers" id="246b-13e2-9c98-e1c6" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="20fe-9ef5-df98-a3d5" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Dreadnought Close Combat Weapon" id="9233-ead5-6cc2-bb70" hidden="false" type="profile" targetId="d3c6-1218-b3a3-83d4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Lugft Huron" hidden="false" id="a429-e5e4-b2cf-7efe">
       <profiles>

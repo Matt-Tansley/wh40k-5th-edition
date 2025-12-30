@@ -737,6 +737,16 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model armed with digital weapons can re-roll a single failed roll to wound in each assault phase</characteristic>
       </characteristics>
     </profile>
+    <profile name="Extra Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ac51-15a9-3707-b470">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Need to fill in</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dreadnought Close Combat Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d3c6-1218-b3a3-83d4">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
