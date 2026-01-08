@@ -969,6 +969,11 @@ Instead of using these weapons as two heavy flamers, they may be fired as a sing
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Talisman of Sundered Souls" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5a91-b9d1-9915-5577">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">It grants Ahazra Redth an invulnerable save of 5+ and allows him to re-roll a failed test to use a psychic power once per player turn. Note that this may negate a Perils of the Warp attack, but the outcome of the re-roll must be taken, even if it it first than the first roll.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -979,7 +984,61 @@ Instead of using these weapons as two heavy flamers, they may be fired as a sing
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="df93-17f4-09f2-b6b8" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="293c-32ab-51cf-ac86" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Force Weapon" id="dec1-a318-7510-9113" hidden="false" type="profile" targetId="3e6f-4d21-608f-f3ee"/>
+        <infoLink name="Bolt Pistol" id="d1c0-b9fe-aa80-67bf" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="0ba9-b2cc-c01c-568e" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="e267-a9ca-ed65-cef8" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Psychic Hood" id="3e42-7c7a-9ec0-1b3f" hidden="false" type="profile" targetId="8117-6c63-fd36-e4d9"/>
+        <infoLink name="And They Shall Know No Fear" id="05f7-f4c1-cb95-a2c3" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="27a6-4f1f-d44e-2362" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Whispers on the Wind" id="4689-1042-10aa-3678" hidden="false">
+          <description>If Ahazra Redth is part of the army, then failed attempts by the player to seize the initiative before the battle may be re-rolled and enemy reserve rolls suffer a -1 penalty.</description>
+        </rule>
+        <rule name="Battle Psyker" id="1884-fa01-6712-1b17" hidden="false">
+          <description>Ahazra is a powerful psyker. He has the special Mirage psychic power and may also pick one more from the below list. Ahazra may use 2 psychic powers a turn.
+
+
+Smite
+
+
+Force Dome
+
+
+Machine Curse
+
+
+Avenger
+
+
+Quickening
+
+
+Null Zone
+
+
+Might of the Ancients
+
+
+Gate of Infinity
+
+
+Vortex of Doom</description>
+        </rule>
+        <rule name="Mirage" id="36b5-0c05-7763-7ddb" hidden="false">
+          <description>This is a psychic power. 
+
+
+This power is used at the start of the Librarian&apos;s movement phase. The Librarian, any unit they are with and any vehicle (but not a super-heavy vehicle) they are being transported in, are affected by this power for one full game turn (lasting until the beginning of their next movement phase). 
+
+
+During this time units protected by this power count as being equipped with Defensive Grenades and enemies wishing to shoot at them must do so as if the Night Fighting rules were in effect.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Executioners - High Chaplain Thulsa Kane" hidden="false" id="1627-d1d2-0d1c-7820">
       <profiles>

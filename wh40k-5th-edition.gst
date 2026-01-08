@@ -763,6 +763,14 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models equipped with a jump pack are jump infantry. In addition they may deploy via Deep Strike.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Psychic Hood" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8117-6c63-fd36-e4d9">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Declare that you&apos;ll use the psychic hood after an enemy model within 24&quot; of the Librarian passes a psychic test. If there are several Librarians in range only one can attempt to nullify the power. 
+
+
+Each player rolls a D6 and adds their models Leadership value to the score. If the Librarian beats the opposing model&apos;s score then the psychic power is nullified and does not take effect that turn. If the opposing model&apos;s score is equal to or higher, it can use its psychic power as normal. The psychic hood can be used once each time an enemy model uses a psychic power within range.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
