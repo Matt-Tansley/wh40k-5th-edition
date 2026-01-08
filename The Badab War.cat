@@ -748,6 +748,9 @@ Independent characters cannot be targeted by this attack.</description>
           <description>If your army includes Mordaci Blaylock, your Terminator and Terminator Assault squads count as scoring units.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="195"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Hawks - Knight-Captain Elam Courbray" hidden="false" id="95e6-b3c8-1478-5e88">
       <profiles>
@@ -764,14 +767,9 @@ Independent characters cannot be targeted by this attack.</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
-        <profile name="The Sword Excellus" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1627-eba5-c784-4a0c">
+        <profile name="The Sword Excellus" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0546-6930-0588-63e9">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Excellus is a Power Weapon that also has the Rending Special rule. In addition, when he charges into an assault, Knight-Captain Elam Courbray can forgo his usual number of attacks (including the bonus attack for charging) to make a single special attack which is a strength 8, Power Weapon, Rending attack.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1409-ea1f-78fd-2ca3">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Excellus is a power weapon that also has the Rending special rule. In addition, when he charges into an assault, Knight-Captain Elam Courbray can forgo his usual number of attacks (including the bonus for charging) to make a single attack which is a Strength 8, Power Weapon, Rending attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -800,6 +798,8 @@ Independent characters cannot be targeted by this attack.</description>
         <infoLink name="Bolt Pistol" id="c636-b494-703e-f2d8" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
         <infoLink name="Krak Grenades" id="1836-6857-31ab-02db" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
         <infoLink name="Frag Grenades" id="dbd8-c7b5-b911-0a24" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="ed7c-8e24-1c3e-5d92" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Jump Pack" id="3342-1d23-f785-5871" hidden="false" type="profile" targetId="03ca-7d84-2867-f44f"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="185"/>
@@ -820,6 +820,11 @@ Independent characters cannot be targeted by this attack.</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Cinder Edge" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d4ff-0c98-f521-bf2b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Cinder Edge is a master-crafted power weapon.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -835,6 +840,30 @@ Independent characters cannot be targeted by this attack.</description>
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="150"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Power Weapon" id="ec7b-ba5e-cbc4-cf9b" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Krak Grenades" id="bf93-94ce-3e5e-779c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="e446-d989-1448-17e2" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="9f43-66e2-a9de-10b0" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="And They Shall Know No Fear" id="8028-482f-7fc1-2752" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="bd36-19d4-62fa-bde9" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Combi-Flamer" hidden="false" id="d18d-26f4-cba5-6c41" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7b3-35ee-a252-f836" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d9-7123-3eb9-9c97" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Master Duelist" id="1da0-b693-66da-c358" hidden="false">
+          <description>As long as Mir&apos;San is in base contact with an enemy independent character model, he may choose either to gain an additional +1 attack or reduce a single enemy independent character in base contact&apos;s Attack characteristic by -1 (to a minimum of 1) for that Assault phase. Choose which will apply at the beginning of each Assault phase of combat before any blows are struck by either side.</description>
+        </rule>
+        <rule name="Unflinching Resolve" id="c669-8409-2d50-1eb0" hidden="false">
+          <description>Mir&apos;san and any Space Marine unit he joins can choose to automatically pass or fail any Morale or Pinning test they are called on to make.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Bray&apos;Arth Ashmantle" hidden="false" id="07fc-a816-b323-67bb">
       <profiles>

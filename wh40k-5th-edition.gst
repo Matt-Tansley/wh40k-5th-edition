@@ -758,6 +758,11 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Relic Blade is a power weapon whose hits are resolved at Strength 6. A model with a Relic Blade cannot gain an extra attack for having two close combat weapons.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Jump Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="03ca-7d84-2867-f44f">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models equipped with a jump pack are jump infantry. In addition they may deploy via Deep Strike.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Combi-Weapon" id="344f-10b9-ca94-f1eb" hidden="false">
