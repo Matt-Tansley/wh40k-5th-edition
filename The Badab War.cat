@@ -113,6 +113,7 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="b1ed-2519-4e24-cc94" targetId="26c0-589a-9f26-b597" primary="true"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="462d-c85b-6b1a-c979" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Red Scorpions - Lord High Commander Carab Culln" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1c7a-058f-9aa3-4ac5">
@@ -128,7 +129,34 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Blade of the Scorpion" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c5a8-55eb-5257-1a0d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Blade of the Scorpion is a master-crafted Relic Blade, and if Carab Culln&apos;s Weapon Skill is greater than the highest Weapon Skill of the enemy or enemies he is fighting (squad or character) he gains a bonus number of attacks equal to the difference in their Weapon Skill characteristics (i.e if Culln is fighting a mob of Orks with Weapon Skill 4, he gains +2 attacks).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="f076-e6c7-6c49-5311" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Teleport Homer" id="d99b-7605-794d-593c" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="Iron Halo" id="ae4f-e28f-7eec-e8ec" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Storm Bolter" id="8131-4ce9-af61-f97a" hidden="false" type="profile" targetId="839a-3401-a8a3-989e">
+          <modifiers>
+            <modifier type="append" value="Master-Crafted" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+            <modifier type="prepend" value="Master-Crafted" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="And They Shall Know No Fear" id="088c-ac62-1907-07ec" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="16ef-742c-9b5e-41e8" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Orbital Bombardment (link to this later, once Space Marine Chapter Master is done)" id="6f38-93ea-a093-326e" hidden="false"/>
+        <rule name="Proud to Live, Proud to Die, Hard to Kill" id="a154-89c1-df44-b339" hidden="false">
+          <description>Lord High Commander Carab Culln benefits form the Eternal Warrior special rule, and while he is alive he and all other Red Scorpion units within 12&quot; add +1 to their total score for the purposes of determining combat resolution in any given assault. Note this bonus does not stack for multiple Red Scorpions squads involved in a single combat or with any other similar bonus.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="215"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="be43-969a-1da0-45df">
       <categoryLinks>
@@ -166,6 +194,41 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="205"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Storm Bolter or Heavy Flamer" id="2a28-3656-2492-3e9f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="3dce-d4d0-8eb0-939c" type="selectionEntry" targetId="e58f-3db0-d262-b837" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="0515-e123-5fed-d269" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b33-23e7-a660-dfaa" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f73a-a058-bafd-53e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Lascannon opr Assault Cannon" id="9f0b-9385-fc16-f412" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="256e-a9ed-763d-a688" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e506-ee25-e853-bf5e" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lascannon" hidden="false" id="054f-a9d0-d017-62ee" type="selectionEntry" targetId="81a2-ac97-955a-62c8"/>
+            <entryLink import="true" name="Assault Cannon" hidden="false" id="50c3-f67c-4263-5024" type="selectionEntry" targetId="ee10-7f9a-f4c4-af5b"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Extra Armour" id="b6ec-830f-daa6-d0b8" hidden="false" type="profile" targetId="ac51-15a9-3707-b470"/>
+        <infoLink name="Smoke Launchers" id="246b-13e2-9c98-e1c6" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="20fe-9ef5-df98-a3d5" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Dreadnought Close Combat Weapon" id="9233-ead5-6cc2-bb70" hidden="false" type="profile" targetId="d3c6-1218-b3a3-83d4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Lugft Huron" hidden="false" id="a429-e5e4-b2cf-7efe">
       <profiles>
@@ -182,6 +245,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Ghost Razors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23b4-5698-3c23-e38d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This unique lightning claw was a long-cherished artifact of the Tiger Claws Chapter and gifted to Huron as a mark of their gratitude. Its strange pale blades flicker with a ghostly light when activated and the technology which powers the weapon is an utter mystery even to Valthek, the Astral Claws savant master of Techmarines. As well as working as a lightning claw, successful invulnerable saves made against wounds caused by the Ghost Razors must be re-rolled (the results of the second roll count as normal).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Living Legend" id="4289-c585-de26-65dd" hidden="false">
@@ -194,23 +262,9 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           <description>Lugft Huron is touched by a dark destiny as later events would prove. The first time Huron would be removed from play as a casualty for any reason, leave him on his side on the table. At the end of the turn where this has happened, roll a D6 and on a 2+ he instead survives with a single remaining wound, (this includes attacks causing Instant Death, and multiple wounds which remove him from play caused by a particular model&apos;s attacks, etc) and is placed back in play as close to where he fell as possible. This special rule does not apply to any subsequent damage he takes after he has escaped death once in the game.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="The Ghost Razors" hidden="false" id="d27d-5fdc-d7b5-972a">
-          <profiles>
-            <profile name="The Ghost Razors" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="23b4-5698-3c23-e38d">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This unique lightning claw was a long-cherished artifact of the Tiger Claws Chapter and gifted to Huron as a mark of their gratitude. Its strange pale blades flicker with a ghostly light when activated and the technology which powers the weapon is an utter mystery even to Valthek, the Astral Claws savant master of Techmarines. As well as working as a lightning claw, successful invulnerable saves made against wounds caused by the Ghost Razors must be re-rolled (the results of the second roll count as normal).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9270-ecc8-1185-75f2-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="c0c2-72c9-df77-e50b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="9b66-71a1-d7f6-bc07" primary="false" name="Independent Character"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -219,6 +273,16 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Heavy Flamer" id="53f0-e2b3-fbe0-96a3" hidden="false" type="profile" targetId="5f94-6b30-51ac-7af9"/>
+        <infoLink name="And They Shall Know No Fear" id="8b93-1421-fc94-0879" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9518-5223-7d45-fb68" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Terminator Armour" id="e160-a4c7-64f8-c8b8" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Iron Halo" id="cf10-ff90-c8d8-e42d" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="235"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Captain Corien Sumatris" hidden="false" id="7f60-b326-dc94-66f7">
       <profiles>
@@ -235,45 +299,28 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Spectre Pattern Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="66db-3471-d816-5246">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Goldenfang" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6502-7e1b-3dcf-7461">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This shimmering blade is a master-crafted power sword, in additional while using the weapon Corien Sumatris gains two extra attacks on a turn when he assaults, rather than the usual one.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="The Tyrant&apos;s Champion" id="ab0f-311c-1025-4dcf" hidden="false">
           <description>Fierce and merciless, Corien Sumatris&apos; combat skills are legendary in his Chapter, and the highly trained fighters of the 2nd Company under this charge seek to excel all others in the Tyrant&apos;s service. Corien Sumatris has the Furious Charge universal special rule which he also confers to any Codex Space Marine unit he joins. Space Marine infantry units in his force (but not independent characters) also gain +1 to their WS while within 12&quot; of him.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Spectre Pattern Bolter" hidden="false" id="567e-191c-c766-0128">
-          <profiles>
-            <profile name="Spectre Pattern Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="66db-3471-d816-5246">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7216-4cd5-59cc-2e77-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Goldenfang" hidden="false" id="e947-ccc1-c840-bfb2">
-          <profiles>
-            <profile name="Goldenfang" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6502-7e1b-3dcf-7461">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This shimmering blade is a master-crafted power sword, in additional while using the weapon Corien Sumatris gains two extra attacks on a turn when he assaults, rather than the usual one.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb1b-c142-91e5-f608-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="589a-dda6-a92c-feda" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="7077-fbc7-19ec-3040" primary="false" name="Independent Character"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -282,10 +329,22 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="165"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Storm Shield" id="ad88-a843-2e01-fcf6" hidden="false" type="profile" targetId="bfee-9985-7f95-5235"/>
+        <infoLink name="Digital Weapons" id="cf8c-c465-4e34-6d91" hidden="false" type="profile" targetId="60c1-32f6-1e4d-c121"/>
+        <infoLink name="Frag Grenades" id="ac30-ba08-a3d4-a106" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="2847-2746-d761-a487" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="a64e-3c1e-3693-a5c1" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="36e4-3311-6b66-734a" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Astral Claws - Armenneus Valthex" hidden="false" id="1eae-9130-ea70-aa12">
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="2e61-67c6-5f84-9b0c" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="9166-8f7d-fc60-8485" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Astral Claws - Armenneus Valthex" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="608f-be58-3066-8f55">
@@ -320,10 +379,31 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="145"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="3a1e-f971-0be1-985c" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="ad09-82cd-1362-7fb6" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="a0e3-7a7b-bb13-aa76" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="And They Shall Know No Fear" id="ce38-a49a-b3f0-4233" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="d94b-2a51-dfbf-2ac3" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Blessing of the Omnissiah" id="bb01-8fe1-14df-427e" hidden="false" type="rule" targetId="8d73-d6f7-7bc6-7a43"/>
+        <infoLink name="Bolster Defences" id="a201-4374-b4cd-aa41" hidden="false" type="rule" targetId="2c42-9e65-0c0c-3481"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Beamer" hidden="false" id="365e-afac-dbce-af44" type="selectionEntry" targetId="9d9f-755c-3258-709e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db38-4c21-b800-a2a2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3429-de16-bc33-8ee2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marines Errant - Lieutenant Commander Anton Narvaez" hidden="false" id="a5fb-f059-5870-7e49">
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="cbcc-ec41-1e96-03c6" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="eb19-da00-1c75-26bc" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Marines Errant - Lieutenant Commander Anton Narvaez" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="177d-541e-ad18-bd17">
@@ -339,30 +419,17 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Actinic Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1460-bc61-1c60-4992">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A highly charged power-field generator, the Actinic Halo provides a 3+ invulnerable save, however should this be failed and Narvaez survives, roll a further dice and on a 4+ the Actinic Halo continues to work, otherwise it cannot be used for the rest of the battle.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule name="Dark Void Elite" id="24c7-ef09-5d27-24b3" hidden="false">
           <description>If Anton Narvaez is included in your army, one Tactical Squad also included in your army may be chosen to represent the veterans of the Chapter&apos;s long voyages into the outer-galactic darkness. Both Anton Narvaez himself and his chosen squad have the Move Through Cover and Scout universal special rules, and counts as having Void Hardened Armour in battles such as boarding actions where this is relevant, all at no additional cost.</description>
         </rule>
-        <rule name="Actinic Halo" id="c8ff-7700-9535-6c60" hidden="false">
-          <description>A highly charged power-field generator, the Actinic Halo provides a 3+ invulnerable save, however should this be failed and Narvaez survives, roll a further dice and on a 4+ the Actinic Halo continues to work, otherwise it cannot be used for the rest of the battle.</description>
-        </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Thundershock" hidden="false" id="6b72-9697-1d69-6160">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e48-7b0f-f3df-0c3c-max" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Thundershock" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6d97-e35f-f1a4-4160">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A pre-Imperial artifact acquired when Narvaez was fighting as a veteren sergeant under the banner of Rogue Trader Ecale, Thundershock is a master-crafted plasma-gun/</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -370,6 +437,23 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Plasma Gun" id="2f00-5db1-425d-12e5" hidden="false" type="profile" targetId="3bfe-f09d-17dd-d0b4">
+          <modifiers>
+            <modifier type="set" value="Thundershock" field="name" join=" "/>
+            <modifier type="append" value="Master-Crafted" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Power Weapon" id="2e48-cf32-802f-b90e" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Bolt Pistol" id="5509-9a7d-b684-9537" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="5b0d-f9d7-aafe-834f" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="c757-8c8f-d9a5-5a63" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="046a-9998-9751-9e1f" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9ee6-cd97-3372-d414" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="135"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Red Scorpions - Magister Sevrin Loth" hidden="false" id="b6f2-868d-f98b-50fa">
       <profiles>
@@ -386,6 +470,14 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Armour of Selket" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b66-46c4-704f-94f0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A suit of artificer armour that incorporates a psychic hood. 
+
+
+At the beginning of his turn, by passing a psychic test, Loth&apos;s armour save becomes a 2+ invulnerable save which lasts until the beginning of Sevrin Loth&apos;s next turn. This counts as one of Sevrin Loth&apos;s uses of a psychic power for that turn, but may not be negated by outside forces (such as by an enemy&apos;s Psychic Hood for example).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -396,7 +488,48 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e52e-6be5-9763-81ca" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="492e-554d-6621-4538" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <rules>
+        <rule name="Master Psyker" id="802f-5d08-2bee-ff25" hidden="false">
+          <description>Sevrin Loth is a hugely potent Psyker and may use up to three psychic powers per turn, but may not use a single type of power more than once in a turn.</description>
+        </rule>
+        <rule name="Revered" id="cb35-cf32-7b28-74d6" hidden="false">
+          <description>If you include Sevrin Loth in your army, you may also include one Honour Guard squad (see the Space Marine Codex), this does not take up one of your HQ slots.</description>
+        </rule>
+        <rule name="Psyker (maybe link to the actual powers later?)" id="4145-3718-ab5b-428b" hidden="false">
+          <description>Loth has the following psychic powers (see Codex Space Marines for details). 
+
+
+Smite
+
+
+Machine Curse
+
+
+The Avenger
+
+
+Quickening
+
+
+Null Zone
+
+
+Vortex of Doom</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="205"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Force Weapon" id="d6a0-1e4e-c500-961b" hidden="false" type="profile" targetId="3e6f-4d21-608f-f3ee"/>
+        <infoLink name="Bolt Pistol" id="cef9-9d27-f3e3-f37f" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="8310-fae2-0ee3-bdfa" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="e67b-36eb-5060-133b" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Fearless" id="72b9-0d9b-2474-dc22" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+        <infoLink name="Combat Tactics" id="94a3-e5f9-3df3-3f91" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Angels - Captain Tarnus Vale" hidden="false" id="1d4e-c915-f924-c01d">
       <profiles>
@@ -423,7 +556,30 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="d9b8-f657-efe5-2dc5" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="feb2-527a-e632-0b04" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Chainsword" id="e8f2-2637-6ea9-e4c5" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
+        <infoLink name="Bolt Pistol" id="a601-7899-8dc4-19d1" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Plasma Pistol" id="1c79-3e0a-dfcf-02fb" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Krak Grenades" id="ad51-7209-fbde-f1bb" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="5c83-cdb6-54d0-166b" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Melta Bombs" id="dab0-916c-5fd2-3ed7" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
+        <infoLink name="Iron Halo" id="ab67-0168-c44e-1966" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="And They Shall Know No Fear" id="c779-6329-6e14-045b" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="b922-e57c-7760-6474" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="No Retreat, No Surrender" id="0064-52a1-a475-cb68" hidden="false">
+          <description>Tarnus Vale and any Space Marrine squad he joins are Stubborn.</description>
+        </rule>
+        <rule name="Master Gunner" id="803b-60bb-bce7-db34" hidden="false">
+          <description>Any vehicle with the subtype (Tank) in which Captain Vale is being transported gains the benefit of his Tank Hunter special rule if his Chapter Tactics are being used.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raptors - Lias Issodon" hidden="false" id="f65c-e2e4-5b9b-4648">
       <profiles>
@@ -440,6 +596,14 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Malice" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2aae-0f9a-60fa-118d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2 or Heavy 4, Special Ammunition</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -450,7 +614,34 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="ff30-3955-4e90-74e9" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="c5d8-c70a-b7e9-7de1" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Weapon" id="aaae-a89a-8ce4-bfdc" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Bolt Pistol" id="24eb-9753-4653-6246" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="395d-8d5e-543b-eeb8" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="60ff-f495-3c19-a4af" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="1c96-b921-dea2-c034" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="38fc-6b03-c51d-20d1" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Cunning Strategist" id="3f68-e6ff-5741-3ab5" hidden="false">
+          <description>Enemy reserve rolls suffer a -1 penalty if Lias Issodon is present in your army.</description>
+        </rule>
+        <rule name="Infiltrate, Isolate, and Destory" id="de8b-3edc-6c12-f7f0" hidden="false">
+          <description>If your army list contains Lias Issodon, you may select a single enemy unit which is either an enemy squad, monstrous creature, or vehicle that is present on the battlefield at the beginning of the game as the victim of assassination or sabotage.
+
+After any Scout moves are made but before the game begins, the chosen unit suffers either D6 wounds distributed as shooting hits (with AP -) if a squad or monstrous creature.
+
+If the target is a vehicle, it takes a single glancing hit instead. 
+
+
+Independent characters cannot be targeted by this attack.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="140"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lamenters - Malakim Phoros" hidden="false" id="8228-710a-b520-a1df">
       <profiles>
@@ -467,6 +658,19 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Glaive Encarmine" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f5cc-6813-50b8-5db0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This is a two-handed, master-crafted power weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Catechist" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d918-696f-098a-6966">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Melta</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -477,7 +681,25 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e439-6a7b-8241-0589" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="1ce9-16e6-2384-17cf" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frag Grenades" id="fb41-1884-d34c-c30c" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="a0d0-12e4-fa0f-ae71" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Iron Halo" id="ef68-90bc-0760-bc2a" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Fearless" id="e5c5-ad0f-1d59-fe67" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+      </infoLinks>
+      <rules>
+        <rule name="Lord of Ruin" id="8c07-4361-6461-05a5" hidden="false">
+          <description>Any Lamenters unit Malakim Phoros joins become Fearless, and enemy units that lose a combat that involves Malakim Phoros must re-roll successful Morale checks to prevent falling back.</description>
+        </rule>
+        <rule name="Bloodline of Sanguinius" id="2571-769a-c6b5-af1d" hidden="false">
+          <description>The Lamenters are a Chapter formed from the Blood Angels, and Lord Malakim Phoros is a special character to be used in conjunction with a Lamenters army drawn from the Blood Angels Codex and counts as a Blood Angels model (see the Blood Angels Codex for more details and rules pertaining to this).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Novamarines - Captain Mordaci Blaylock" hidden="false" id="6e39-6800-d664-f0e8">
       <profiles>
@@ -494,6 +716,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Foe Ripper" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="caa3-3c4c-d675-f38e">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Foe Ripper is a master-crafted chainfist.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -504,7 +731,26 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="fa49-d87c-581b-bc38" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="c905-2f8a-407e-8cd3" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="9324-95b4-ef67-c247" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Iron Halo" id="40b3-c257-ba0d-80f5" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Storm Bolter" id="b65d-3ba5-9c7a-2e2b" hidden="false" type="profile" targetId="839a-3401-a8a3-989e"/>
+        <infoLink name="And They Shall Know No Fear" id="d555-8445-27b1-2f65" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="67e4-0736-68dc-6771" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Hard as Stone" id="7ad9-a4de-16a6-2ea9" hidden="false">
+          <description>He and any Terminator squad he joins may choose to either pass or fail any Morale test they are called on to make and cannot be pinned.</description>
+        </rule>
+        <rule name="Terminator Attack" id="0fae-3ab0-1970-ac1d" hidden="false">
+          <description>If your army includes Mordaci Blaylock, your Terminator and Terminator Assault squads count as scoring units.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="195"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Hawks - Knight-Captain Elam Courbray" hidden="false" id="95e6-b3c8-1478-5e88">
       <profiles>
@@ -521,6 +767,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Sword Excellus" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0546-6930-0588-63e9">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Excellus is a power weapon that also has the Rending special rule. In addition, when he charges into an assault, Knight-Captain Elam Courbray can forgo his usual number of attacks (including the bonus for charging) to make a single attack which is a Strength 8, Power Weapon, Rending attack.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -531,7 +782,28 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="448d-2085-2e9b-86e6" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="6097-7ae4-a71f-4ec6" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <rules>
+        <rule name="Firefall" id="2cac-1d03-1abf-4df8" hidden="false">
+          <description>Knight-Captain Elam Courbray and any jump pack equipped Space Marine squad he joins have the Counter Attack and Hit and Run universal special rules.</description>
+        </rule>
+        <rule name="Martial Contempt" id="dc8c-4514-63e8-5dcb" hidden="false">
+          <description>If knight-Captain Elam Courbray is in base-to-base contact with an enemy independent character at the start of any assault in which he is involved, then he must direct all his attacks against them. Also, if charging into an assault with a squad containing an enemy independent character. Courbray must be placed in base-to-base contact with them if possible. if more than one enemy character is is eligible as a target to attack, Courbray&apos;s owning player may decide which to focus on.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="ae0f-7eec-a7c4-c1e2" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="f6f0-b1e0-ed81-f801" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Bolt Pistol" id="c636-b494-703e-f2d8" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="1836-6857-31ab-02db" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="dbd8-c7b5-b911-0a24" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="ed7c-8e24-1c3e-5d92" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Jump Pack" id="3342-1d23-f785-5871" hidden="false" type="profile" targetId="03ca-7d84-2867-f44f"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="185"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="f308-079f-d941-9e4e">
       <profiles>
@@ -548,6 +820,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Cinder Edge" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d4ff-0c98-f521-bf2b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Cinder Edge is a master-crafted power weapon.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -558,7 +835,35 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="86eb-a298-d3bb-6d05" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="4872-762a-40cd-eadc" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="150"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Power Weapon" id="ec7b-ba5e-cbc4-cf9b" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Krak Grenades" id="bf93-94ce-3e5e-779c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="e446-d989-1448-17e2" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="9f43-66e2-a9de-10b0" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="And They Shall Know No Fear" id="8028-482f-7fc1-2752" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="bd36-19d4-62fa-bde9" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Combi-Flamer" hidden="false" id="d18d-26f4-cba5-6c41" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7b3-35ee-a252-f836" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d9-7123-3eb9-9c97" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Master Duelist" id="1da0-b693-66da-c358" hidden="false">
+          <description>As long as Mir&apos;San is in base contact with an enemy independent character model, he may choose either to gain an additional +1 attack or reduce a single enemy independent character in base contact&apos;s Attack characteristic by -1 (to a minimum of 1) for that Assault phase. Choose which will apply at the beginning of each Assault phase of combat before any blows are struck by either side.</description>
+        </rule>
+        <rule name="Unflinching Resolve" id="c669-8409-2d50-1eb0" hidden="false">
+          <description>Mir&apos;san and any Space Marine unit he joins can choose to automatically pass or fail any Morale or Pinning test they are called on to make.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Salamanders - Bray&apos;Arth Ashmantle" hidden="false" id="07fc-a816-b323-67bb">
       <profiles>
@@ -571,7 +876,7 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Side" typeId="31b8-be05-a169-eec6">12</characteristic>
             <characteristic name="Rear" typeId="5ffa-c8d3-306c-b7bb">10</characteristic>
             <characteristic name="I" typeId="2a73-0ffe-fbda-71dd">4</characteristic>
-            <characteristic name="A" typeId="5dd6-2318-e247-bd7b">4</characteristic>
+            <characteristic name="A" typeId="5dd6-2318-e247-bd7b">3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -584,7 +889,70 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="0ab6-4901-58e4-2e4d" primary="true" name="HQ"/>
+        <categoryLink targetId="b4fe-561a-c465-819b" id="4774-a3f2-f5df-afa7" primary="false" name="Walker"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="265"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Smoke Launchers" id="a579-e300-dfc4-60e5" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Searchlight" id="9e92-b262-5e4b-c83b" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Extra Armour" id="b463-2f5b-a362-ebcb" hidden="false" type="profile" targetId="ac51-15a9-3707-b470"/>
+      </infoLinks>
+      <rules>
+        <rule name="Wrought by Vulkan" id="787e-c05a-d545-a845" hidden="false">
+          <description>The &apos;Iron Dragon&apos; in which Bray&apos;arth has been interned is a true relic, a unique Dreadnaught war machine that is believed to have been fashioned by the artifice of the Primarch Vulcan himself. It contains many defensive measures and systems that others have strived but always failed to replicate.
+
+
+Weapons and Attacks that usually gain any form of additional dice to penetrate Bray&apos;arth&apos;s Thick Booty (such as monstrous creatures, chainfists, melta weapons, rending attacks, etc) do not do so in his case, and lance weapons do not lower his armour value.</description>
+        </rule>
+        <rule name="Venerable" id="2d8f-24fe-bcfe-197a" hidden="false">
+          <description>Venerable dreadnaughts are very hard to destroy. Whenever Bray&apos;arth Ashmantle suffers a Glancing or penetrating hit, Ashmantles player may tell their opponent to re-roll the result on the damage chart, the second result stands even if it is worse! you may not cry about it.</description>
+        </rule>
+        <rule name="Burning Wrath" id="8d3f-8a6c-fc2e-c9b6" hidden="false">
+          <description>Bray&apos;arth&apos;s Dreadnought chassis is also fitted with a number of secondary flame projectors as well as his main armament, allowing the ancient Dreadnought to wreath himself in flame, incinerating anything that strays too close. 
+
+
+In any close combat in which he is involved, Bray&apos;arth can forgo one of his usual attacks to inflict a single automatic Strength 5, AP 4 hit to all models (friend and foe) in base-to-base contact. the rest of his attacks are made as normal. Note this is not a weapon as such and so is not affected by the Weapon Destroyed result.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Dreadnought Close Combat Weapons each of which has an inbuilt Dreadfire Heavy Flamer" hidden="false" id="0bcb-3de5-69f9-b534">
+          <infoLinks>
+            <infoLink name="Dreadnought Close Combat Weapon" id="61a9-8fb1-8da5-0fa3" hidden="false" type="profile" targetId="d3c6-1218-b3a3-83d4"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6fb-d9f9-f94c-06eb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34f6-3e57-438e-5651" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Dreadfire Heavy Flamers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="12c2-4271-4d12-f87a">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">These Weapons of ancient design are capable of unleashing their power in a single, highly concentrated burst, confining the burning promethium in a superheated lance of flame.
+
+
+Instead of using these weapons as two heavy flamers, they may be fired as a single twin-linked Melta gun (or a single Melta gun if one arm has been destroyed).</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dreadfire Heavy Flamers (Flamer Mode)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d829-eb7f-d0e2-c490">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dreadfire Heavy Flamers (Melta Mode)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="67b0-c38a-dc7e-c508">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Melta</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mantis Warriors - Ahazra Redth" hidden="false" id="74fb-c149-0a66-75e1">
       <profiles>
@@ -601,6 +969,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Talisman of Sundered Souls" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5a91-b9d1-9915-5577">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">It grants Ahazra Redth an invulnerable save of 5+ and allows him to re-roll a failed test to use a psychic power once per player turn. Note that this may negate a Perils of the Warp attack, but the outcome of the re-roll must be taken, even if it it first than the first roll.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -611,7 +984,64 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="df93-17f4-09f2-b6b8" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="293c-32ab-51cf-ac86" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Force Weapon" id="dec1-a318-7510-9113" hidden="false" type="profile" targetId="3e6f-4d21-608f-f3ee"/>
+        <infoLink name="Bolt Pistol" id="d1c0-b9fe-aa80-67bf" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="0ba9-b2cc-c01c-568e" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="e267-a9ca-ed65-cef8" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Psychic Hood" id="3e42-7c7a-9ec0-1b3f" hidden="false" type="profile" targetId="8117-6c63-fd36-e4d9"/>
+        <infoLink name="And They Shall Know No Fear" id="05f7-f4c1-cb95-a2c3" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="27a6-4f1f-d44e-2362" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Whispers on the Wind" id="4689-1042-10aa-3678" hidden="false">
+          <description>If Ahazra Redth is part of the army, then failed attempts by the player to seize the initiative before the battle may be re-rolled and enemy reserve rolls suffer a -1 penalty.</description>
+        </rule>
+        <rule name="Battle Psyker" id="1884-fa01-6712-1b17" hidden="false">
+          <description>Ahazra is a powerful psyker. He has the special Mirage psychic power and may also pick one more from the below list. Ahazra may use 2 psychic powers a turn.
+
+
+Smite
+
+
+Force Dome
+
+
+Machine Curse
+
+
+Avenger
+
+
+Quickening
+
+
+Null Zone
+
+
+Might of the Ancients
+
+
+Gate of Infinity
+
+
+Vortex of Doom</description>
+        </rule>
+        <rule name="Mirage" id="36b5-0c05-7763-7ddb" hidden="false">
+          <description>This is a psychic power. 
+
+
+This power is used at the start of the Librarian&apos;s movement phase. The Librarian, any unit they are with and any vehicle (but not a super-heavy vehicle) they are being transported in, are affected by this power for one full game turn (lasting until the beginning of their next movement phase). 
+
+
+During this time units protected by this power count as being equipped with Defensive Grenades and enemies wishing to shoot at them must do so as if the Night Fighting rules were in effect.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="165"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Executioners - High Chaplain Thulsa Kane" hidden="false" id="1627-d1d2-0d1c-7820">
       <profiles>
@@ -628,6 +1058,24 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Lifetaker" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9b29-68f6-194a-b4ea">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Lifetaker is a massive axe of archaic design, carried by successive Chapter Masters and now given to Kane to signify his leadership of the Executioners during the dark days of the Badab War. The Lifetaker is a Relic Blade.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Aenigmata Ferrum" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b729-f0c3-ba5d-4e42">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This sacred book contains the accumulated battle-wisdom and ancient secrets of the Executioners chapter culled from many thousands of years of chronicles. A copy of the Aenigmata Ferrum is carried into battle and further added to by every High Mortiurge of the chapter. 
+
+
+Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s when rolling to wound in an assault.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grehdalin&apos;s Bones" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0171-f051-1f82-701b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This is a suit of artificer armour that grants its wearer the Eternal Warrior special rule.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -638,7 +1086,26 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="eafc-aa9c-c0da-61b1" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="cfb6-ff2d-5c86-b338" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Plasma Pistol" id="5ff8-26db-5c86-e544" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Rosarius " id="39ab-2739-6737-82bf" hidden="false" type="profile" targetId="6a86-b5c4-7f83-95eb"/>
+        <infoLink name="Frag Grenades" id="4630-ee01-6986-ad89" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="f298-5602-7a78-189f" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Combat Tactics" id="b252-9a28-7d8e-cbb3" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
+      <rules>
+        <rule name="Honour of the Chapter" id="0b75-b6f7-148d-2547" hidden="false">
+          <description>Both he and any squad he joins are Fearless rather than Stubborn (see the Executioners Chapter Tactics), and can re-roll failed armour saves taken as a result of the No Retreat! rule.</description>
+        </rule>
+        <rule name="Liturgies of Battle" id="1aa1-db7a-8eaf-f018" hidden="false">
+          <description>As a Chaplain, Kane and his squad can re-roll failed rolls to hit on a turn in which they assault.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minotaurs - Chaplain Ivanus Enkomi" hidden="false" id="dc5a-c1d7-3085-ad8f">
       <profiles>
@@ -655,6 +1122,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Void Hardened Armour or Jump Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="41c1-3567-095c-6a92">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">You may chose to equip Enkomi with either Void Hardened Armour or a Jump Pack. This must be selected before the game, and should be modeled appropriately.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -665,7 +1137,34 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="f6bf-f21e-0604-27eb" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="4466-6cbc-2c38-4c4a" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Fist" id="3f48-e332-36b7-5916" hidden="false" type="profile" targetId="cc3f-c898-284f-f88d"/>
+        <infoLink name="Crozius Arcanum" id="63e7-f9b6-873c-19ca" hidden="false" type="profile" targetId="e2ff-1ff9-cf5e-b249"/>
+        <infoLink name="Rosarius " id="d594-53bd-8839-e9bc" hidden="false" type="profile" targetId="6a86-b5c4-7f83-95eb"/>
+        <infoLink name="Frag Grenades" id="82b2-c622-e6d5-1532" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="9b15-ffe0-8fa6-7e0c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="72a6-e23d-0f90-1317" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="d454-db34-8e15-e1d2" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Auxiliary Grenade Launcher" hidden="false" id="7b8c-6700-f47c-e025" type="selectionEntry" targetId="5679-1570-d7f0-a45d"/>
+      </entryLinks>
+      <rules>
+        <rule name="Liturgies of Battle" id="e190-8c7d-5189-1dc2" hidden="false">
+          <description>As a Chaplain, Enkomi and his squad can re-roll failed rolls to hit on a turn in which they assault.</description>
+        </rule>
+        <rule name="Honour of the Chapter" id="2f2d-345d-55f9-0fc0" hidden="false">
+          <description>Ivanus Enkomi carries the honour and faith of the chapter, both he and any Space Marine squad he joins are Fearless.</description>
+        </rule>
+        <rule name="Bane of Hatred" id="685c-3ac8-0634-ddc3" hidden="false">
+          <description>Both he and any Space Marine squad he joins gains +2 attack on the turn they charge into assault as opposed to the usual +1.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="145"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minotaurs - Lord Asterion Moloc" hidden="false" id="b911-aee3-cefc-e606">
       <profiles>
@@ -682,6 +1181,19 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Black Spear (Shooting)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5920-116f-01ad-58e5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, One Use</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Black Spear (Melee)" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7e58-7bcc-0b4c-c630">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Black Spear is a relic blade, which houses a single-shot laser weapon. Once per game it can be used to make a shooting attack with the shooting profile.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -692,7 +1204,23 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="5808-d216-9a84-390b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="f1f7-b6f1-2a41-bca8" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="ccb6-86be-ef43-67c0" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Storm Shield" id="8f1e-c52f-b818-3667" hidden="false" type="profile" targetId="bfee-9985-7f95-5235"/>
+        <infoLink name="Combat Tactics" id="eb30-a36d-9be9-a4ef" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Eternal Warrior" id="e367-1035-01f2-bb4d" hidden="false" type="rule" targetId="081d-7750-bb55-7c19"/>
+      </infoLinks>
+      <rules>
+        <rule name="Orbital Bombardment (link to this later, once Space Marine Chapter Master is done)" id="3ffe-d18e-b6ef-4cac" hidden="false"/>
+        <rule name="Dark Fury" id="ae17-6ada-7b37-151b" hidden="false">
+          <description>Both he and any Space Marine squad he joins gains the Fearless rule and counts as carrying assault grenades if they are not already doing so.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="235"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcharodons - Tyberos the Red Wake" hidden="false" id="9203-732a-be9d-3682">
       <profiles>
@@ -709,6 +1237,14 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Hunger and Slake" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="64f8-4d2a-ddb2-0ee5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Tyberos&apos; terminator armour is equipped with a pair of unique power weapons. 
+
+
+Tyberos counts as being equipped with a chainfist and a lightning claw, and may divide up his close combat attacks freely between these two weapon types at the start of any assault phase he is involved in. Not this division must be declared before any blows are struck in that assault phase, and the bonus attack for using 2 weapons has already been included in this profile.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -719,7 +1255,28 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e17e-9649-a028-2a72" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="2cb7-e91d-8d40-4377" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="8a8e-fe58-a34f-bd9f" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Teleport Homer" id="1ff6-63ef-93ef-a8b5" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="And They Shall Know No Fear" id="9b28-cf51-2a84-9b3c" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="297b-d5d2-7e4d-5f46" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Battle Fever" id="611c-733e-d739-77c1" hidden="false">
+          <description>Should Tyberos become subject to the Rage special rule (see Carcharodons Chapter Tactics) he also gains the Preferred Enemy special rule against the army type of the unit he defeated.</description>
+        </rule>
+        <rule name="The Red Brethren" id="36f6-af88-e3b2-d90d" hidden="false">
+          <description>If Tyberos is chosen, then a single lightning claw-equipped Assault Terminator squad may be take as a Troops choice in your army.
+
+
+In addition, any Space Marine infantry model in the army armed with a bolt gun may exchange it for a close combat weapon for free.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="190"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exorcists - Captain Silas Alberec" hidden="false" id="ff77-16fa-67b3-f628">
       <profiles>
@@ -736,6 +1293,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Hellslayer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0d4e-8cfa-2ec0-c6bf">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Hellslayer is a two-handed weapon that counts as a master-crafted Thunder Hammer, and against targets which are either daemons, or possess psychic powers of any kind, all successful hits wound automatically.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -746,7 +1308,31 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="3a36-3173-bfdf-55ed" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="553c-4903-0fad-09b2" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="282a-044d-9c86-595a" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="a1b7-098d-fd3e-2751" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="3c72-5c44-27d4-b163" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="3462-cd09-7505-4bed" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Teleport Homer" id="a135-e17e-cbbf-fd54" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="And They Shall Know No Fear" id="1d73-8293-6ffe-1eef" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="49b6-24a8-ebc9-9a17" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Implacable Discipline" id="a547-79f1-08cf-b0cd" hidden="false">
+          <description>Space Marine units in a force that includes Alberic may re-roll failed pinning checks. 
+
+
+Additionally, Alberic has the Feel No Pain special rule.</description>
+        </rule>
+        <rule name="Soul Seared" id="6a12-b5d4-cd16-5a47" hidden="false">
+          <description>All psychic powers directed at him and any unit he has joined and/or vehicle he is being transported in are nullified on a 4+.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="155"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Star Phantoms - Captain Zhrukhal Androcles" hidden="false" id="cd39-1695-51e6-70d2">
       <profiles>
@@ -763,6 +1349,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bdd6-d305-4250-9f0c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -773,7 +1364,34 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="a076-25fe-e775-0bb8" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="38a2-fa99-bccc-da39" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Fist" id="c62b-dfeb-da19-c822" hidden="false" type="profile" targetId="cc3f-c898-284f-f88d"/>
+        <infoLink name="Frag Grenades" id="ddc8-4ecb-80dd-d902" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="5549-60e3-69b3-612f" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="d3c9-d98f-2033-2fc9" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="a288-17cf-551f-af77" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Combi-Melta" hidden="false" id="bca9-321f-2e64-3739" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8184-66de-6b76-7073" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52bd-d8e0-d314-202c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="155"/>
+      </costs>
+      <rules>
+        <rule name="Master Of Destruction" id="8479-373f-1b1a-97b8" hidden="false">
+          <description>Once per turn, either Zhrukhal Androcles himself, or a single chosen Space Marine unit within 6&quot; of Androcles may add +1 to their rolls on the damage chart against all targets (including buildings and bastions) with an Armour Value that turn. This bonus is cumulative with any other bonus gained as a result from a weapon&apos;s special rules, etc.</description>
+        </rule>
+        <rule name="Commander of the 9th Company " id="238c-2970-529b-f8d2" hidden="false">
+          <description>Zhrukhal Androcles&apos; personal forces comprise of his Chapters heavily armed 9th company Devastator reserve. As such, if Zhrukhal Androcles is present in the army, then devastator squads may be taken as elite as well as heavy support choices.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sons of Medusa - Vaylund Cal" hidden="false" id="7a49-d5c0-899a-e255">
       <profiles>
@@ -790,6 +1408,11 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5dbc-a958-54ca-b70c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -800,7 +1423,35 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="d943-a039-b98d-402b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="d4a7-981c-df17-383d" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Thunder Hammer" id="284f-0f00-3136-33a2" hidden="false" type="profile" targetId="b105-7b07-956b-be5e"/>
+        <infoLink name="Fearless" id="39d7-e225-3d5f-7c6a" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+        <infoLink name="And They Shall Know No Fear" id="47ed-7c85-bc65-3c3a" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="9409-c6d8-c78b-7fca" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Blessing of the Omnissiah" id="0e45-8c6e-6d23-6635" hidden="false" type="rule" targetId="8d73-d6f7-7bc6-7a43"/>
+      </infoLinks>
+      <rules>
+        <rule name="Purge the Weak" id="32ce-915b-01a2-b2e2" hidden="false">
+          <description>Any Devastator squad suitably modelled to represent their cybernetic augmentation taken as part of a ab army that contains Vaylund Cal gains the Feel No Pain universal special rule, but may not run or make sweeping advances.</description>
+        </rule>
+        <rule name="Opus Machina " id="3e64-e62e-a40e-899a" hidden="false">
+          <description>Vayland Cal is a big boy and should be modelled on a 40mm base.</description>
+        </rule>
+        <rule name="Iron Thane" id="ee92-22bd-f298-4aa4" hidden="false">
+          <description>If Vaylund Cal is part of your army, then you may not also take a Space Marine Chapter Master.</description>
+        </rule>
+        <rule name="Lord of the Armoury" id="472e-2722-bfce-8314" hidden="false">
+          <description>If Vaylund Cal is included in the army, then dreadnoughts, venerable dreadnoughts, and ironclad dreadnoughts may be taken as Heavy Support choices as well as Elites.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="215"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Servo-Harness" hidden="false" id="e3b5-2c11-cb08-7ede" type="selectionEntry" targetId="684f-b2a9-d672-a51c"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
