@@ -386,6 +386,31 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxiliary Grenade Launcher" hidden="false" id="5679-1570-d7f0-a45d">
+      <rules>
+        <rule name="Auxiliary Grenade Launcher" id="91eb-6d6b-23ce-bcfe" hidden="false">
+          <description>An Auxiliary Grenade Launcher may be fired is attached to another weapon. It can be fired in addition to the weapon it is attached to. Each time it is fired choose which type of grenade is being used.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="db2b-4ff6-5566-f51b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="188b-349b-992f-fabe">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -774,6 +799,11 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
     <profile name="Rosarius " typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6a86-b5c4-7f83-95eb">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Rosarius confers a 4+ invulnerable save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crozius Arcanum" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e2ff-1ff9-cf5e-b249">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Crozius Arcanum is a power weapon</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

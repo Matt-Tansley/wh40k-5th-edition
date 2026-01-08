@@ -1122,6 +1122,11 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Void Hardened Armour or Jump Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="41c1-3567-095c-6a92">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">You may chose to equip Enkomi with either Void Hardened Armour or a Jump Pack. This must be selected before the game, and should be modeled appropriately.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1132,7 +1137,31 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="f6bf-f21e-0604-27eb" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="4466-6cbc-2c38-4c4a" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Fist" id="3f48-e332-36b7-5916" hidden="false" type="profile" targetId="cc3f-c898-284f-f88d"/>
+        <infoLink name="Crozius Arcanum" id="63e7-f9b6-873c-19ca" hidden="false" type="profile" targetId="e2ff-1ff9-cf5e-b249"/>
+        <infoLink name="Rosarius " id="d594-53bd-8839-e9bc" hidden="false" type="profile" targetId="6a86-b5c4-7f83-95eb"/>
+        <infoLink name="Frag Grenades" id="82b2-c622-e6d5-1532" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="9b15-ffe0-8fa6-7e0c" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="72a6-e23d-0f90-1317" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="d454-db34-8e15-e1d2" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Auxiliary Grenade Launcher" hidden="false" id="7b8c-6700-f47c-e025" type="selectionEntry" targetId="5679-1570-d7f0-a45d"/>
+      </entryLinks>
+      <rules>
+        <rule name="Liturgies of Battle" id="e190-8c7d-5189-1dc2" hidden="false">
+          <description>As a Chaplain, Enkomi and his squad can re-roll failed rolls to hit on a turn in which they assault.</description>
+        </rule>
+        <rule name="Honour of the Chapter" id="2f2d-345d-55f9-0fc0" hidden="false">
+          <description>Ivanus Enkomi carries the honour and faith of the chapter, both he and any Space Marine squad he joins are Fearless.</description>
+        </rule>
+        <rule name="Bane of Hatred" id="685c-3ac8-0634-ddc3" hidden="false">
+          <description>Both he and any Space Marine squad he joins gains +2 attack on the turn they charge into assault as opposed to the usual +1.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minotaurs - Lord Asterion Moloc" hidden="false" id="b911-aee3-cefc-e606">
       <profiles>
