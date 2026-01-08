@@ -716,6 +716,11 @@ Independent characters cannot be targeted by this attack.</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Foe Ripper" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="caa3-3c4c-d675-f38e">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Foe Ripper is a master-crafted chainfist.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -726,7 +731,23 @@ Independent characters cannot be targeted by this attack.</description>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="fa49-d87c-581b-bc38" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="c905-2f8a-407e-8cd3" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="9324-95b4-ef67-c247" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Iron Halo" id="40b3-c257-ba0d-80f5" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Storm Bolter" id="b65d-3ba5-9c7a-2e2b" hidden="false" type="profile" targetId="839a-3401-a8a3-989e"/>
+        <infoLink name="And They Shall Know No Fear" id="d555-8445-27b1-2f65" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="67e4-0736-68dc-6771" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Hard as Stone" id="7ad9-a4de-16a6-2ea9" hidden="false">
+          <description>He and any Terminator squad he joins may choose to either pass or fail any Morale test they are called on to make and cannot be pinned.</description>
+        </rule>
+        <rule name="Terminator Attack" id="0fae-3ab0-1970-ac1d" hidden="false">
+          <description>If your army includes Mordaci Blaylock, your Terminator and Terminator Assault squads count as scoring units.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Hawks - Knight-Captain Elam Courbray" hidden="false" id="95e6-b3c8-1478-5e88">
       <profiles>
