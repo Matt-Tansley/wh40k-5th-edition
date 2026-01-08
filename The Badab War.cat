@@ -1039,6 +1039,9 @@ This power is used at the start of the Librarian&apos;s movement phase. The Libr
 During this time units protected by this power count as being equipped with Defensive Grenades and enemies wishing to shoot at them must do so as if the Night Fighting rules were in effect.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="165"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Executioners - High Chaplain Thulsa Kane" hidden="false" id="1627-d1d2-0d1c-7820">
       <profiles>
