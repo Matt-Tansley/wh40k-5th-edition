@@ -154,6 +154,9 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
           <description>Lord High Commander Carab Culln benefits form the Eternal Warrior special rule, and while he is alive he and all other Red Scorpion units within 12&quot; add +1 to their total score for the purposes of determining combat resolution in any given assault. Note this bonus does not stack for multiple Red Scorpions squads involved in a single combat or with any other similar bonus.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="215"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="be43-969a-1da0-45df">
       <categoryLinks>
@@ -553,7 +556,27 @@ Vortex of Doom</description>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="d9b8-f657-efe5-2dc5" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="feb2-527a-e632-0b04" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Chainsword" id="e8f2-2637-6ea9-e4c5" hidden="false" type="profile" targetId="88b6-8f11-6a15-d874"/>
+        <infoLink name="Bolt Pistol" id="a601-7899-8dc4-19d1" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Plasma Pistol" id="1c79-3e0a-dfcf-02fb" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Krak Grenades" id="ad51-7209-fbde-f1bb" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="5c83-cdb6-54d0-166b" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Melta Bombs" id="dab0-916c-5fd2-3ed7" hidden="false" type="profile" targetId="257e-557a-29ef-7f41"/>
+        <infoLink name="Iron Halo" id="ab67-0168-c44e-1966" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="And They Shall Know No Fear" id="c779-6329-6e14-045b" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="b922-e57c-7760-6474" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="No Retreat, No Surrender" id="0064-52a1-a475-cb68" hidden="false">
+          <description>Tarnus Vale and any Space Marrine squad he joins are Stubborn.</description>
+        </rule>
+        <rule name="Master Gunner" id="803b-60bb-bce7-db34" hidden="false">
+          <description>Any vehicle with the subtype (Tank) in which Captain Vale is being transported gains the benefit of his Tank Hunter special rule if his Chapter Tactics are being used.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raptors - Lias Issodon" hidden="false" id="f65c-e2e4-5b9b-4648">
       <profiles>
