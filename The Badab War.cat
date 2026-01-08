@@ -1162,6 +1162,9 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
           <description>Both he and any Space Marine squad he joins gains +2 attack on the turn they charge into assault as opposed to the usual +1.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="145"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minotaurs - Lord Asterion Moloc" hidden="false" id="b911-aee3-cefc-e606">
       <profiles>
@@ -1178,6 +1181,19 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Black Spear (Shooting)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5920-116f-01ad-58e5">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, One Use</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Black Spear (Melee)" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7e58-7bcc-0b4c-c630">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Black Spear is a relic blade, which houses a single-shot laser weapon. Once per game it can be used to make a shooting attack with the shooting profile.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1188,7 +1204,23 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="5808-d216-9a84-390b" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="f1f7-b6f1-2a41-bca8" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="ccb6-86be-ef43-67c0" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Storm Shield" id="8f1e-c52f-b818-3667" hidden="false" type="profile" targetId="bfee-9985-7f95-5235"/>
+        <infoLink name="Combat Tactics" id="eb30-a36d-9be9-a4ef" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Eternal Warrior" id="e367-1035-01f2-bb4d" hidden="false" type="rule" targetId="081d-7750-bb55-7c19"/>
+      </infoLinks>
+      <rules>
+        <rule name="Orbital Bombardment (link to this later, once Space Marine Chapter Master is done)" id="3ffe-d18e-b6ef-4cac" hidden="false"/>
+        <rule name="Dark Fury" id="ae17-6ada-7b37-151b" hidden="false">
+          <description>Both he and any Space Marine squad he joins gains the Fearless rule and counts as carrying assault grenades if they are not already doing so.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="235"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcharodons - Tyberos the Red Wake" hidden="false" id="9203-732a-be9d-3682">
       <profiles>
