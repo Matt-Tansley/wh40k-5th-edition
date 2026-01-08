@@ -1237,6 +1237,14 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Hunger and Slake" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="64f8-4d2a-ddb2-0ee5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Tyberos&apos; terminator armour is equipped with a pair of unique power weapons. 
+
+
+Tyberos counts as being equipped with a chainfist and a lightning claw, and may divide up his close combat attacks freely between these two weapon types at the start of any assault phase he is involved in. Not this division must be declared before any blows are struck in that assault phase, and the bonus attack for using 2 weapons has already been included in this profile.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1247,7 +1255,28 @@ Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e17e-9649-a028-2a72" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="2cb7-e91d-8d40-4377" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="8a8e-fe58-a34f-bd9f" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Teleport Homer" id="1ff6-63ef-93ef-a8b5" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="And They Shall Know No Fear" id="9b28-cf51-2a84-9b3c" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="297b-d5d2-7e4d-5f46" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Battle Fever" id="611c-733e-d739-77c1" hidden="false">
+          <description>Should Tyberos become subject to the Rage special rule (see Carcharodons Chapter Tactics) he also gains the Preferred Enemy special rule against the army type of the unit he defeated.</description>
+        </rule>
+        <rule name="The Red Brethren" id="36f6-af88-e3b2-d90d" hidden="false">
+          <description>If Tyberos is chosen, then a single lightning claw-equipped Assault Terminator squad may be take as a Troops choice in your army.
+
+
+In addition, any Space Marine infantry model in the army armed with a bolt gun may exchange it for a close combat weapon for free.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="190"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Exorcists - Captain Silas Alberec" hidden="false" id="ff77-16fa-67b3-f628">
       <profiles>
