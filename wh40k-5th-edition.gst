@@ -411,6 +411,19 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Servo-Harness" hidden="false" id="684f-b2a9-d672-a51c">
+      <profiles>
+        <profile name="Servo-Harness" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="63ab-3995-3605-c30a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A servo-harness gives the Techmarine an extra servo-arm (giving him two servo-arm attacks). Plasma Cutter (fired in the shooting phase as a twin linked plasma pistol), and a flamer. In the shooting phase the Techmarine can fire both harness mounted weapons or one harness mounted weapon and another gun.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Plasma Pistol" id="040a-602c-bdde-6863" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Flamer" id="29fe-3477-91e4-a209" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">

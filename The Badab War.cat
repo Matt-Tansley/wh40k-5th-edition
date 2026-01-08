@@ -1408,6 +1408,11 @@ Additionally, Alberic has the Feel No Pain special rule.</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5dbc-a958-54ca-b70c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This character has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1425,18 +1430,28 @@ Additionally, Alberic has the Feel No Pain special rule.</description>
         <infoLink name="Fearless" id="39d7-e225-3d5f-7c6a" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
         <infoLink name="And They Shall Know No Fear" id="47ed-7c85-bc65-3c3a" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
         <infoLink name="Combat Tactics" id="9409-c6d8-c78b-7fca" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Blessing of the Omnissiah" id="0e45-8c6e-6d23-6635" hidden="false" type="rule" targetId="8d73-d6f7-7bc6-7a43"/>
       </infoLinks>
       <rules>
         <rule name="Purge the Weak" id="32ce-915b-01a2-b2e2" hidden="false">
           <description>Any Devastator squad suitably modelled to represent their cybernetic augmentation taken as part of a ab army that contains Vaylund Cal gains the Feel No Pain universal special rule, but may not run or make sweeping advances.</description>
         </rule>
         <rule name="Opus Machina " id="3e64-e62e-a40e-899a" hidden="false">
-          <description>vayland Cal is a big boy and should be modelled on a 40mm base.</description>
+          <description>Vayland Cal is a big boy and should be modelled on a 40mm base.</description>
+        </rule>
+        <rule name="Iron Thane" id="ee92-22bd-f298-4aa4" hidden="false">
+          <description>If Vaylund Cal is part of your army, then you may not also take a Space Marine Chapter Master.</description>
+        </rule>
+        <rule name="Lord of the Armoury" id="472e-2722-bfce-8314" hidden="false">
+          <description>If Vaylund Cal is included in the army, then dreadnoughts, venerable dreadnoughts, and ironclad dreadnoughts may be taken as Heavy Support choices as well as Elites.</description>
         </rule>
       </rules>
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="215"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Servo-Harness" hidden="false" id="e3b5-2c11-cb08-7ede" type="selectionEntry" targetId="684f-b2a9-d672-a51c"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
