@@ -639,6 +639,9 @@ If the target is a vehicle, it takes a single glancing hit instead. 
 Independent characters cannot be targeted by this attack.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="140"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lamenters - Malakim Phoros" hidden="false" id="8228-710a-b520-a1df">
       <profiles>
@@ -655,6 +658,19 @@ Independent characters cannot be targeted by this attack.</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Glaive Encarmine" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f5cc-6813-50b8-5db0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This is a two-handed, master-crafted power weapon.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Catechist" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d918-696f-098a-6966">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Melta</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -665,7 +681,25 @@ Independent characters cannot be targeted by this attack.</description>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e439-6a7b-8241-0589" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="1ce9-16e6-2384-17cf" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Frag Grenades" id="fb41-1884-d34c-c30c" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="a0d0-12e4-fa0f-ae71" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Iron Halo" id="ef68-90bc-0760-bc2a" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Fearless" id="e5c5-ad0f-1d59-fe67" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+      </infoLinks>
+      <rules>
+        <rule name="Lord of Ruin" id="8c07-4361-6461-05a5" hidden="false">
+          <description>Any Lamenters unit Malakim Phoros joins become Fearless, and enemy units that lose a combat that involves Malakim Phoros must re-roll successful Morale checks to prevent falling back.</description>
+        </rule>
+        <rule name="Bloodline of Sanguinius" id="2571-769a-c6b5-af1d" hidden="false">
+          <description>The Lamenters are a Chapter formed from the Blood Angels, and Lord Malakim Phoros is a special character to be used in conjunction with a Lamenters army drawn from the Blood Angels Codex and counts as a Blood Angels model (see the Blood Angels Codex for more details and rules pertaining to this).</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Novamarines - Captain Mordaci Blaylock" hidden="false" id="6e39-6800-d664-f0e8">
       <profiles>
