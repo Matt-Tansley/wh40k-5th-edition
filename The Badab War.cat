@@ -1293,6 +1293,11 @@ In addition, any Space Marine infantry model in the army armed with a bolt gun m
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Hellslayer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0d4e-8cfa-2ec0-c6bf">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Hellslayer is a two-handed weapon that counts as a master-crafted Thunder Hammer, and against targets which are either daemons, or possess psychic powers of any kind, all successful hits wound automatically.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1303,7 +1308,31 @@ In addition, any Space Marine infantry model in the army armed with a bolt gun m
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="3a36-3173-bfdf-55ed" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="553c-4903-0fad-09b2" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="282a-044d-9c86-595a" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Krak Grenades" id="a1b7-098d-fd3e-2751" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Frag Grenades" id="3c72-5c44-27d4-b163" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Iron Halo" id="3462-cd09-7505-4bed" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Teleport Homer" id="a135-e17e-cbbf-fd54" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="And They Shall Know No Fear" id="1d73-8293-6ffe-1eef" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="49b6-24a8-ebc9-9a17" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Implacable Discipline" id="a547-79f1-08cf-b0cd" hidden="false">
+          <description>Space Marine units in a force that includes Alberic may re-roll failed pinning checks. 
+
+
+Additionally, Alberic has the Feel No Pain special rule.</description>
+        </rule>
+        <rule name="Soul Seared" id="6a12-b5d4-cd16-5a47" hidden="false">
+          <description>All psychic powers directed at him and any unit he has joined and/or vehicle he is being transported in are nullified on a 4+.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="155"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Star Phantoms - Captain Zhrukhal Androcles" hidden="false" id="cd39-1695-51e6-70d2">
       <profiles>
