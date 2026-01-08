@@ -577,6 +577,9 @@ Vortex of Doom</description>
           <description>Any vehicle with the subtype (Tank) in which Captain Vale is being transported gains the benefit of his Tank Hunter special rule if his Chapter Tactics are being used.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raptors - Lias Issodon" hidden="false" id="f65c-e2e4-5b9b-4648">
       <profiles>
@@ -593,6 +596,14 @@ Vortex of Doom</description>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
         </profile>
+        <profile name="Malice" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2aae-0f9a-60fa-118d">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2 or Heavy 4, Special Ammunition</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -603,7 +614,31 @@ Vortex of Doom</description>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="ff30-3955-4e90-74e9" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="c5d8-c70a-b7e9-7de1" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Power Weapon" id="aaae-a89a-8ce4-bfdc" hidden="false" type="profile" targetId="1724-667c-a495-6cd7"/>
+        <infoLink name="Bolt Pistol" id="24eb-9753-4653-6246" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="395d-8d5e-543b-eeb8" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="60ff-f495-3c19-a4af" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="And They Shall Know No Fear" id="1c96-b921-dea2-c034" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="38fc-6b03-c51d-20d1" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Cunning Strategist" id="3f68-e6ff-5741-3ab5" hidden="false">
+          <description>Enemy reserve rolls suffer a -1 penalty if Lias Issodon is present in your army.</description>
+        </rule>
+        <rule name="Infiltrate, Isolate, and Destory" id="de8b-3edc-6c12-f7f0" hidden="false">
+          <description>If your army list contains Lias Issodon, you may select a single enemy unit which is either an enemy squad, monstrous creature, or vehicle that is present on the battlefield at the beginning of the game as the victim of assassination or sabotage.
+
+After any Scout moves are made but before the game begins, the chosen unit suffers either D6 wounds distributed as shooting hits (with AP -) if a squad or monstrous creature.
+
+If the target is a vehicle, it takes a single glancing hit instead. 
+
+
+Independent characters cannot be targeted by this attack.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lamenters - Malakim Phoros" hidden="false" id="8228-710a-b520-a1df">
       <profiles>
