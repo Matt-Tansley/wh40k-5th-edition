@@ -1386,13 +1386,10 @@ Additionally, Alberic has the Feel No Pain special rule.</description>
       </costs>
       <rules>
         <rule name="Master Of Destruction" id="8479-373f-1b1a-97b8" hidden="false">
-          <description>Once per turn, either Zhrukhal Androcles himself, or a single chosen Space Marine unit within 6&quot; of Androcles may add +1 to their rills on the damage chart against all targets (including buildings and bastions) with an Armour Value that turn. This bonus is cumulative with any other bonus gained as a result from a weapon&apos;s special rules, ect.</description>
-        </rule>
-        <rule name="Commander of the 9th Company " id="89ce-a58b-a358-7549" hidden="false">
-          <description>Devastator squads may be taken as Elites as well as Heavy Support choices.</description>
+          <description>Once per turn, either Zhrukhal Androcles himself, or a single chosen Space Marine unit within 6&quot; of Androcles may add +1 to their rolls on the damage chart against all targets (including buildings and bastions) with an Armour Value that turn. This bonus is cumulative with any other bonus gained as a result from a weapon&apos;s special rules, etc.</description>
         </rule>
         <rule name="Commander of the 9th Company " id="238c-2970-529b-f8d2" hidden="false">
-          <description>Zhrukhal Androcles&apos; personal forces comprise of his Chapters heavily armed 9th company Devastator reserve. As such, if Zhrukhal Androcles is present in the army, then devastator squads may be taken as elite ass well as heavy support choices.</description>
+          <description>Zhrukhal Androcles&apos; personal forces comprise of his Chapters heavily armed 9th company Devastator reserve. As such, if Zhrukhal Androcles is present in the army, then devastator squads may be taken as elite as well as heavy support choices.</description>
         </rule>
       </rules>
     </selectionEntry>
