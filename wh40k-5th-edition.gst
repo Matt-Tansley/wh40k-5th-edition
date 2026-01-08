@@ -486,6 +486,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
     <rule name="Bolster Defences" id="2c42-9e65-0c0c-3481" hidden="false">
       <description>Each Techmarine may bolster a single ruin before the game begins. When you deploy nominate one ruin in your deployment zone for your Techmarine to Bolster. The ruin&apos;s cover save is improved by one for the duration of the game.</description>
     </rule>
+    <rule name="Master-Crafted" id="8e7d-3eff-078a-e89a" hidden="false"/>
   </sharedRules>
   <sharedProfiles>
     <profile name="Heavy Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35f7-bbeb-6757-ba5c">
@@ -745,6 +746,16 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
     <profile name="Dreadnought Close Combat Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d3c6-1218-b3a3-83d4">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Teleport Homer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c0a6-fc13-1f90-0d3d">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Relic Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3255-9ace-12a7-af56">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Relic Blade is a power weapon whose hits are resolved at Strength 6. A model with a Relic Blade cannot gain an extra attack for having two close combat weapons.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

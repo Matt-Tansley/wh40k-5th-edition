@@ -113,6 +113,7 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="b1ed-2519-4e24-cc94" targetId="26c0-589a-9f26-b597" primary="true"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="462d-c85b-6b1a-c979" primary="false" name="Independent Character"/>
       </categoryLinks>
       <profiles>
         <profile name="Red Scorpions - Lord High Commander Carab Culln" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1c7a-058f-9aa3-4ac5">
@@ -128,7 +129,31 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Blade of the Scorpion" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c5a8-55eb-5257-1a0d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Blade of the Scorpion is a master-crafted Relic Blade, and if Carab Culln&apos;s Weapon Skill is greater than the highest Weapon Skill of the enemy or enemies he is fighting (squad or character) he gains a bonus number of attacks equal to the difference in their Weapon Skill characteristics (i.e if Culln is fighting a mob of Orks with Weapon Skill 4, he gains +2 attacks).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Terminator Armour" id="f076-e6c7-6c49-5311" hidden="false" type="profile" targetId="6064-dd96-bab7-5727"/>
+        <infoLink name="Teleport Homer" id="d99b-7605-794d-593c" hidden="false" type="profile" targetId="c0a6-fc13-1f90-0d3d"/>
+        <infoLink name="Iron Halo" id="ae4f-e28f-7eec-e8ec" hidden="false" type="profile" targetId="3540-7821-df0a-eda5"/>
+        <infoLink name="Storm Bolter" id="8131-4ce9-af61-f97a" hidden="false" type="profile" targetId="839a-3401-a8a3-989e">
+          <modifiers>
+            <modifier type="append" value="Master-Crafted" field="2f86-c8b4-b3b4-3ff9" join=", "/>
+            <modifier type="prepend" value="Master-Crafted" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="And They Shall Know No Fear" id="088c-ac62-1907-07ec" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="16ef-742c-9b5e-41e8" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <rules>
+        <rule name="Orbital Bombardment (link to this later, once Space Marine Chapter Master is done)" id="6f38-93ea-a093-326e" hidden="false"/>
+        <rule name="Proud to Live, Proud to Die, Hard to Kill" id="a154-89c1-df44-b339" hidden="false">
+          <description>Lord High Commander Carab Culln benefits form the Eternal Warrior special rule, and while he is alive he and all other Red Scorpion units within 12&quot; add +1 to their total score for the purposes of determining combat resolution in any given assault. Note this bonus does not stack for multiple Red Scorpions squads involved in a single combat or with any other similar bonus.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Griffons - Chaplain Dreadnought Titus" hidden="false" id="be43-969a-1da0-45df">
       <categoryLinks>
@@ -442,6 +467,14 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Armour of Selket" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="5b66-46c4-704f-94f0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A suit of artificer armour that incorporates a psychic hood. 
+
+
+At the beginning of his turn, by passing a psychic test, Loth&apos;s armour save becomes a 2+ invulnerable save which lasts until the beginning of Sevrin Loth&apos;s next turn. This counts as one of Sevrin Loth&apos;s uses of a psychic power for that turn, but may not be negated by outside forces (such as by an enemy&apos;s Psychic Hood for example).</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -452,7 +485,48 @@ Any unit affected by this rule becomes subject to the Rage universal special rul
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="e52e-6be5-9763-81ca" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="492e-554d-6621-4538" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <rules>
+        <rule name="Master Psyker" id="802f-5d08-2bee-ff25" hidden="false">
+          <description>Sevrin Loth is a hugely potent Psyker and may use up to three psychic powers per turn, but may not use a single type of power more than once in a turn.</description>
+        </rule>
+        <rule name="Revered" id="cb35-cf32-7b28-74d6" hidden="false">
+          <description>If you include Sevrin Loth in your army, you may also include one Honour Guard squad (see the Space Marine Codex), this does not take up one of your HQ slots.</description>
+        </rule>
+        <rule name="Psyker (maybe link to the actual powers later?)" id="4145-3718-ab5b-428b" hidden="false">
+          <description>Loth has the following psychic powers (see Codex Space Marines for details). 
+
+
+Smite
+
+
+Machine Curse
+
+
+The Avenger
+
+
+Quickening
+
+
+Null Zone
+
+
+Vortex of Doom</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="205"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Force Weapon" id="d6a0-1e4e-c500-961b" hidden="false" type="profile" targetId="3e6f-4d21-608f-f3ee"/>
+        <infoLink name="Bolt Pistol" id="cef9-9d27-f3e3-f37f" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+        <infoLink name="Frag Grenades" id="8310-fae2-0ee3-bdfa" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="e67b-36eb-5060-133b" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Fearless" id="72b9-0d9b-2474-dc22" hidden="false" type="rule" targetId="5323-6c00-da35-3737"/>
+        <infoLink name="Combat Tactics" id="94a3-e5f9-3df3-3f91" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Angels - Captain Tarnus Vale" hidden="false" id="1d4e-c915-f924-c01d">
       <profiles>
