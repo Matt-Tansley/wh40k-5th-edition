@@ -1058,6 +1058,24 @@ During this time units protected by this power count as being equipped with Defe
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
           </characteristics>
         </profile>
+        <profile name="The Lifetaker" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9b29-68f6-194a-b4ea">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Lifetaker is a massive axe of archaic design, carried by successive Chapter Masters and now given to Kane to signify his leadership of the Executioners during the dark days of the Badab War. The Lifetaker is a Relic Blade.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Aenigmata Ferrum" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b729-f0c3-ba5d-4e42">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This sacred book contains the accumulated battle-wisdom and ancient secrets of the Executioners chapter culled from many thousands of years of chronicles. A copy of the Aenigmata Ferrum is carried into battle and further added to by every High Mortiurge of the chapter. 
+
+
+Any Space Marine model on Kane&apos;s side within 12&quot; of him can re-roll 1s when rolling to wound in an assault.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grehdalin&apos;s Bones" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="0171-f051-1f82-701b">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This is a suit of artificer armour that grants its wearer the Eternal Warrior special rule.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1068,7 +1086,26 @@ During this time units protected by this power count as being equipped with Defe
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="26c0-589a-9f26-b597" id="eafc-aa9c-c0da-61b1" primary="true" name="HQ"/>
+        <categoryLink targetId="f64f-8fb4-d8ea-6fc9" id="cfb6-ff2d-5c86-b338" primary="false" name="Independent Character"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Plasma Pistol" id="5ff8-26db-5c86-e544" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Rosarius " id="39ab-2739-6737-82bf" hidden="false" type="profile" targetId="6a86-b5c4-7f83-95eb"/>
+        <infoLink name="Frag Grenades" id="4630-ee01-6986-ad89" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="f298-5602-7a78-189f" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+        <infoLink name="Combat Tactics" id="b252-9a28-7d8e-cbb3" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="175"/>
+      </costs>
+      <rules>
+        <rule name="Honour of the Chapter" id="0b75-b6f7-148d-2547" hidden="false">
+          <description>Both he and any squad he joins are Fearless rather than Stubborn (see the Executioners Chapter Tactics), and can re-roll failed armour saves taken as a result of the No Retreat! rule.</description>
+        </rule>
+        <rule name="Liturgies of Battle" id="1aa1-db7a-8eaf-f018" hidden="false">
+          <description>As a Chaplain, Kane and his squad can re-roll failed rolls to hit on a turn in which they assault.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minotaurs - Chaplain Ivanus Enkomi" hidden="false" id="dc5a-c1d7-3085-ad8f">
       <profiles>
