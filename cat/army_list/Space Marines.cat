@@ -1550,89 +1550,6 @@
         <infoLink name="Frag Grenades" id="dd49-9ed8-ca06-0652" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Land Speeder Squadron" hidden="false" id="d848-53b9-e8fb-6cb0">
-      <categoryLinks>
-        <categoryLink targetId="b327-ab7b-3c9c-3123" id="967e-fee8-0eaa-6bd6" primary="true" name="Fast Attack"/>
-        <categoryLink targetId="9f87-2b05-865f-8790" id="8cfe-c407-1999-9daf" primary="false" name="Skimmer"/>
-        <categoryLink targetId="e308-d529-0957-5bf9" id="edf4-8d65-0aad-f1bb" primary="false" name="Fast"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Land Speeder" hidden="false" id="0596-17e3-8240-a0ca" defaultAmount="1">
-          <costs>
-            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
-          </costs>
-          <profiles>
-            <profile name="Land Speeder" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="bf1c-3825-1e51-48d1">
-              <characteristics>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
-                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
-                <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Deep Strike" id="dcc7-301c-8d22-614f" hidden="false" type="rule" targetId="c32f-6871-314f-219e"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ea4-5f83-e297-85cb" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="eada-22f4-e91a-a028" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Pintle Weapon" id="6da6-0f79-8d4b-d61f" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Heavy Bolter" hidden="false" id="caa7-5af8-6e2e-79e0" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
-                <entryLink import="true" name="Heavy Flamer" hidden="false" id="9421-4dbb-ccb5-53e9" type="selectionEntry" targetId="759b-5938-021f-1661"/>
-                <entryLink import="true" name="Multi-Melta" hidden="false" id="bfe7-1fcd-5d5b-e918" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="20c1-9ac4-308a-0005-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20c1-9ac4-308a-0005-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Other Weapon" id="20df-30cc-4b5c-5290" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f513-eb1b-1499-0d3f" includeChildSelections="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Heavy Flamer" hidden="false" id="b1e5-c18e-d013-0f42" type="selectionEntry" targetId="759b-5938-021f-1661">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Heavy Bolter" hidden="false" id="c42a-0ff2-c353-c7c6" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Multi-Melta" hidden="false" id="d31c-e9b0-8815-8bd3" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Assault Cannon" hidden="false" id="3645-2947-bb89-6379" type="selectionEntry" targetId="ee10-7f9a-f4c4-af5b">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Typhoon Missile Launcher" hidden="false" id="669b-eb49-9767-293b" type="selectionEntry" targetId="6e67-df01-8a5e-5f91">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Speeder Storm" hidden="false" id="9f18-f700-a70b-12e0">
       <categoryLinks>
         <categoryLink targetId="b327-ab7b-3c9c-3123" id="61ed-36d7-7d8b-ba88" primary="true" name="Fast Attack"/>
@@ -3868,5 +3785,6 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
     <entryLink import="true" name="Scout Squad" hidden="false" id="afac-0d25-8b4a-c580" type="selectionEntry" targetId="e828-33f5-b969-c13b"/>
     <entryLink import="true" name="Assault Squad" hidden="false" id="04ee-b46d-9c90-d2e9" type="selectionEntry" targetId="cad1-7b2e-4ae3-4704"/>
     <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="12c0-2f9b-35f5-980b" type="selectionEntry" targetId="b15b-98a6-ee15-d383"/>
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="6f6d-bb3b-6ba3-de3a" type="selectionEntry" targetId="963b-eb6a-33b2-d42c"/>
   </entryLinks>
 </catalogue>

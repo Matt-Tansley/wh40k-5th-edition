@@ -3940,6 +3940,114 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Land Speeder Squadron" hidden="false" id="963b-eb6a-33b2-d42c">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="1e02-0b5a-51fb-e1f0" targetId="b327-ab7b-3c9c-3123" primary="true"/>
+        <categoryLink name="Skimmer" hidden="false" id="e092-9047-b411-b6e3" targetId="9f87-2b05-865f-8790" primary="false"/>
+        <categoryLink name="Fast" hidden="false" id="0120-2b4e-fb41-66b8" targetId="e308-d529-0957-5bf9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Land Speeder" hidden="false" id="7732-633f-99e3-b5ac" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
+          </costs>
+          <profiles>
+            <profile name="Land Speeder" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="93e0-b8a0-9a81-3698">
+              <characteristics>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">10</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="2076-3c4b-d2b9-b66c" hidden="false" type="rule" targetId="c32f-6871-314f-219e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbae-0931-75fc-799b" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5074-f381-c62b-342f" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pintle Weapon" id="1b77-c04d-0585-ffc0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="9a5d-7b4d-aa06-49be" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="5324-bddb-1302-1a91" type="selectionEntry" targetId="759b-5938-021f-1661"/>
+                <entryLink import="true" name="Multi-Melta" hidden="false" id="c5d8-ee86-0d90-dd35" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac91-3b0e-201b-5f26" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c17b-48fb-85d4-df11" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Other Weapon" id="3250-5be3-726b-08cc" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beb6-ae96-4f1f-91ff" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="061f-09da-379a-d334" type="selectionEntry" targetId="759b-5938-021f-1661">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="1cba-672e-e791-30cb" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-Melta" hidden="false" id="eff1-648d-6e1a-86cf" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Assault Cannon" hidden="false" id="9451-f833-0543-01dc" type="selectionEntry" targetId="ee10-7f9a-f4c4-af5b">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Typhoon Missile Launcher" hidden="false" id="8556-0c76-1026-3b1b" type="selectionEntry" targetId="d75f-e77d-af1b-a94c">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Typhoon Missile Launcher" hidden="false" id="d75f-e77d-af1b-a94c">
+      <profiles>
+        <profile name="Frag Missiles" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8685-f13f-db6f-b153">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Krak Missiles" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6756-ff2b-ac87-c2fa">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Typhoon Missile Launcher" id="9ea7-d614-d3bc-c37b" hidden="false">
+          <description>A Typhoon Missile Launcher is equipped with Frag and Krak Missiles, declare which type of missile you wish to use each time the weapon is fired.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Psychic Powers" id="fa5d-ea08-1692-4752" hidden="false">
