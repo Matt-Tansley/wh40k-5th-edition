@@ -1,6 +1,6 @@
 ## Armies
 
-- [Space Marines]()
+- [Space Marines](space_marines.md)
 - [Imperial Guard]()
 - [Tyrants Legion]()
 
