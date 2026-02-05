@@ -2534,6 +2534,214 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
         <infoLink name="Combat Tactics" id="e9ac-657d-a704-d9f2" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="9b12-ce85-c65e-0a09">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="181a-4ce3-367f-70f2" targetId="2929-ab82-8ced-da7c" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="c1ed-5075-8120-c347" targetId="c07f-a679-9bd0-a9c0" primary="true"/>
+        <categoryLink name="Independent Character" hidden="false" id="1d66-57ac-5a90-1a91" targetId="f64f-8fb4-d8ea-6fc9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Techmarine" hidden="false" id="79fb-fc46-09e8-099f">
+          <profiles>
+            <profile name="Techmarine" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="cdaf-24cf-4be0-f57e">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="And They Shall Know No Fear" id="aad7-060e-a4fc-790a" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+            <infoLink name="Combat Tactics" id="3261-04c4-0ada-ee82" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+            <infoLink name="Blessing of the Omnissiah" id="34aa-0a25-f519-6dc4" hidden="false" type="rule" targetId="8d73-d6f7-7bc6-7a43"/>
+            <infoLink name="Bolster Defences" id="3880-1593-bed6-596a" hidden="false" type="rule" targetId="2c42-9e65-0c0c-3481"/>
+            <infoLink name="Servo-arm" id="0610-0257-b564-30ab" hidden="false" type="profile" targetId="3b82-2593-f1bd-c606"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Servo-Harness" hidden="false" id="6d1d-8cf9-9c94-71a3" type="selectionEntry" targetId="684f-b2a9-d672-a51c">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Space Marine Bike" hidden="false" id="e2e1-d6d2-ad5f-afc3" type="selectionEntry" targetId="98e0-709f-cf2f-598b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e97-e1ba-a3e8-cdd0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86d1-fa35-bf13-50e2" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="5502-291d-ba27-c338" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="6b71-127f-a628-0520" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1"/>
+                <entryLink import="true" name="Boltgun" hidden="false" id="119c-5c6a-a448-a7ad" type="selectionEntry" targetId="36dc-77bf-9c77-ebec"/>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="4753-dba1-1b37-0736" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="946b-565e-f1df-f6ce" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="989b-b93b-39e5-54e2" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="fd58-3576-1d1f-f9cc" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="0d4a-21c6-d8f3-f443" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28d-89a1-0439-6c0a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="643d-30a0-2f69-7069" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="1725-2e9a-c19c-2cc3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="6d5d-6d8d-931d-561e" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="00fe-2388-8727-e90d" type="selectionEntry" targetId="1deb-7737-421e-a74d">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Servitors" hidden="false" id="5052-d693-54ff-498c">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="-5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="f676-11af-bff3-23f1" targetId="2929-ab82-8ced-da7c" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="6ce9-97ea-9d17-05c9" targetId="c07f-a679-9bd0-a9c0" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="f3f6-770b-3457-44dc" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Servitors" id="5ef8-4181-183a-5da2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sevitor" hidden="false" id="7828-bd65-075f-e21f" defaultAmount="1">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Sevitor" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="2f5e-95d6-4c29-8aed">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Servo-arm" id="e821-f8ec-7791-6848" hidden="false" type="profile" targetId="3b82-2593-f1bd-c606"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sevitor with Heavy Weapon" hidden="false" id="4fb2-f0ad-9d5f-a444">
+              <profiles>
+                <profile name="Sevitor" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="1ad1-df1a-0520-c003">
+                  <characteristics>
+                    <characteristic name="WS" typeId="1a67-35be-8c50-5f48">3</characteristic>
+                    <characteristic name="BS" typeId="a833-788f-22a7-be67">3</characteristic>
+                    <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">3</characteristic>
+                    <characteristic name="T" typeId="84a0-3904-4669-e8da">3</characteristic>
+                    <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                    <characteristic name="I" typeId="a9ee-4582-9091-350a">3</characteristic>
+                    <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">1</characteristic>
+                    <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                    <characteristic name="Sv" typeId="82b9-7b33-be67-0944">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Heavy Weapon" id="8613-b563-1b62-11c6" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4485-44f9-5425-33fc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d0a-9ac9-1439-6583" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="e02f-a9ab-321a-e32a" type="selectionEntry" targetId="dc75-835b-0844-b9a1">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Multi-Melta" hidden="false" id="1095-a243-98fb-96f8" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="dd40-9fb5-abc8-9a39" type="selectionEntry" targetId="fd5b-25eb-73cf-b322">
+                      <costs>
+                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c171-911f-5b0d-6f6b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c42-2a2c-ee71-cfdc" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="57c8-47a6-81f5-7651" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Mindlock" id="6cda-3553-cfac-bc39" hidden="false">
+          <description>A unit of Servitors must test for mindlock at the start of each friendly turn, roll a D6 for each unit of Servitors. If the Result is a 4, 5 or 6 the test is passed and the unit can function normally for the rest of the turn. If the result is a 1, 2 or 3 the unit and any attached characters may not move, shoot, or assault that turn. If a Techmarine or Master of the Forge is part of the Servitor unit at the start of the turn the test is passed automatically.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="increment" value="1" field="f3f6-770b-3457-44dc">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9b12-ce85-c65e-0a09" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Psychic Powers" id="fa5d-ea08-1692-4752" hidden="false">
@@ -2721,6 +2929,11 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
     <profile name="Frag Assault Launchers" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ac70-455b-c374-b664">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit charging into close combat on the same turn as it disembarks from a model with Frag Assault Launchers counts as having frag grenades.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Servo-arm" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3b82-2593-f1bd-c606">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each servo-arm grants the model a single extra close combat attack made seperately at Initiative 1 and Strength 8 ignoring Armour Saves</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
