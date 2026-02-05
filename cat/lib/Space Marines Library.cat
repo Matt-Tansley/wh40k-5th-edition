@@ -4318,6 +4318,170 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
         <infoLink name="Combat Squads" id="e486-5296-8ae1-2abb" hidden="false" type="rule" targetId="a095-a211-d826-323e"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Bike Squad" hidden="false" id="2153-231b-5303-dc75">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="f5eb-5069-9260-6c3d" targetId="b327-ab7b-3c9c-3123" primary="true"/>
+        <categoryLink name="Bike" hidden="false" id="224e-6356-ae2b-341b" targetId="65e8-7133-4b26-b5d9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="6bae-8515-f068-a968" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb2f-f852-3934-55ac" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb89-b5a0-efed-ea3a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scout Biker Sergeant" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="df90-b5d4-8f3a-290e">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4(5)</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">1</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">9</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Space Marine Shotgun" id="5023-bcb3-c27f-1cee" hidden="false" type="profile" targetId="930c-dd74-9aa1-dcc8"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="6979-909e-082a-bee7" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7e4-1123-e19d-fd6b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4bc-a77b-be07-bc49" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="38f0-e96b-4ea2-2807" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="7629-c916-abc0-a2ed" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="2d5f-c9bd-d9aa-8eeb" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="94a1-0730-aa31-9f4c" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="24db-b832-1b01-0e4f" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="fc51-ce96-7ea5-50d0" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="a7a2-f288-0405-7e38" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="b151-461b-34ab-52df" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="338d-23a7-32f4-666e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Space Marine Bike" hidden="false" id="3877-42c1-160f-46d6" type="selectionEntry" targetId="98e0-709f-cf2f-598b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2230-1d7a-07c3-8abc" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cdb-2a9e-e142-0b33" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Locator Beacon" hidden="false" id="2414-efb8-bf3a-2a1d">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+              </costs>
+              <profiles>
+                <profile name="Locator Beacon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7ad1-aa8e-ff7a-012e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">If a unit wishes to arrive from deep strike then it will not scatter. Note that the locator beacon must be on the table at the start of the turn for it to used.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb1-30b7-350e-f30f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Scout Bikers" hidden="false" id="6ad0-d5d1-d679-7d56" defaultAmount="2">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6aaa-d88f-1694-1c99" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="06e2-f167-f833-50c3" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Space Marine Bike" hidden="false" id="ee79-a7da-3a24-5e56" type="selectionEntry" targetId="98e0-709f-cf2f-598b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78b8-1a84-3f18-6ffe" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee99-3baf-1601-cf8e" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Astartes Grenade Launcher" hidden="false" id="342c-19ce-02ac-6c2d" type="selectionEntry" targetId="170a-8bf7-98b0-26f5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57b0-48ef-74ef-3cc7" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="2153-231b-5303-dc75" shared="true" id="9b91-4999-7d9f-ec3c" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Space Marine Shotgun" id="5e9b-bd1b-265b-ac40" hidden="false" type="profile" targetId="930c-dd74-9aa1-dcc8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cluster Mines" hidden="false" id="edd0-16c9-eeed-2909">
+          <profiles>
+            <profile name="Cluster Mines" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="44c6-9ba9-3aa6-e1bc">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each Scout Bike Squad equipped with cluster mines can booby-trap one piece of area terrain before the game begins. Note that a Scout Bike Squad that has split into combat squads still counts as one unit for the purposes of cluster mines. At the start of the game after terrain has been placed declare that your Scout Bikers have placed booby-traps and secretly write down the piece(s) of terrain that have been booby-trapped in this fashion. Each terrain piece can only be booby trapped once. 
+
+
+Cluster Mines are automatically triggered the first time a unit (friendly or enemy) moves into the booby-trapped terrain, the Cluster Mines inflict 2D6 S4 Ap- hits on the unfortunate unit against which no cover saves may be taken vehicles are hit on their rear armor. Once the hits have resolves the Cluster Mines have no further effect</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd1c-3820-7f23-870c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="637f-2939-5864-d611" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Squads" id="25ea-b4cb-49f8-8e42" hidden="false" type="rule" targetId="a095-a211-d826-323e"/>
+        <infoLink name="Combat Tactics" id="1d3c-68e6-7432-c91a" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Scouts" id="4839-df79-f292-c78e" hidden="false" type="rule" targetId="6582-1f0a-7769-4153"/>
+        <infoLink name="Infiltrate" id="cef6-1074-9acb-45fd" hidden="false" type="rule" targetId="ab39-776f-d923-a486"/>
+        <infoLink name="Frag Grenades" id="d96b-1c52-24b8-3707" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+        <infoLink name="Krak Grenades" id="b41c-c7ff-4fe8-d477" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Psychic Powers" id="fa5d-ea08-1692-4752" hidden="false">
@@ -4510,6 +4674,14 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
     <profile name="Servo-arm" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3b82-2593-f1bd-c606">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each servo-arm grants the model a single extra close combat attack made seperately at Initiative 1 and Strength 8 ignoring Armour Saves</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Space Marine Shotgun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="930c-dd74-9aa1-dcc8">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
