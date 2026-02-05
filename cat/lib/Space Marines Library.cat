@@ -4048,6 +4048,63 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Attack Bike Squad" hidden="false" id="32da-a065-25b8-5153">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Attack Bike" hidden="false" id="c04d-4f51-2470-da9b">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8a8d-fd10-c146-3ab5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604f-a962-1aad-ff4a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Attack Bike" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="5344-bce1-e7de-a4da">
+              <characteristics>
+                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
+                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+                <characteristic name="T" typeId="84a0-3904-4669-e8da">4(5)</characteristic>
+                <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
+                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="994f-7e2c-4b8e-ccbb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="b81e-28cb-ff8a-88b0" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
+                <entryLink import="true" name="Multi-Melta" hidden="false" id="11e0-86af-0192-c71d" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78eb-fdf7-a935-328b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ca1-7c65-64ad-16a7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Bolt Pistol" id="fe34-6bc6-7959-95c0" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
+            <infoLink name="Krak Grenades" id="a29a-4704-5951-9d5d" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="d58b-7b31-16d4-2e80" targetId="b327-ab7b-3c9c-3123" primary="true"/>
+        <categoryLink name="Bike" hidden="false" id="7d03-b9a7-48fa-3957" targetId="65e8-7133-4b26-b5d9" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="0739-c9cc-8e8a-d59c" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
+        <infoLink name="Combat Tactics" id="479f-c1d5-eda5-434d" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Frag Grenades" id="7b40-91bc-e67a-ffd5" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Psychic Powers" id="fa5d-ea08-1692-4752" hidden="false">

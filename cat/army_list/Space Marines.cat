@@ -1493,63 +1493,6 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Attack Bike Squad" hidden="false" id="1d0a-4764-6b22-2137">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Attack Bike" hidden="false" id="ef4c-f783-6a61-900e">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c630-a401-2530-110b" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5883-d746-0de0-c19d" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Attack Bike" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="9502-f6eb-f7b8-eb8f">
-              <characteristics>
-                <characteristic name="WS" typeId="1a67-35be-8c50-5f48">4</characteristic>
-                <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
-                <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
-                <characteristic name="T" typeId="84a0-3904-4669-e8da">4(5)</characteristic>
-                <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
-                <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
-                <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
-                <characteristic name="Ld" typeId="d577-4878-e724-5b1e">8</characteristic>
-                <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="40"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon" id="4b6a-4ea7-5fee-5c35" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Heavy Bolter" hidden="false" id="29db-b8ee-e07a-14a7" type="selectionEntry" targetId="dc75-835b-0844-b9a1" defaultAmount="1"/>
-                <entryLink import="true" name="Multi-Melta" hidden="false" id="0232-7680-7682-38b1" type="selectionEntry" targetId="7195-0c6e-8ac0-9d02">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19d8-046e-0ddd-e55d" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33be-d23a-d04a-01f3" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <infoLinks>
-            <infoLink name="Bolt Pistol" id="42c5-05af-711a-d661" hidden="false" type="profile" targetId="4646-fb47-d4ac-f451"/>
-            <infoLink name="Krak Grenades" id="4205-7440-d1e7-d952" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="b327-ab7b-3c9c-3123" id="1c3f-2842-6187-863d" primary="true" name="Fast Attack"/>
-        <categoryLink targetId="65e8-7133-4b26-b5d9" id="cd97-198f-a81d-5d40" primary="false" name="Bike"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="And They Shall Know No Fear" id="c39d-23ae-d09e-81b6" hidden="false" type="rule" targetId="2db7-2b1a-b1eb-292c"/>
-        <infoLink name="Combat Tactics" id="c3b8-d5eb-9300-f07b" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
-        <infoLink name="Frag Grenades" id="dd49-9ed8-ca06-0652" hidden="false" type="profile" targetId="3600-a707-af81-279e"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Speeder Storm" hidden="false" id="9f18-f700-a70b-12e0">
       <categoryLinks>
         <categoryLink targetId="b327-ab7b-3c9c-3123" id="61ed-36d7-7d8b-ba88" primary="true" name="Fast Attack"/>
@@ -3786,5 +3729,6 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
     <entryLink import="true" name="Assault Squad" hidden="false" id="04ee-b46d-9c90-d2e9" type="selectionEntry" targetId="cad1-7b2e-4ae3-4704"/>
     <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="12c0-2f9b-35f5-980b" type="selectionEntry" targetId="b15b-98a6-ee15-d383"/>
     <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="6f6d-bb3b-6ba3-de3a" type="selectionEntry" targetId="963b-eb6a-33b2-d42c"/>
+    <entryLink import="true" name="Attack Bike Squad" hidden="false" id="9b8f-d9a5-5749-a857" type="selectionEntry" targetId="32da-a065-25b8-5153"/>
   </entryLinks>
 </catalogue>
