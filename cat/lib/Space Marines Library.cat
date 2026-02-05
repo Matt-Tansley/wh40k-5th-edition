@@ -1689,309 +1689,6 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="34d3-527b-c5a7-9895"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Dedicated Transport" id="fd18-c0ae-bd85-66cd" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="unit" import="true" name="Land Raider" hidden="false" id="6b21-3ae4-2ed0-a9ec">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="cb43-8ee6-365e-2fee" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="8746-eb02-01a5-f21e" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="9ddd-c1fb-70b5-62b0" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="af3b-a5f1-b6fd-a646">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="ef2e-6e0e-0f50-2906" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="5bcb-3837-3c39-8360" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="1373-d2ae-534c-c75d" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="792d-4910-aed1-30fe" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="fa7f-d11b-fd09-6401" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="8b63-4457-6b89-b447" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e137-e4e8-8436-4d28" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="07e6-37a2-6d6d-7da2" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66d-4645-5c1c-9482" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="6811-3ed8-6dc1-5506" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc7f-3edf-85df-7672" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="b70d-5d8d-aedc-a63d">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="f47b-ae60-09ef-6504" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-36aa-3221-23d2" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Twin Linked Lascannons" hidden="false" id="3c77-c6ab-8a5d-4c9e">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d51d-aff9-50e2-ef04" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="891c-5da4-fdb1-f895" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Lascannon" id="9da4-ec36-f765-093f" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
-                    <infoLink name="Twin-Linked" id="7a08-47dd-1022-ed7e" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Heavy Bolter" hidden="false" id="4361-4628-d5b9-12a3">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe5a-de4c-9b8c-03f8" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d43-6c9d-8dab-9ace" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Heavy Bolter" id="cc23-8b7d-5d69-4060" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
-                    <infoLink name="Twin-Linked" id="af02-0a46-d03e-a717" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="69ab-884f-eb9e-8245">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="2923-87f9-a2fb-5627" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="f03d-8ca4-a9d3-9980" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="bc1a-c6ad-6b11-e827" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider Crusader" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="5bb5-1baf-ff4a-d745">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">16</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="00f0-a7a2-1b60-fb58" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="fe17-9dac-ba4e-adbc" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="df94-da24-1d29-dde3" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="88aa-db7b-d7fe-57e8" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-                <infoLink name="Frag Assault Launchers" id="3f97-b96a-64ef-22b2" hidden="false" type="profile" targetId="ac70-455b-c374-b664"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="3a83-5c9a-001b-3c6e" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="2dc0-f104-1313-5268" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cccb-f286-72b1-233c" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="12be-9e3d-d424-f60e" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56fb-294a-6678-157d" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="c615-6dba-b13b-5fa5" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae47-c54b-4532-10ab" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="71e2-52e8-c9a5-c96f">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="a873-0ad7-5f71-9ab3" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baf7-1765-e30d-ac34" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Hurricane Bolters" hidden="false" id="d3bd-3d30-8f2f-8b1f">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68f0-8e98-a6db-20f0" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f780-f53e-f483-d013" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="84c2-508c-7acb-6254" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                  <profiles>
-                    <profile name="Two Hurricane Bolters" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d13b-1da1-c960-59b8">
-                      <characteristics>
-                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each hurricane bolter consists of 3 twin linked bolters fired as a single weapon</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="0a60-b60d-af0e-1995">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="155c-a062-11be-486d" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95a9-9d21-ea09-bcd2" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="2eae-4264-a761-cc44" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                    <infoLink name="Assault Cannon" id="a098-5558-3bd3-2cf6" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Land Raider Redeemer" hidden="false" id="adb8-255d-feba-2f80">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="240"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="ba24-105f-58f1-8c85" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="acb4-3e69-006f-6311" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="726f-4fa9-d4f6-97d4" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider Redeemer" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b946-32b8-6e12-b9c3">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="eb20-f9ee-2bca-934d" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="ad1d-773e-7167-c3a7" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="2bd9-6ff6-9bc0-f57d" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="b4eb-65dd-b587-8be4" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-                <infoLink name="Frag Assault Launchers" id="3f5f-9a42-9a93-b51b" hidden="false" type="profile" targetId="ac70-455b-c374-b664"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="831f-2c5b-211b-c2ed" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="4569-a36e-f0f0-a53c" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76f4-a6d8-9726-5dbc" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="c89c-7a29-f971-05a7" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05ee-db76-5f00-d98a" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="9e7a-df80-5218-c56a" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8a1-ff7b-a35c-b96f" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="9024-e4cd-ab11-f2f8">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="88f1-11f6-24bb-f9e5" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a81-b86e-fc0d-b45b" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Flamestorm Cannons" hidden="false" id="c160-af89-d55a-bdb9">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fdd6-b723-7a7e-fb48" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="94d3-57e8-f4d3-6d36" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Two Flamestorm Cannons" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f53d-c8c1-2776-86ea">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="c6b4-3634-8f61-6c4e">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="391f-d34b-c640-0539" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b417-4a28-4499-3c95" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="31f1-636d-f3d6-d101" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                    <infoLink name="Assault Cannon" id="bbf9-315a-560c-9442" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dce-5e4e-2d93-3991" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="For every five models in the squad, one terminator may chose one of the following options" id="3ac9-faff-ef40-8b57" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="e802-f682-573e-7e6d" type="selectionEntry" targetId="759b-5938-021f-1661">
@@ -2020,6 +1717,16 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="a70b-cb21-9efd-69f7" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="643a-2e90-7dab-7160" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Land Raider" hidden="false" id="7513-8575-2852-6073" type="selectionEntry" targetId="b728-0f76-25dc-786c"/>
+            <entryLink import="true" name="Land Raider Crusader" hidden="false" id="e758-9f52-cc4b-cc95" type="selectionEntry" targetId="bb96-fa99-2a26-35cf"/>
+            <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="0568-1f4a-b02d-5fd7" type="selectionEntry" targetId="e977-1bb8-410c-9256"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -2224,307 +1931,14 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Dedicated Transport" id="ee10-b84c-53cb-19df" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="unit" import="true" name="Land Raider" hidden="false" id="3a5c-174b-6369-8a7a">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="e425-e230-8ec6-b8bd" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="e51e-1032-b8aa-b6c6" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="770e-d2b7-887c-fef1" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="b5fd-80c1-dada-5e02">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="d25b-81b1-6643-a73e" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="9311-6884-155d-aac1" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="9c3a-925e-7090-8ee7" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="0035-4f00-537b-995d" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="3d3f-e856-b1a0-5b48" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="3b33-ca7d-8ba9-4f64" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0171-548f-0965-8d88" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="0789-b2a9-244e-90c1" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a1d-79a2-0482-8845" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="d0f4-64bd-8e4a-41a3" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="959e-a7a7-612f-2981" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="5260-21bf-d7cb-a97c">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="21dd-e228-865d-098c" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c037-6db5-bf42-c46b" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Twin Linked Lascannons" hidden="false" id="d3f9-d9f7-f0a1-52a3">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2c5b-262c-162c-4bcc" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="469b-9bb7-3487-92c2" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Lascannon" id="eb5d-dc4f-74f3-a9a0" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
-                    <infoLink name="Twin-Linked" id="ce74-c4ed-47e5-4027" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Heavy Bolter" hidden="false" id="b5a1-9913-159d-d3d1">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f13-11fb-eca1-e004" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb1-c320-74c2-2da5" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Heavy Bolter" id="7994-12b7-5740-55fc" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
-                    <infoLink name="Twin-Linked" id="7cd7-51a9-7a54-1a4c" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="df3c-684c-03c3-253a">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="2224-69d8-c764-5b55" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="bf1a-97e7-73d9-e5d3" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="a24a-30d7-36ad-651d" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider Crusader" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="3358-3377-224f-8714">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">16</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="e3db-2aa0-d50b-30bb" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="35b0-105f-9bd3-9d90" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="7fd2-4758-99b6-ddd4" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="35b3-b5c9-d86c-e1f3" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-                <infoLink name="Frag Assault Launchers" id="14ef-3abb-89c0-6d2c" hidden="false" type="profile" targetId="ac70-455b-c374-b664"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="18f2-f877-9036-f4b8" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="e61e-969f-3cb0-7ff2" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02de-df67-e3a8-ee74" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="c00f-0866-5120-70dd" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eacf-7799-1525-5586" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="2feb-979a-f619-4675" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ec-0e8c-6b84-726a" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="b0bf-efdf-2d76-5067">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="372e-5c99-b8ae-448f" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce7-ea6e-8cd8-accc" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Hurricane Bolters" hidden="false" id="11d1-de17-2b27-712b">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8e3a-043c-40b6-8090" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff50-c347-e629-4625" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="2ec2-9fe9-56f3-e883" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                  </infoLinks>
-                  <profiles>
-                    <profile name="Two Hurricane Bolters" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1cd8-1d2e-3112-2759">
-                      <characteristics>
-                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each hurricane bolter consists of 3 twin linked bolters fired as a single weapon</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="0636-c203-4a01-5ab4">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b74-4833-c56f-fc2d" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc80-5006-2319-4039" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="afe7-d4e5-9b5f-dd3a" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                    <infoLink name="Assault Cannon" id="b044-41ec-b572-f052" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Land Raider Redeemer" hidden="false" id="bc4f-dc31-a6bb-f074">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="240"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Heavy Support" hidden="false" id="a814-e2ee-e1a3-4edf" targetId="07d4-3cdd-37e9-4188" primary="true"/>
-                <categoryLink name="Tank" hidden="false" id="f9c7-5ad6-92ee-39f2" targetId="e352-9408-717e-72de" primary="false"/>
-                <categoryLink name="Transport" hidden="false" id="9aa4-9a9a-a1a2-eaec" targetId="eb42-459e-89fa-d41a" primary="false"/>
-              </categoryLinks>
-              <profiles>
-                <profile name="Land Raider Redeemer" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="63dd-8e5c-bb5d-acf3">
-                  <characteristics>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
-                    <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Power of the Machine Spirit" id="0eba-b491-ceea-a67e" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
-                <infoLink name="Assault Vehicle" id="e3e8-266a-73c4-5a4e" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
-                <infoLink name="Searchlight" id="bc95-fa8d-98bc-c48d" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
-                <infoLink name="Smoke Launchers" id="affd-a290-96ab-438d" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
-                <infoLink name="Frag Assault Launchers" id="784c-08b9-cdcc-24f6" hidden="false" type="profile" targetId="ac70-455b-c374-b664"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="e584-fdc2-da1b-938e" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Extra Armour" hidden="false" id="a417-e28e-8685-e2db" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07e0-bd92-8c86-bd40" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="5a7a-2504-67ea-fb8c" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb71-e335-c329-94f2" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Storm Bolter" hidden="false" id="6b5a-3a9d-3f8c-d96c" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4889-6bec-b0c9-3702" includeChildSelections="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="ca80-6ebc-f5ed-9e41">
-                      <costs>
-                        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                      </costs>
-                      <infoLinks>
-                        <infoLink name="Multi-Melta" id="fe88-411b-f7bf-52d2" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ad9-177b-2c37-5378" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Flamestorm Cannons" hidden="false" id="6046-9da3-f0ae-1b86">
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="358a-cbd3-2f80-82d3" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="107d-b062-d07a-74a9" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Two Flamestorm Cannons" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="ecab-da82-27d8-a8d7">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="ebd2-4c55-607b-475b">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a9e-cc74-2b75-d806" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9637-7c2a-5ff8-0be0" includeChildSelections="false"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Twin-Linked" id="9423-3ae7-032f-8a8e" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
-                    <infoLink name="Assault Cannon" id="b5f5-4b38-4697-4d82" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a60-1620-b7f4-cd40" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Land Raider" hidden="false" id="a113-a4ad-4479-ac5b" type="selectionEntry" targetId="b728-0f76-25dc-786c"/>
+            <entryLink import="true" name="Land Raider Crusader" hidden="false" id="d909-acea-39e9-89f2" type="selectionEntry" targetId="bb96-fa99-2a26-35cf"/>
+            <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="9463-6ac9-c092-2064" type="selectionEntry" targetId="e977-1bb8-410c-9256"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -5107,6 +4521,302 @@ Cluster Mines are automatically triggered the first time a unit (friendly or ene
               <description>Each whirlwind is equipped with Vengeance Missiles and Incendiary Castellan Missiles. Declare which type of missile you wish to use before the whirlwind fires.</description>
             </rule>
           </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Land Raider" hidden="false" id="b728-0f76-25dc-786c">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="b4b3-e0b1-2103-cc1f" targetId="07d4-3cdd-37e9-4188" primary="true"/>
+        <categoryLink name="Tank" hidden="false" id="301b-b3bd-858a-14aa" targetId="e352-9408-717e-72de" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="0426-1f68-1cea-01d6" targetId="eb42-459e-89fa-d41a" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Land Raider" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="c1a6-309a-72a5-d0b7">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Power of the Machine Spirit" id="8afe-4a70-5aaa-da03" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
+        <infoLink name="Assault Vehicle" id="d2b4-bb81-65c1-56de" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
+        <infoLink name="Searchlight" id="b0e6-3be0-c0cb-e939" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Smoke Launchers" id="c4d4-955c-6708-46ea" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="6eec-d853-5058-3f17" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="9ad8-1d74-e835-8050" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10e8-ec0b-4dd8-9a2f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="ab82-e10b-18ae-6d19" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d571-bb2f-d732-a7cd" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="859b-40ed-39f2-c111" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a03-9440-851f-983c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="9bee-2d20-d5e3-ffad">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Multi-Melta" id="5e42-b833-23f4-8d6c" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54a0-b6d9-5f8b-aee1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Twin Linked Lascannons" hidden="false" id="e07f-8c7c-d34c-0c06">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="939d-3c1f-afc4-cb7e" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a3b8-0ce6-7d89-16ca" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Lascannon" id="5b63-e51d-8d4c-d875" hidden="false" type="profile" targetId="9e04-5b15-ba18-b034"/>
+            <infoLink name="Twin-Linked" id="c5ea-9a3e-4a7b-3c74" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Linked Heavy Bolter" hidden="false" id="d439-dd60-2b7e-6888">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b06a-2c85-b710-3c7a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ac6-3175-8aaf-8fde" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Heavy Bolter" id="fa83-fb28-41cf-8295" hidden="false" type="profile" targetId="35f7-bbeb-6757-ba5c"/>
+            <infoLink name="Twin-Linked" id="02c5-7402-e080-9931" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="bb96-fa99-2a26-35cf">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="250"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="e7f3-bde1-8498-a380" targetId="07d4-3cdd-37e9-4188" primary="true"/>
+        <categoryLink name="Tank" hidden="false" id="e25a-7029-b5b3-5897" targetId="e352-9408-717e-72de" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="f388-c12f-bea5-9cca" targetId="eb42-459e-89fa-d41a" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Land Raider Crusader" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="1f9e-84b0-8ad4-d980">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">16</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Power of the Machine Spirit" id="6bc8-92d5-cfa1-4a5d" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
+        <infoLink name="Assault Vehicle" id="dc34-779d-372d-4f80" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
+        <infoLink name="Searchlight" id="177f-dc26-faed-c9f2" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Smoke Launchers" id="5ae6-d258-b1cd-9e2c" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Assault Cannon" id="d4a4-b908-3b5d-ddea" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="addc-0aee-5bb1-f303" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="6217-38c4-b976-b3f4" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a026-9d22-d493-594a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="4a50-2dbc-289f-7f1e" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c105-740c-ecd3-f1a4" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="ba83-53fa-f402-91a1" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bf3-43cb-617a-7190" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="fed1-c7ba-17b7-990a">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Multi-Melta" id="e14d-9ab1-0ae3-b1dd" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d605-bdac-6bc5-ac32" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Hurricane Bolters" hidden="false" id="1442-30f0-690f-b239">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="688b-7801-0086-14ea" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b94c-d1bc-97c3-01ff" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="0a66-881d-ea7e-389f" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Two Hurricane Bolters" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1e65-68d5-2f13-3935">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Each hurricane bolter consists of 3 twin linked bolters fired as a single weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="803b-164c-2968-ed67">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b24-1184-5e41-84cf" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7448-aed4-33cd-bffd" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="30be-d6dc-eb08-8506" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+            <infoLink name="Assault Cannon" id="315a-e7ac-042c-d7f3" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Land Raider Redeemer" hidden="false" id="e977-1bb8-410c-9256">
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="240"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="59f3-44bb-e161-e987" targetId="07d4-3cdd-37e9-4188" primary="true"/>
+        <categoryLink name="Tank" hidden="false" id="cb4c-3367-9b17-6542" targetId="e352-9408-717e-72de" primary="false"/>
+        <categoryLink name="Transport" hidden="false" id="db80-72ae-2bb0-86cb" targetId="eb42-459e-89fa-d41a" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Land Raider Redeemer" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="75c0-2010-2457-5221">
+          <characteristics>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Front Ramp, Side Doors</characteristic>
+            <characteristic name="Fire Points" typeId="2656-840d-9c1c-b256">None</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Power of the Machine Spirit" id="54a7-18d9-b56f-c5f6" hidden="false" type="rule" targetId="59b3-9a70-8947-77b2"/>
+        <infoLink name="Assault Vehicle" id="aa37-d8b3-3c0d-0ee8" hidden="false" type="rule" targetId="745f-0dc5-7b71-b930"/>
+        <infoLink name="Searchlight" id="4485-fedb-dea1-ba6e" hidden="false" type="profile" targetId="dc23-5a9c-9914-330c"/>
+        <infoLink name="Smoke Launchers" id="6fda-d846-6042-14ff" hidden="false" type="profile" targetId="164d-1bee-3b70-8f65"/>
+        <infoLink name="Frag Assault Launchers" id="d647-0652-b214-3dd3" hidden="false" type="profile" targetId="ac70-455b-c374-b664"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Space Marine Vehicle Upgrades" id="0a10-94c9-d093-ac50" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Extra Armour" hidden="false" id="3068-d078-abe0-86d6" type="selectionEntry" targetId="0a9f-b9a4-09b0-deb9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf3-a2c9-8f72-7311" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="69c2-8e72-ce28-691a" type="selectionEntry" targetId="89b8-312d-cec7-69ac">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a79f-3086-cd09-cb0b" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="5e26-0e2b-c8e9-ad3a" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4f4-db83-70a8-908d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi Melta" hidden="false" id="6aeb-75e9-c61b-25b3">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Multi-Melta" id="845d-4217-3052-e435" hidden="false" type="profile" targetId="f146-e688-6b63-f308"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bffa-1ad4-727b-b64a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Flamestorm Cannons" hidden="false" id="0b0a-2492-b8c8-e040">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ab75-203b-d20f-487a" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9d0-8907-dfb5-39af" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Two Flamestorm Cannons" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="f1b6-4d3f-c3d7-0799">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Linked Assault Cannon" hidden="false" id="fb6a-1a25-08b5-a7c3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8d7-ac9a-c131-ac35" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1485-9768-00d0-5e62" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="1531-dc86-41aa-deff" hidden="false" type="rule" targetId="e0a9-c4c2-998e-cad5"/>
+            <infoLink name="Assault Cannon" id="269c-32d6-13fa-384f" hidden="false" type="profile" targetId="c6d8-f011-ba85-3346"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
