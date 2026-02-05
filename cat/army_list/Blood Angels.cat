@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2d1a-a6bc-e722-1342" name="Blood Angels" gameSystemId="sys-282a-b1c7-7a9a-c326" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Reclusiarch" hidden="false" id="bfcf-6aff-52e6-2530">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="923e-4af6-a9ae-a843" targetId="26c0-589a-9f26-b597" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="074f-5351-7206-0c7e" targetId="2929-ab82-8ced-da7c" primary="false"/>
+        <categoryLink name="Independent Character" hidden="false" id="f8df-5d43-07da-823f" targetId="f64f-8fb4-d8ea-6fc9" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="130"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Combat Tactics" id="72ac-a11c-b0cb-7d52" hidden="false" type="rule" targetId="401e-a2bb-b897-f056"/>
+        <infoLink name="Frag Grenades" id="48e1-33d6-6044-7c62" hidden="false" type="profile" targetId="3600-a707-af81-279e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="543d-51a6-b94c-bdd4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Krak Grenades" id="50f0-c22a-08ba-ee8e" hidden="false" type="profile" targetId="23fc-31fc-fcc8-2d39">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="543d-51a6-b94c-bdd4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Rosarius " typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="91e5-e0c2-4ad7-0fce">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Rosarius confers a 4+ invulnerable save</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chaplain" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6ff8-97d0-493a-c4c6">
+          <characteristics>
+            <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
+            <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+            <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
+            <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4(5)" field="84a0-3904-4669-e8da">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="98e0-709f-cf2f-598b" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2+" field="82b9-7b33-be67-0944">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="4c54-0060-0194-28ac" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crozius Arcanum" hidden="false" id="2e3e-a21e-79c6-de15" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23ad-309b-6cf2-c1d9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a95f-c73d-f2a9-dda3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Crozius Arcanum" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b2e1-e6ba-8549-3537">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Crozius Arcanum is a power weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Honour of the Chapter " id="0176-f36d-5f37-c07f" hidden="false">
+          <description>A Chaplain and all members of any squad he has joined are fearless.</description>
+        </rule>
+        <rule name="Liturgies of Blood" id="404f-fa02-f6b5-b611" hidden="false">
+          <description>On a Player turn in which he assaults, a Chaplain and all members of any squad he has joined can re-roll all failed rolls to hit.
+
+Models in a Death Company unit can also re-roll failed rolls to wound.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Chaplain Weapons" id="e9fa-50a6-da27-16ef" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="499f-1942-c466-d485" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54"/>
+            <entryLink import="true" name="Boltgun" hidden="false" id="6524-7d71-da8c-81ab" type="selectionEntry" targetId="36dc-77bf-9c77-ebec"/>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="91b7-b31d-590f-80cd" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="f552-82ce-039f-45e8" type="selectionEntry" targetId="4603-baf5-2bd9-1ccc"/>
+            <entryLink import="true" name="Combi-Flamer" hidden="false" id="1562-fc68-90f3-322b" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Melta" hidden="false" id="a12f-5952-7c81-059e" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-Plasma" hidden="false" id="87f3-fe68-85b2-6cac" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="3c36-05fb-a675-8d5d" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="541b-d19a-0ac2-5d9e" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Infernus Pistol" hidden="false" id="ead2-5b5f-ed22-f100" type="selectionEntry" targetId="c54d-912c-54c8-e3dc"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f57-36c8-598c-9650" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcbb-9e57-aa1b-95c7" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="543d-51a6-b94c-bdd4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Melta Bombs" hidden="false" id="85c0-e8ac-4ecc-03d5" type="selectionEntry" targetId="31ed-7ab1-57dc-889b">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a64a-0d05-189d-42c3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Jump Pack" hidden="false" id="5b63-0616-e5ab-8471" type="selectionEntry" targetId="2b6b-1715-a3ab-dbcd">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="98e0-709f-cf2f-598b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4c54-0060-0194-28ac" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1f-734b-8392-e3e2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Space Marine Bike" hidden="false" id="8554-2ce0-c226-2272" type="selectionEntry" targetId="98e0-709f-cf2f-598b">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3e8-0fef-d120-6b2d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="5b63-0616-e5ab-8471" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="4c54-0060-0194-28ac" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Terminator Armour" hidden="false" id="4c54-0060-0194-28ac" type="selectionEntry" targetId="543d-51a6-b94c-bdd4">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="671b-7b16-a350-b034" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Terminator Ranged Weapon" id="7d72-2514-8635-45a6" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77ab-1302-1aae-52f6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c993-6357-7d5b-2863" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="ad14-4d71-21a5-f617" type="selectionEntry" targetId="e58f-3db0-d262-b837" defaultAmount="1"/>
+                <entryLink import="true" name="Combi-Flamer" hidden="false" id="c559-f42b-3721-3f5e" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Melta" hidden="false" id="dd64-cca4-22f7-ac69" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-Plasma" hidden="false" id="7a89-caad-635c-5bad" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+                  <costs>
+                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="98e0-709f-cf2f-598b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="5b63-0616-e5ab-8471" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="8cda-4105-96c3-b054" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="2b6b-1715-a3ab-dbcd" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="2929-ab82-8ced-da7c" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="bfcf-6aff-52e6-2530" childId="2b6b-1715-a3ab-dbcd" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Space Marines Library" id="5ad6-0058-f96a-0e5c" targetId="e521-4c64-7249-9fdf"/>
+  </catalogueLinks>
+  <sharedProfiles>
+    <profile name="Hand Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="95d6-5d42-4643-2e8c">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infernus Pistol" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6e17-2c68-244f-e752">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Melta</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Hand Flamer" hidden="false" id="4603-baf5-2bd9-1ccc">
+      <infoLinks>
+        <infoLink name="Hand Flamer" id="1882-9973-9640-9cae" hidden="false" type="profile" targetId="95d6-5d42-4643-2e8c"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernus Pistol" hidden="false" id="c54d-912c-54c8-e3dc">
+      <infoLinks>
+        <infoLink name="Infernus Pistol" id="ca5f-6646-bb90-0c42" hidden="false" type="profile" targetId="6e17-2c68-244f-e752"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
