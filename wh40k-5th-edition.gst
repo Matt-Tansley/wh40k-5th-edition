@@ -358,6 +358,72 @@
         <infoLink name="Feel No Pain" id="0a34-cca0-9bd8-df67" hidden="false" type="rule" targetId="9cd9-3f91-3337-fdd0"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Conversion Beamer" hidden="false" id="9d9f-755c-3258-709e">
+      <profiles>
+        <profile name="Conversion Beamer &lt;18&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="637f-f7aa-6018-57d2">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conversion Beamer 18&quot; to 42&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="aff9-51da-b2df-2cb3">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot; - 42&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conversion Beamer 42&quot;-72&quot;" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="682c-d155-e125-6b63">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">42&quot; - 72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxiliary Grenade Launcher" hidden="false" id="5679-1570-d7f0-a45d">
+      <rules>
+        <rule name="Auxiliary Grenade Launcher" id="91eb-6d6b-23ce-bcfe" hidden="false">
+          <description>An Auxiliary Grenade Launcher may be fired is attached to another weapon. It can be fired in addition to the weapon it is attached to. Each time it is fired choose which type of grenade is being used.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="db2b-4ff6-5566-f51b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="188b-349b-992f-fabe">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Servo-Harness" hidden="false" id="684f-b2a9-d672-a51c">
+      <profiles>
+        <profile name="Servo-Harness" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="63ab-3995-3605-c30a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A servo-harness gives the Techmarine an extra servo-arm (giving him two servo-arm attacks). Plasma Cutter (fired in the shooting phase as a twin linked plasma pistol), and a flamer. In the shooting phase the Techmarine can fire both harness mounted weapons or one harness mounted weapon and another gun.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Plasma Pistol" id="040a-602c-bdde-6863" hidden="false" type="profile" targetId="6104-3c67-5bfb-5873"/>
+        <infoLink name="Flamer" id="29fe-3477-91e4-a209" hidden="false" type="profile" targetId="0aa6-37fe-dc24-4432"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Template Weapons" id="aea6-d0a5-7def-15ef" hidden="false">
@@ -447,6 +513,18 @@ DEEP STRIKE MISHAP TABLE:
     <rule name="Poisoned Weapons" id="9a2a-5fce-a6f7-640d" hidden="false">
       <description>Poisoned weapons always wound on a fixed number, generally shown in brackets.  In addition, if the Strength of the wielder is the same or higher than the Toughness of the victim, the wielder must re-roll failed rolls to wound in close combat.</description>
     </rule>
+    <rule name="Blessing of the Omnissiah" id="8d73-d6f7-7bc6-7a43" hidden="false">
+      <description>If a Techmarine is in base contact with a damaged vehicle during the shooting phase he can attempt to repair it instead of firing. Roll a D6 and add the following modifiers:
+
+Each Servitor with a servo-arm in the unit: +1
+The Techmarine has a servo-harness: +1
+
+If the result is a 5 or more, then either a Weapon Destroyed or Immobilised result may be repaired. If a Weapon Destroyed result is repaired the weapon may be fired in the following shooting phase. A Techmarine may not attempt to repair if gone to ground or falling back.</description>
+    </rule>
+    <rule name="Bolster Defences" id="2c42-9e65-0c0c-3481" hidden="false">
+      <description>Each Techmarine may bolster a single ruin before the game begins. When you deploy nominate one ruin in your deployment zone for your Techmarine to Bolster. The ruin&apos;s cover save is improved by one for the duration of the game.</description>
+    </rule>
+    <rule name="Master-Crafted" id="8e7d-3eff-078a-e89a" hidden="false"/>
   </sharedRules>
   <sharedProfiles>
     <profile name="Heavy Bolter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35f7-bbeb-6757-ba5c">
@@ -591,7 +669,7 @@ DEEP STRIKE MISHAP TABLE:
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Force Weapons have the same effects as power weapons, but also confer to the wielder one additional psychic power. 
 
 
-Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value. </characteristic>
+Roll to hit and wound as normal, allowing any invulnerable saves to be made. The psyker may then take a psychic test to use the weapons power against any one opponent that suffered an unsaved wound by the weapon in that player turn. The normal rules for using psychic powers apply. If the test is passed the enemy model suffers instant death regardless of its Toughness value. This power has no effect against vehicles, models that are immune to instant death, and any other model that does not have a wounds value.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy Flamer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5f94-6b30-51ac-7af9">
@@ -676,6 +754,69 @@ Roll to hit and wound as normal, allowing any invulnerable saves to be made. The
     <profile name="Thunder Hammer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b105-7b07-956b-be5e">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Terminator Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6064-dd96-bab7-5727">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models in terminator armor have the relentless universal special rule. Models in terminator armor may not perform sweeping advances. Models in Terminator armor have a 2+ armor save and a 5+ invulnerable save. Any model wearing terminator armor may deploy via deep strike even if the mission rules would not typically permit it. Terminators count as two models for the purposed of transport capacity and cannot embark on Rhinos or Razorbacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Iron Halo" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3540-7821-df0a-eda5">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Iron Halo Confers a 4+ Invulnerable Save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Storm Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bfee-9985-7f95-5235">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a storm shield has a 3+ invulnerable save. A model with a storm shield may never claim an additional attack for being armed with two melee weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Digital Weapons" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="60c1-32f6-1e4d-c121">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model armed with digital weapons can re-roll a single failed roll to wound in each assault phase</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Extra Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ac51-15a9-3707-b470">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Need to fill in</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dreadnought Close Combat Weapon" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="d3c6-1218-b3a3-83d4">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Teleport Homer" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="c0a6-fc13-1f90-0d3d">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
+      </characteristics>
+    </profile>
+    <profile name="Relic Blade" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3255-9ace-12a7-af56">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Relic Blade is a power weapon whose hits are resolved at Strength 6. A model with a Relic Blade cannot gain an extra attack for having two close combat weapons.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jump Pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="03ca-7d84-2867-f44f">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models equipped with a jump pack are jump infantry. In addition they may deploy via Deep Strike.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Psychic Hood" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8117-6c63-fd36-e4d9">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Declare that you&apos;ll use the psychic hood after an enemy model within 24&quot; of the Librarian passes a psychic test. If there are several Librarians in range only one can attempt to nullify the power. 
+
+
+Each player rolls a D6 and adds their models Leadership value to the score. If the Librarian beats the opposing model&apos;s score then the psychic power is nullified and does not take effect that turn. If the opposing model&apos;s score is equal to or higher, it can use its psychic power as normal. The psychic hood can be used once each time an enemy model uses a psychic power within range.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rosarius " typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6a86-b5c4-7f83-95eb">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Rosarius confers a 4+ invulnerable save</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crozius Arcanum" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="e2ff-1ff9-cf5e-b249">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Crozius Arcanum is a power weapon</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

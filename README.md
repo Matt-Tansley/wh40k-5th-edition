@@ -8,7 +8,10 @@
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
+
 ## Overview
+
+See the [Docs!](docs/docs.md)
 
 **What's this?**
 

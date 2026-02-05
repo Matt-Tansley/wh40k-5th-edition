@@ -5342,12 +5342,12 @@ A Thunderfire Cannon has multiple profiles. Choose which one you wish to use bef
           <entryLinks>
             <entryLink import="true" name="Bolt Pistol" hidden="false" id="34f6-7e61-d834-5c85" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1"/>
             <entryLink import="true" name="Boltgun" hidden="false" id="273a-a57d-226f-3c3b" type="selectionEntry" targetId="36dc-77bf-9c77-ebec"/>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="d513-6a20-ed14-9df4" type="selectionEntry" targetId="e58f-3db0-d262-b837" defaultAmount="">
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="d513-6a20-ed14-9df4" type="selectionEntry" targetId="e58f-3db0-d262-b837">
               <costs>
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Combi-Flamer" hidden="false" id="a6ef-1147-219d-36bc" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded" defaultAmount="">
+            <entryLink import="true" name="Combi-Flamer" hidden="false" id="a6ef-1147-219d-36bc" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
               <costs>
                 <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
               </costs>
@@ -5385,7 +5385,7 @@ A Thunderfire Cannon has multiple profiles. Choose which one you wish to use bef
         <selectionEntry type="upgrade" import="true" name="Epistolary " hidden="false" id="410e-88eb-7470-b5e2">
           <rules>
             <rule name="Epistolary " id="78c9-3d4e-9cd0-81d4" hidden="false">
-              <description>A model with the Epistolary upgrade can cast two psychic powers each turn instead of one. </description>
+              <description>A model with the Epistolary upgrade can cast two psychic powers each turn instead of one.</description>
             </rule>
           </rules>
           <costs>
@@ -5419,7 +5419,7 @@ A Thunderfire Cannon has multiple profiles. Choose which one you wish to use bef
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Master of the Forge" hidden="false" id="c77f-ff78-4ece-9343" defaultAmount="">
+    <selectionEntry type="upgrade" import="true" name="Master of the Forge" hidden="false" id="c77f-ff78-4ece-9343">
       <costs>
         <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="100"/>
       </costs>
@@ -6524,7 +6524,7 @@ A Thunderfire Cannon has multiple profiles. Choose which one you wish to use bef
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Declare that you&apos;ll use the psychic hood after an enemy model within 24&quot; of the Librarian passes a psychic test. If there are several Librarians in range only one can attempt to nullify the power. 
 
 
-Each player rolls a D6 and adds their models Leadership value to the score. If the Librarian beats the opposing model&apos;s score then the psychic power is nullified and does not take effect that turn. If the opposing model&apos;s score is equal to or higher, it can use its psychic power as normal. The psychic hood can be used once each time an enemy model uses a psychic power within range. </characteristic>
+Each player rolls a D6 and adds their models Leadership value to the score. If the Librarian beats the opposing model&apos;s score then the psychic power is nullified and does not take effect that turn. If the opposing model&apos;s score is equal to or higher, it can use its psychic power as normal. The psychic hood can be used once each time an enemy model uses a psychic power within range.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6632,7 +6632,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="Smite" hidden="false" id="817b-e870-7afc-d152">
           <rules>
             <rule name="Smite" id="5811-d8bc-6a72-4f3f" hidden="false">
-              <description>Smite is a Psychic Shooting attack with the following profile. </description>
+              <description>Smite is a Psychic Shooting attack with the following profile.</description>
             </rule>
           </rules>
           <profiles>
@@ -6652,7 +6652,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="Force Dome" hidden="false" id="e232-5e90-abef-4ff5">
           <rules>
             <rule name="Force Dome" id="cc98-474a-34d9-d0b7" hidden="false">
-              <description>This power is used at the start of the Librarian&apos;s Movement phase. The Librarian and any unit he is with receive a 5+ invulnerable save until the end to the following player turn. </description>
+              <description>This power is used at the start of the Librarian&apos;s Movement phase. The Librarian and any unit he is with receive a 5+ invulnerable save until the end to the following player turn.</description>
             </rule>
           </rules>
           <constraints>
@@ -6671,7 +6671,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, If this attack hits the target Vehicle suffers a single glancing hit. </characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, If this attack hits the target Vehicle suffers a single glancing hit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6682,7 +6682,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="The Avenger" hidden="false" id="5d8f-3db2-7656-3d5a">
           <rules>
             <rule name="The Avenger" id="3ff1-8293-cd0a-faab" hidden="false">
-              <description>This power is a psychic shooting attack with the following profile. </description>
+              <description>This power is a psychic shooting attack with the following profile.</description>
             </rule>
           </rules>
           <profiles>
@@ -6712,7 +6712,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="Null Zone" hidden="false" id="6785-d939-f98f-9033">
           <rules>
             <rule name="Null Zone" id="db74-f9e1-4ace-64ce" hidden="false">
-              <description>This power is used at the start of the Librarian&apos;s Shooting phase. All enemy units within 24&quot; of the Librarian must re-roll successful invulnerable saves for the remainder of the player turn. </description>
+              <description>This power is used at the start of the Librarian&apos;s Shooting phase. All enemy units within 24&quot; of the Librarian must re-roll successful invulnerable saves for the remainder of the player turn.</description>
             </rule>
           </rules>
           <constraints>
@@ -6722,7 +6722,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="Might of the Ancients" hidden="false" id="c120-510b-5a88-1fb4">
           <rules>
             <rule name="Might of the Ancients" id="d060-aa79-c4af-5d74" hidden="false">
-              <description>The Power is used at the start of the Librarian&apos;s Assault phase. If successful, the Librarian has Strength 6 and rolls 2d6 for armour penetration for the remainder of that Assault phase. </description>
+              <description>The Power is used at the start of the Librarian&apos;s Assault phase. If successful, the Librarian has Strength 6 and rolls 2d6 for armour penetration for the remainder of that Assault phase.</description>
             </rule>
           </rules>
           <constraints>
@@ -6732,7 +6732,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="The Gate of Infinity" hidden="false" id="a835-9db0-b437-1f91">
           <rules>
             <rule name="The Gate of Infinity" id="1814-2762-d0e8-37e4" hidden="false">
-              <description>This power is used at the beginning of the Librarian&apos;s Movement phase. The Librarian, and any unit he is with. are removed from the tabletop and immediately placed back together anywhere within 24&quot; using the Deep Strike rules. If the Librarian travels alone there is no risk but if he is joined by a unit there is a chance something will go wrong. If the deep strike attempt scatters and a double is rolled, one member of the unit, chosen by the controlling player, is claimed by the Warp and removed as a casualty. </description>
+              <description>This power is used at the beginning of the Librarian&apos;s Movement phase. The Librarian, and any unit he is with. are removed from the tabletop and immediately placed back together anywhere within 24&quot; using the Deep Strike rules. If the Librarian travels alone there is no risk but if he is joined by a unit there is a chance something will go wrong. If the deep strike attempt scatters and a double is rolled, one member of the unit, chosen by the controlling player, is claimed by the Warp and removed as a casualty.</description>
             </rule>
           </rules>
           <constraints>
@@ -6742,7 +6742,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
         <selectionEntry type="upgrade" import="true" name="Vortex of Doom" hidden="false" id="a461-99d3-28af-4604">
           <rules>
             <rule name="Vortex of Doom" id="3585-1fa1-134f-0385" hidden="false">
-              <description>This power is a psychic shooting attack with the following profile. If when using this power the Librarian fails his psychic test, place the Vortex of Doom blast marker on the Librarian, in this case the template will not scatter. </description>
+              <description>This power is a psychic shooting attack with the following profile. If when using this power the Librarian fails his psychic test, place the Vortex of Doom blast marker on the Librarian, in this case the template will not scatter.</description>
             </rule>
           </rules>
           <profiles>
@@ -6793,7 +6793,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Badab" id="0449-0363-2f53-15a1" targetId="09cf-2cb8-65aa-33a8"/>
+    <catalogueLink type="catalogue" name="The Badab War" id="0449-0363-2f53-15a1" targetId="09cf-2cb8-65aa-33a8"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Badab Chapter" hidden="false" id="29dc-3183-90c0-61a8" type="selectionEntry" targetId="4fd3-3314-f580-1f5d">
@@ -6823,7 +6823,7 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
     <entryLink import="true" name="Salamanders - Captain Pellas Mir&apos;San" hidden="false" id="c3b0-05b1-1f2b-65b4" type="selectionEntry" targetId="f308-079f-d941-9e4e"/>
     <entryLink import="true" name="Sons of Medusa - Vaylund Cal" hidden="false" id="c272-5fb7-ff82-fa4d" type="selectionEntry" targetId="7a49-d5c0-899a-e255"/>
     <entryLink import="true" name="Star Phantoms - Captain Zhrukhal Androcles" hidden="false" id="b9d3-d4ab-f8e4-e648" type="selectionEntry" targetId="cd39-1695-51e6-70d2"/>
-    <entryLink import="true" name="Devastator Squad (Elites)" hidden="false" id="ab67-a1e9-80e3-d098" type="selectionEntry" targetId="3e16-bc8b-3e41-c1fe">
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="ab67-a1e9-80e3-d098" type="selectionEntry" targetId="3e16-bc8b-3e41-c1fe">
       <categoryLinks>
         <categoryLink targetId="c07f-a679-9bd0-a9c0" id="38fc-10e6-b406-0f60" primary="true" name="Elites"/>
         <categoryLink targetId="2929-ab82-8ced-da7c" id="92fb-bb31-4d54-12ca" primary="false" name="Infantry"/>
