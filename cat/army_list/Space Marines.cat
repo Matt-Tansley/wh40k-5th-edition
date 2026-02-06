@@ -2710,7 +2710,23 @@ If the result is a 5 or more, then either a Weapon Destroyed or Immobilised resu
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Librarian" hidden="false" id="e36e-d599-424c-cd02" type="selectionEntry" targetId="4f8f-853f-e4fb-3e07"/>
-    <entryLink import="true" name="Captain" hidden="false" id="73bb-8aff-ccd9-c031" type="selectionEntry" targetId="078e-d457-1d59-b8a8"/>
+    <entryLink import="true" name="Captain" hidden="false" id="73bb-8aff-ccd9-c031" type="selectionEntry" targetId="078e-d457-1d59-b8a8">
+      <entryLinks>
+        <entryLink import="true" name="Power Armour Weapons" hidden="false" id="57f3-6ecf-e344-9945" type="selectionEntryGroup" targetId="6ed1-d7d0-861a-f56e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="73bb-8aff-ccd9-c031" childId="543d-51a6-b94c-bdd4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5202-a388-e7a6-26b6" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e77a-7a39-a0bd-e3a3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
     <entryLink import="true" name="Chaplain" hidden="false" id="0d8b-797e-a41c-0f10" type="selectionEntry" targetId="fa10-f453-8d14-5f31"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="3ed2-eaa6-9dbb-b453" type="selectionEntry" targetId="d15c-ad94-f2ce-f54f"/>
     <entryLink import="true" name="Terminator Assault Squad" hidden="false" id="b6a9-70ac-ff9e-baf2" type="selectionEntry" targetId="ed97-c439-df02-fff3"/>

@@ -382,104 +382,6 @@ Each player rolls a D6 and adds their models Leadership value to the score. If t
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Power Armour Weapons" id="6ed1-d7d0-861a-f56e" hidden="false">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="af79-e8a2-1139-5ba1" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7308-04ce-b0f4-ec64" includeChildSelections="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Bolt Pistol" hidden="false" id="1bca-1004-21aa-497a" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47d2-20c1-8818-45bb" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Chainsword" hidden="false" id="bab6-7b7e-a3ee-cf5f" type="selectionEntry" targetId="7544-be24-33ca-539a" defaultAmount="1">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0187-b764-eff3-5463" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Boltgun" hidden="false" id="0717-239d-915b-2700" type="selectionEntry" targetId="36dc-77bf-9c77-ebec">
-              <entryLinks>
-                <entryLink import="true" name="Hellfire Rounds" hidden="false" id="0d8e-fc90-62e4-6b08" type="selectionEntry" targetId="d461-4524-994a-11cb">
-                  <costs>
-                    <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92c7-8837-5465-fbf3" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="b3d8-4fdc-7937-44fc" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Combi-Flamer" hidden="false" id="9188-ea8a-c54d-d51e" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Combi-Melta" hidden="false" id="1640-6ee3-25bd-769a" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Combi-Plasma" hidden="false" id="8881-0262-bb0a-0ec7" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Weapon" hidden="false" id="fc33-ec93-4858-ead9" type="selectionEntry" targetId="4116-38b9-9975-8f38">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Storm Bolter" hidden="false" id="28d3-2471-caaf-1d46" type="selectionEntry" targetId="e58f-3db0-d262-b837">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Lightning Claw" hidden="false" id="f1e2-2cc3-39b0-1c1d" type="selectionEntry" targetId="f3e3-33f3-5fa4-52c9">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Plasma Pistol" hidden="false" id="f614-fd37-e781-1a5b" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Power Fist" hidden="false" id="8e7b-5a30-ad4d-d2aa" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Thunder Hammer" hidden="false" id="3901-9d71-68cc-0b7d" type="selectionEntry" targetId="1deb-7737-421e-a74d">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Relic Blade" hidden="false" id="70f7-19e2-2b70-a943" type="selectionEntry" targetId="2d07-1b63-80db-8b2f">
-              <costs>
-                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="078e-d457-1d59-b8a8" childId="543d-51a6-b94c-bdd4" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Command Squad" id="dfd2-a6a7-f2d3-f383" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Command Squad" hidden="false" id="6e20-5e72-6a9f-8085">
@@ -5001,6 +4903,93 @@ Cluster Mines are automatically triggered the first time a unit (friendly or ene
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Power Armour Weapons" id="6ed1-d7d0-861a-f56e" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="1bca-1004-21aa-497a" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47d2-20c1-8818-45bb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chainsword" hidden="false" id="bab6-7b7e-a3ee-cf5f" type="selectionEntry" targetId="7544-be24-33ca-539a" defaultAmount="1">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0187-b764-eff3-5463" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Boltgun" hidden="false" id="0717-239d-915b-2700" type="selectionEntry" targetId="36dc-77bf-9c77-ebec">
+          <entryLinks>
+            <entryLink import="true" name="Hellfire Rounds" hidden="false" id="0d8e-fc90-62e4-6b08" type="selectionEntry" targetId="d461-4524-994a-11cb">
+              <costs>
+                <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92c7-8837-5465-fbf3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="b3d8-4fdc-7937-44fc" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Combi-Flamer" hidden="false" id="9188-ea8a-c54d-d51e" type="selectionEntry" targetId="f0a4-a0e4-25f9-dded">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Combi-Melta" hidden="false" id="1640-6ee3-25bd-769a" type="selectionEntry" targetId="cad5-bbe3-fb66-0625">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Combi-Plasma" hidden="false" id="8881-0262-bb0a-0ec7" type="selectionEntry" targetId="2cbf-d533-20f3-d524">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Power Weapon" hidden="false" id="fc33-ec93-4858-ead9" type="selectionEntry" targetId="4116-38b9-9975-8f38">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="28d3-2471-caaf-1d46" type="selectionEntry" targetId="e58f-3db0-d262-b837">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Lightning Claw" hidden="false" id="f1e2-2cc3-39b0-1c1d" type="selectionEntry" targetId="f3e3-33f3-5fa4-52c9">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Plasma Pistol" hidden="false" id="f614-fd37-e781-1a5b" type="selectionEntry" targetId="f8f7-2583-32c6-bd44">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Power Fist" hidden="false" id="8e7b-5a30-ad4d-d2aa" type="selectionEntry" targetId="14b2-b5e9-8517-9fe8">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Thunder Hammer" hidden="false" id="3901-9d71-68cc-0b7d" type="selectionEntry" targetId="1deb-7737-421e-a74d">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Relic Blade" hidden="false" id="70f7-19e2-2b70-a943" type="selectionEntry" targetId="2d07-1b63-80db-8b2f">
+          <costs>
+            <cost name="Pts" typeId="66e8-2b35-427e-1fbd" value="30"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>

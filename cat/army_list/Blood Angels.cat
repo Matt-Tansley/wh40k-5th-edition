@@ -37,15 +37,15 @@
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Rosarius confers a 4+ invulnerable save</characteristic>
           </characteristics>
         </profile>
-        <profile name="Chaplain" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6ff8-97d0-493a-c4c6">
+        <profile name="Reclusiarch" typeId="618c-4b59-7703-dea7" typeName="Unit" hidden="false" id="6ff8-97d0-493a-c4c6">
           <characteristics>
             <characteristic name="WS" typeId="1a67-35be-8c50-5f48">5</characteristic>
-            <characteristic name="BS" typeId="a833-788f-22a7-be67">4</characteristic>
+            <characteristic name="BS" typeId="a833-788f-22a7-be67">5</characteristic>
             <characteristic name="S" typeId="3a56-2050-a9e7-ddf4">4</characteristic>
             <characteristic name="T" typeId="84a0-3904-4669-e8da">4</characteristic>
-            <characteristic name="W" typeId="af55-a000-5871-43ed">2</characteristic>
-            <characteristic name="I" typeId="a9ee-4582-9091-350a">4</characteristic>
-            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">2</characteristic>
+            <characteristic name="W" typeId="af55-a000-5871-43ed">3</characteristic>
+            <characteristic name="I" typeId="a9ee-4582-9091-350a">5</characteristic>
+            <characteristic name="A" typeId="1f4e-bdf1-161f-8e90">3</characteristic>
             <characteristic name="Ld" typeId="d577-4878-e724-5b1e">10</characteristic>
             <characteristic name="Sv" typeId="82b9-7b33-be67-0944">3+</characteristic>
           </characteristics>
@@ -89,7 +89,7 @@ Models in a Death Company unit can also re-roll failed rolls to wound.</descript
         </rule>
       </rules>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Chaplain Weapons" id="e9fa-50a6-da27-16ef" hidden="false">
+        <selectionEntryGroup name="Power Armour Weapons" id="e9fa-50a6-da27-16ef" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Bolt Pistol" hidden="false" id="499f-1942-c466-d485" type="selectionEntry" targetId="78e5-9a3a-4fd1-ec54"/>
             <entryLink import="true" name="Boltgun" hidden="false" id="6524-7d71-da8c-81ab" type="selectionEntry" targetId="36dc-77bf-9c77-ebec"/>
@@ -288,4 +288,34 @@ Models in a Death Company unit can also re-roll failed rolls to wound.</descript
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Captain" hidden="false" id="6e32-e89b-12e4-dc15" type="selectionEntry" targetId="078e-d457-1d59-b8a8">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Captain Power Armour Weapons" id="fc76-43db-7b26-1e47" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Power Armour Weapons" hidden="false" id="b1ae-8644-4dbd-8091" type="selectionEntryGroup" targetId="6ed1-d7d0-861a-f56e"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="55e0-0ef1-e371-7e81" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3048-abb7-f287-5612" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Power Armour Weapons - Blood Angels" id="e539-9129-6527-44fc" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="0be5-3f59-a50c-cb0b" type="selectionEntry" targetId="4603-baf5-2bd9-1ccc"/>
+                <entryLink import="true" name="Infernus Pistol" hidden="false" id="dcb6-06d5-5aba-5304" type="selectionEntry" targetId="c54d-912c-54c8-e3dc"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="6e32-e89b-12e4-dc15" childId="543d-51a6-b94c-bdd4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+  </entryLinks>
 </catalogue>
